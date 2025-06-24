@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback</title>
+  <link rel="stylesheet" href="../../STUDENT_2/Global/GlobalStyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../../STUDENT_3/Feedback/Feeback.css">
+  <link rel="icon" type="image/png" href="../../STUDENT_2/Global/EnerBridge_Logo.png" />
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="../../STUDENT_2/Global/EnerBridge_Logo.png" alt="Site Logo" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../../STUDENT_2/Home/Home.html" ><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+          <li><a href="../../STUDENT_1/volunteer/volunterr.html"><i class="fa-solid fa-handshake-angle"></i><span>Volunteer</span></a></li>
+          <li><a href="../../STUDENT_2/Table/Table.html"><i class="fa-solid fa-solar-panel"></i><span>Energy Data</span></a></li>
+          <li><a href="#" class="active"><i class="fa-solid fa-comments"></i><span>Feedback</span></a></li>
+          <li><a href="../../STUDENT_3/Team/Team.html"><i class="fa-solid fa-people-group"></i><span>Team</span></a></li>
+          <li><a href="../../STUDENT_4/UserProfile/UserProfile.html"><i class="fa-solid fa-users"></i><span>User Profile</span></a></li>
+          <li><a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span>Site Map</span></a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <video autoplay muted loop playsinline id="bg-video">
+  <source src="../../STUDENT_2/Global/loop.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+    <!-- Main Content -->
+   <!-- Main Content -->
+    <main style="max-width: 3000px; width: 95%; margin: 0 auto" class="wrapper">
+      <div class="fb-container">
+      <h2>Illuminate Our Path With Your Feedback!</h2><br>
+
+      <form class="fb-form">
+        <fieldset>
+        <legend><b>Personal Details</b></legend>
+
+        <label for="fullname">Full Name : <span class="required">*</span></label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your fullname" title="Please enter your full name" maxlength="50" required>
+
+        <label for="email">Email Address : <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required title="Enter a valid email address" placeholder="Enter your email">
+
+        <label for="telephone">Telephone Number :</label>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" title="Enter a valid phone number" placeholder="Enter phone number">
+
+        <label for="address">Address :</label>
+        <textarea id="address" name="address" rows="2" maxlength="100" placeholder="Enter your address"></textarea>
+        </fieldset>
+      
+
+
+      <fieldset>
+        <legend><b>Feedback Details</b></legend>
+
+        <label for="sources">Which renewable energy sources do you support?</label><br />
+          <select name="sources[]" id="sources" multiple size="2">
+            <option value="wind">Wind Energy</option>
+            <option value="hydro">Hydropower</option>
+            <option value="solar">Solar Energy</option>
+            <option value="geothermal">Geothermal Energy</option>
+            <option value="biomass">Biomass</option>
+          </select>
+
+
+        <label for="find">How did you find  our website?</label>
+          <select id="find" name="find">
+            <option value="social media">Social Media</option>
+            <option value="link">University Link</option>
+            <option value="friend">Friends</option>
+            <option value="search engine">Search Engine</option>
+            <option value="other">Other</option>
+          </select>
+
+        <label>What would you like us to improve on the website?</label><br />
+        <label><input type="checkbox" name="improve" value="navigation"> Improve Navigation</label>
+        <label><input type="checkbox" name="improve" value="mobile"> Improve Mobile Experience</label>
+        <label><input type="checkbox" name="improve" value="content"> Increase Content</label>
+        <label><input type="checkbox" name="improve" value="interactivity"> Improve Interactivity</label><br>
+        
+
+        <label for="visit-date">When did you visit our website?</label>
+        <input type="datetime-local" id="visit-date" name="visit-date" /><br><br>
+
+
+        <label>Do you believe this website merits recommendation?</label>
+        <label class="radio"><input type="radio" name="recommend" value="yes"/>Yes</label>
+        <label class="radio"><input type="radio" name="recommend" value="no" />No</label><br>
+        
+
+        <label  for="message">Your Message / Any Inquiries :</label>
+        <textarea name="message" id="message" placeholder="Enter your message" maxlength="300"></textarea>
+        <div id="char-count">0/300 characters</div>
+
+        <label for="upload">Upload Screenshot (optional):</label>
+        <input type="file" id="upload" name="upload" accept="image/*,application/pdf" />
+      </fieldset>
+
+      <fieldset>
+          <legend>Rate Us</legend>
+          <div class="emoji-rating">
+            <span title="1 Star">😠</span>
+            <span title="2 Stars">😐</span>
+            <span title="3 Stars">😊</span>
+            <span title="4 Stars">😁</span>
+            <span title="5 Stars">😍</span>
+          </div>
+      </fieldset><br>
+
+      <button type="submit" class="btn primary">Submit</button>
+      <button type="reset" class="btn secondary">Reset</button>
+
+
+      </form>
+      </div>
+      
+
+    </main>
+
+  </div> <!-- End wrapper -->
+
+  <a href="#top" id="go-top-button"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- Footer OUTSIDE wrapper -->
+  <footer>
+    <p>⚡️ Empowering the future with clean, sustainable energy for all ⚡️</p>
+
+    <p>
+      | <a href="../../STUDENT_1/PageEditor_ST1/pageEditor_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 01</span></a> |
+      <a href="../../STUDENT_2/PageEditor_ST2/PageEditor_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 02</span></a> |
+      <a href="../../STUDENT_3/PageEditor_ST3/pageEditor_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 03</span></a> |
+      <a href="../../STUDENT_4/PageEditor_ST4/PageEditor_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 04</span></a> |
+    </p>
+
+    <p>
+      | <a href="../../STUDENT_1/ContentPage_ST1/content_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 01</span></a> |
+      <a href="../../STUDENT_2/ContentPage_ST2/Content_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 02</span></a> |
+      <a href="../../STUDENT_3/ContentPage_ST3/content_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 03</span></a> |
+      <a href="../../STUDENT_4/ContentPage_ST4/content_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 04</span></a> |
+    </p>
+
+    <div class="sitemap">
+      | <a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span style="margin-left: 5px;">Site Map</span></a> |
+    </div>
+
+    <p> || Supporting <strong>SDG 7: Affordable & Clean Energy</strong> ||</p>
+</p>
+
+    <p>&copy; EnerBridge. All rights reserved.</p>
+  </footer>
+
+<script>
+  const messageField = document.getElementById('message');
+  const charCountDisplay = document.getElementById('char-count');
+
+  messageField.addEventListener('input', () => {
+    const currentLength = messageField.value.length;
+    const maxLength = messageField.getAttribute('maxlength') || 500;
+    charCountDisplay.textContent = `${currentLength} / ${maxLength} characters`;
+  });
+</script>
+
+
+</body>
+</html>

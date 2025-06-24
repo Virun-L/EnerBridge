@@ -1,0 +1,214 @@
+/* Background Video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #076c61;
+}
+
+/* Section Container */
+.energy-table-section {
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  max-width: 1200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+  border: 5px ridge #00796b;
+  opacity: 0.98;
+  margin-bottom: 70px;
+}
+
+.energy-table-section h2 {
+  text-align: center;
+  color: #00695c;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+/* Table Base */
+.energy-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: #1b1b1b;
+}
+#go-top-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #00796b;
+  color: #e0f7fa;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0, 121, 107, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+#go-top-button:hover,
+#go-top-button:focus {
+  background-color: #004d40;
+  transform: scale(1.1);
+  outline: none;
+}
+
+
+
+/* Header */
+/* White background only for logo cell in header */
+.energy-table thead .white-bg {
+  background-color: white !important;
+}
+
+/* Keep gradient for all other header cells */
+.energy-table thead th:not(.white-bg) {
+  background: linear-gradient(135deg, #00897b, #43a047);
+  color: white;
+}
+
+.energy-table thead img {
+  width: auto;
+  height: auto;
+  align-content: center;
+}
+.energy-table thead .white-bg {
+  background-color: white;
+  border: 1px solid #2e7d32;
+}
+
+/* Logo Cell */
+.logo-cell {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/* Make logo image scale correctly */
+.logo-cell img {
+  display: block;
+  margin-left: 250px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* use 'cover' if you want it to fill cell */
+  max-height: 100px; /* prevent it from becoming too large */
+}
+
+/* Table Body Rows */
+.energy-table tbody td {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid  #00796b;
+  background-color: #f9f9f9;
+  transition: background 0.3s ease;
+}
+
+
+.energy-table tbody tr:nth-child(even) td {
+  background-color: #eef7f6;
+}
+.energy-table thead th {
+  border: 1px solid #00796b; /* Add border to header cells */
+}
+
+/* Emphasis */
+.energy-table tbody td strong {
+  color: #0d47a1;
+}
+
+/* Links */
+.energy-table a {
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.energy-table a:hover {
+  text-decoration: underline;
+}
+
+/* Note Row */
+.note-row {
+  text-align: left;
+  font-size: 0.95em;
+  background-color: #fffde7;
+  color: #6d4c41;
+  font-style: italic;
+  padding: 10px;
+}
+
+/* Highlight based on emojis - fallback method using attribute selectors */
+.energy-table td {
+  font-weight: normal;
+}
+
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .energy-table-section {
+    padding: 10px;
+  }
+
+  .energy-table thead {
+    display: none;
+  }
+
+  .energy-table,
+  .energy-table tbody,
+  .energy-table tr,
+  .energy-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .energy-table tr {
+    margin-bottom: 15px;
+    background: #e3f2fd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .energy-table td {
+    text-align: left;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+  }
+
+  .energy-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #00796b;
+  }
+
+  .logo-cell img {
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+}

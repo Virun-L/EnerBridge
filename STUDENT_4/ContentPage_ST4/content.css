@@ -1,0 +1,126 @@
+.h1_styles{
+    font-size: 35px;
+}
+
+.h2_font{
+    font-family: "Yeseva One", sans-serif;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.paragraph{
+    font-family: "Sedan", sans-serif;
+    text-align: justify;
+}
+
+.sections{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 40px;
+    background-color: rgba(69, 232, 178, 0.243);
+    padding: 15px;
+    border: 2px solid rgba(4, 103, 73, 0.339);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.072);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 8px;
+    
+}
+
+.sections:hover {
+    transform: scale(1.003);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.236);
+}
+
+.reversed{
+    flex-direction: row-reverse;
+}
+
+.section_text{
+    text-align: justify;
+}
+
+.sections{
+    scroll-margin-top: 30vh; /* makes the content align to the middle of the page when dive in buttons are clicked */
+}
+
+.images{
+    border-radius: 8px;
+    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.236);
+    
+}
+
+.hr{
+    margin-top: 10px;   
+    border: none;
+    height: 3px;
+    background-color: #cccccc;
+}
+
+.dive_in_section {
+  text-align: center; /* Centers the "Dive In" heading */
+  margin-bottom: 30px; /* Adds some space below this section */
+  padding: 20px;
+  background-color: rgba(37, 234, 245, 0.395);
+  border-radius:8px;
+}
+
+.dive_in_section h1 {
+  font-family: "Yeseva One", sans-serif;
+  margin-bottom: 15px; /* Space between heading and buttons */
+  font-size: 30px;
+  
+}
+
+.dive_in_links {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+  gap: 15px; /* Adds space between each button */
+  
+}
+
+.dive_in_links a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #005a87; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.072);
+
+}
+
+.dive_in_links a:hover {
+  background-color: #003d5c; 
+  transform: translateY(-2px); 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.143);
+  
+}
+
+.scoll_behavior{
+    scroll-behavior: smooth; /* amoother transition without jumping to a specific point */
+}
+
+#back_to_top{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    border-radius: 50%;    
+    text-decoration: none;    
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#back_to_top:hover{
+    transform: scale(1.1)
+}

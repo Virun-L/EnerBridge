@@ -1,0 +1,308 @@
+
+/* Full-screen background video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure it stays behind other content */
+  opacity: 0.6; /* Optional: Slight transparency for readability */
+  pointer-events: none; /* Prevent interactions */
+}
+
+h2 {
+    margin-bottom: 60px;
+}
+
+.mission {
+  margin-top: 50px;
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #0eb273;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 230, 118, 0.2);
+  opacity: 0.95; /* Lower opacity (0.0 to 1.0) */
+}
+
+
+.mission h1 {
+  font-size: 3rem;
+  color: #00796b; /* Dark teal-green heading */
+  margin-bottom: 1rem;
+  text-shadow: 0 0 3px #00e67633; /* Soft green glow */
+}
+
+
+  
+
+.mission p {
+
+
+  border: 9px double #00796b;
+  font-size: 25.8px;
+  line-height: 1.8;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333; /* Dark grey text for readability */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 90px;
+}
+
+
+.mission b {
+    font-size: 18px;
+  line-height: 1.8;
+
+}
+
+
+
+.extra-support-logos {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.support-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.support-item img {
+  width:250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(6, 136, 112, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.support-item img:hover {
+  transform: scale(1.08);
+}
+
+.support-item .button-wrapper {
+  margin-top: 1rem;
+}
+
+
+
+
+/* Container for the Learn More heading */
+.learn-more-section {
+  text-align: center;
+  margin: 3rem 0 2rem;
+}
+
+
+
+/* Tile container to arrange tiles in a responsive grid */
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  padding: 0 1rem;
+  max-width: 1500px;
+  margin: 0 auto 4rem;
+}
+
+/* Each content tile */
+.content-tile {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #222;
+  align-items: center;
+  text-decoration: none;
+ 
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect to lift the tile */
+.content-tile:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Tile images */
+.tile-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Tile title */
+.tile-title {
+  font-size: 1.3rem;
+  color: #00796b; /* Dark teal */
+  margin: 1rem 1rem 0.5rem;
+  font-weight: 600;
+}
+
+/* Tile description */
+.content-tile p {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #444;
+ 
+  
+}
+
+.learnmore {
+  background: transparent;
+  color: #00796b;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 28px;
+  border: 2px solid #00796b;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #14d45d, 0 0 20px transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.learnmore-link {
+  background: transparent;
+  color: #00796b;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 28px;
+  border: 2px solid #00796b;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #14d45d, 0 0 20px transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.learnmore-link:hover {
+  background-color: #14d45d;
+  color: black;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #09dd81, 0 0 30px #09dd81;
+  transform: scale(1.05);
+}
+
+.learnmore:hover {
+    background-color: #14d45d;
+    color: black;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #09dd81, 0 0 30px #09dd81;
+    transform: scale(1.05);
+}
+
+#go-top-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #00796b;
+  color: #e0f7fa;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 45%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0, 121, 107, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+#go-top-button:hover,
+#go-top-button:focus {
+  background-color: #004d40;
+  transform: scale(1.1);
+  outline: none;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 18px;
+  }
+
+  header {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .mission p {
+    font-size: 20px;
+    padding: 0.8rem;
+  }
+
+  .mission h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .learnmore,
+  .learnmore-link {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  #bg-video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+
+

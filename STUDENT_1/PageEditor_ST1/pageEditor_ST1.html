@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata and head resources -->
+        <meta charset="UTF-8" />
+        <!-- Set character encoding -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Responsive scaling -->
+        <title>PageEditor_ST1</title>
+        <!-- Page title -->
+        <!-- Global styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <!-- Font Awesome icons -->
+        <link rel="stylesheet" href="../../STUDENT_1/PageEditor_ST1/pageEditor_validatST1.css" />
+        <link rel="stylesheet" href="../../STUDENT_2/Global/GlobalStyle.css">
+        <!-- Page-specific styles -->
+        <link rel="icon" type="image/png" href="../../STUDENT_2/Global/EnerBridge_Logo.png" />
+        <!-- Favicon -->
+         
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Header with logo and navigation -->
+            <header>
+                <div class="logo">
+                    <img src="../../STUDENT_2/Global/EnerBridge_Logo.png" alt="Site Logo" />
+                    <!-- Site logo -->
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <!-- Navigation links -->
+                        <li>
+                            <a href="../../STUDENT_2/Home/Home.html" class="active"><i class="fa-solid fa-house"></i><span>Home</span></a>
+                        </li>
+                        <li>
+                            <a href="../../STUDENT_1/volunteer/volunterr.html"><i class="fa-solid fa-handshake-angle"></i><span>Volunteer</span></a>
+                        </li>
+                        <li>
+                            <a href="../../STUDENT_2/Table/Table.html"><i class="fa-solid fa-solar-panel"></i><span>Energy Data</span></a>
+                        </li>
+                        <li>
+                            <a href="../../STUDENT_3/Feedback/feedback.html"><i class="fa-solid fa-comments"></i><span>Feedback</span></a>
+                        </li>
+                        <li>
+                            <a href="../../STUDENT_3/Team/Team.html"><i class="fa-solid fa-people-group"></i><span>Team</span></a>
+                        </li>
+                        <li>
+                            <a href="../../STUDENT_4/UserProfile/UserProfile.html"><i class="fa-solid fa-users"></i><span>User Profile</span></a>
+                        </li>
+                        <li>
+                            <a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span>Site Map</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <!-- Background video for visual appeal -->
+                <video autoplay muted loop playsinline id="bg-video">
+                    <source src="../STUDENT_2/HOME_vid/loop.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
+                <section class="stud">
+        <h2> A.W Kithsara, Student 1</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">Splash Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The splash scrren was developed using HTML and Css wwith an emphasis on animation, multimedia itegration, and responsiveness. A full-screen background video is embedded using  <code>&lt;video&gt;</code> tag with attributes like <code>autoplay</code>, <code>muted</code>, and <code>loop</code> to create a seamless visual loop. The page includes
+                        a timed redirect via a <code>&lt;meta http-equiv="refresh"&gt;</code> tag, transitioning the user automatically after 7 seconds.
+                        <br><br>
+                        For styling, a layered design it created with z-indexed element including a video background, an animated logo (with keyframe-based pulsing), and glassmorphism cards using <code>backdrop-filter</code>, <code>box-shodow</code>, and <code>rgba</code> for semi-transparency. Responsive layout is maintained with Flexbox to center both vertically and horizontally. 
+                        Key CSS animations like <code>fadeOut</code>, <code>whiteFadeIn</code>, and <code>blurFadeIn</code> are used to deliver a smooth transitions.
+                        </p> 
+                    
+                    <h3>Accessibility</h3>
+                        <p>Accessibility was considered by including <code>alt</code> text for all meaningful images, incling logos. Video is muted and looped to avoid audio distractions, and the overlay ensures sufficient contrast between text and background video. Semantic HTML tags such as <code>&lt; ul&gt;</code> for the team list and <code>&lt;h2&gt;</code><code>/</code><code>&lt;p&gt;</code>for structired text echance screen reader compatibility.</p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="../../STUDENT_1/ValidationPage_ST1/validation_ST1.html">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="/splash/SPLASH1.html">Splash Screen Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The Volunteer page uses a clean, responsive layout structured with semantic HTML elements like <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;main&gt;</code>. It features a fixed header with a logo and navigation bar styled using Flexbox. Each volunteer opportunity is contained in a "project card" within a responsive CSS grid, adapting to different screen sizes via <code>grid-template-columns</code> and <code>auto-fit</code>. 
+                        <br><br>
+                        The CSS design implements modern aesthetics using card shadows, hover effects, rounded corners, and vibrant color highlights. Animations such as scale-on-hover are applied using <code>transform</code> and <code>transition</code> properties. User engagement is enhanced with a testimonials section styled via box-shadow and feedback forms that use emoji-based ratings.
+                        <br><br>
+                        Icons from Font Awesome and emoji symbols add visual clarity and appeal. A fixed-width <code>.wrapper</code> centers the content while preventing overflow issues, and visual balance is ensured through consistent spacing, margins, and color theming across sections.
+                        </p>
+
+                    <h3>Accessibility</h3>
+                        <p>Accessibility was incorporated by ensuring all images (like the logo) include <code>alt</code> attributes. Font sizes are readable with good contrast against the background, especially in headers and cards. The layout uses semantic tags (e.g., <code>&lt;section&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;p&gt;</code>) to support screen readers. Interactive elements like feedback buttons and rating inputs are styled with sufficient padding and focus states for better usability.
+                        <br><br>
+                        Icons are paired with descriptive labels for clarity, and the structure allows for keyboard navigation. Additionally, color cues are supported by visual shapes (buttons, borders, emojis) to avoid color-only communication.
+                        </p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="volunteer/volunterr.html">Volunteer Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The webpage is structured using semantic HTML5 elements like , code nav code, code footer code, code main code, code section code, and code footer code to provide clear content hierarchy and improve SEO. The fixed header uses Flexbox for horizontal alignment of navigation links and logo, enchanced with Font Awesome icons. br
+                        A muted background video is embedded with the code video code tag using attributes code autoplay code, code muted code, and code loop code for continuous playback.<br>
+                        Content sections are styled with semi-transparent backgrounds, green accent borders, and responsive images for improved readability and mobile-friendliness. Css includes smooth hover transitions, custom bullet styling, and a fixed-position "Go to Top" button. The design uses a consistent green color theme for a clean and modern look.</p> 
+
+                    <h3>Accessibility</h3>
+                        <p>The use of semantic tags improves navigation and comprehension for screen readers. Font Awesome icons are paired with descriptive link text to aid assistive technologies. Text and background colors maintain sufficient contrast to meet accessibility guidelines. Navigation links and buttons provide clear focus and hover indicators. 
+                            The responsive layout adapts well to different screen sizes, ensuring usability across devices. External links open in new tabs with <code>rel="noopener"</code> for security. Further improvements could include adding ARIA roles and comprehensive screen reader testing.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content page/content.html">Content Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>During the development of the webpages, several challenges were encountered that contributed to valuable learning experiences:</p>
+                    <ul>
+                        <li><strong>Maintaing Layout Consistency:</strong>One of the main challenges was ensuring consistent layout and styling across all pages. This required careful use of CSS file and standard class naming conventions. I learned the importance of a modular CSS struncture and reusing components wherever possible.</li>
+                        <br>
+                        <li><strong>Responsive Design:</strong>Making the site mobile-friendly across different screen sizes was difficult initially. With practice using media queries and CSS Grid/Flexbox, I learned how to create layouts that adjust fluidly to various devices.</li>
+                        <br>
+                        <li><strong>Embedding Multimedia:</strong>Integrating a full-screen video background in the splash page presented preformance and layering issues. I learned how to user <code>z-index</code> properly effectively along with <code>object-fit</code> and <code>position</code> techniques to maintaines visuaal hierarchy.</li>
+                        <br>
+                        <li><strong>Validation Errors:</strong>I encountered several validation errors to improper nesting of elements. Fixing these errors helped me better understand HTML structure rules.</li>
+
+                    </ul> 
+
+                    <p>Overall, this project improved my understanding of front-end web development fundementals, including HTML5 semantics, CSS styling, responsiveness, and accessibility.</p>    
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>I ensured that all the pages I created comply with a JANET Acceptable Use Policy and relevant web publication regulations by following guidelines and best practises:</p>
+                    <ul>
+                        <li><strong>Content Ownership:</strong>All written content is original or properly credited, and images are either sourced from royalty-free playforms or generated with permission, ensuring no copyright infringement.</li>
+                        <br>
+                        <li><strong>Standard Compliance:</strong>All HTML and CSS code was validated using W3C validator to ensure proper struncture and standards-compliant markup.</li>
+                        <br>
+                        <li><strong>Accessibility:</strong>Semantic HTML tags were used consistently to enhance screen reader compatibility. Alt text was provided for images, and color contrast was considered to support users with visual impairments.</li>
+                        <br>
+                        <li><strong>Security Considerations:</strong>Links that open in new tabs use <code>rel="noopener"</code>to prevent security vulnerabilities.</li>
+                        <br>
+                        <li><strong>Professionalism:</strong>The content is educational and appropriate, with no offensive or inappriopriate material.</li>
+                    </ul>
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                        <br>
+                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                        <br>
+                        <li>Jisc (2023) <i>JANET Acceptable Use Policy.</i> Available at: <a href="https://jisc.ac.uk/network/acceptable-use-policy">https://jisc.ac.uk/network/acceptable-use-policy</a> (Last accessed: 23 Jun 2025).</li>
+                        <br>
+                        <li>W3C (n.d.) <i>Markup Validation Service</i> Available at: <a href="https://validator.w3.org/">https://validator.w3.org/</a> (Last accessed: 23 Jun 2025).</li>
+                        <br>
+                        <li>Google Fonts <i>Goodgle fonts service to get fonts and emojis for the webpage</i> Available at: <a href="https://fonts.google.com/">https://fonts.google.com/</a> (Last accessed: 23 Jun 2025)</li>
+                    </ul>
+            </section>
+
+            
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash page</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#">Home page </a></li>
+                        <li><a href="#">Table page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#">Feedback page</a> </li>
+                        <li><a href="#">Team page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#">Profile page </a></li>
+                        <li><a href="#">Sitemap page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+                
+            </main>
+        </div>
+
+        <!-- Back to top button -->
+        <a href="#top" id="go-top-button"><i class="fa-solid fa-arrow-up"></i></a>
+
+        <!-- Footer content -->
+        <footer>
+            <p>⚡️ Empowering the future with clean, sustainable energy for all ⚡️</p>
+            <p>
+                | <a href="../../STUDENT_1/PageEditor_ST1/pageEditor_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 01</span></a> |
+                <a href="../../STUDENT_2/PageEditor_ST2/PageEditor_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 02</span></a> |
+                <a href="../../STUDENT_3/PageEditor_ST3/pageEditor_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 03</span></a> |
+                <a href="../../STUDENT_4/PageEditor_ST4/PageEditor_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 04</span></a> |
+            </p>
+            <p>
+                | <a href="../../STUDENT_1/ContentPage_ST1/content_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 01</span></a> |
+                <a href="../../STUDENT_2/ContentPage_ST2/Content_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 02</span></a> |
+                <a href="../../STUDENT_3/ContentPage_ST3/content_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 03</span></a> |
+                <a href="../../STUDENT_4/ContentPage_ST4/content_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 04</span></a> |
+            </p>
+            <div class="sitemap">
+                | <a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span style="margin-left: 5px;">Site Map</span></a> |
+            </div>
+            <p>|| Supporting <strong>SDG 7: Affordable & Clean Energy</strong> ||</p>
+            <p>&copy; EnerBridge. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
+

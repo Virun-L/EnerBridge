@@ -1,0 +1,255 @@
+/* Full-screen background video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Container with blur and light glass effect */
+.content-container {
+  background: linear-gradient(to bottom right, #ffffffcc, #e0f7facc);
+  backdrop-filter: blur(5px);
+  padding: 40px 30px;
+  margin: 40px auto;
+  border-radius: 20px;
+  max-width: 1300px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/*Headings*/
+.content-container h1 {
+  font-size: 2.8rem;
+  color: #00796b;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #00796b, #00e676);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;  
+}
+
+/*Navigation Tabs*/
+.internal-nav {
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  border: 2px solid #00bfa5; 
+}
+
+
+.internal-nav strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #374151;
+  font-size: 1.125rem;
+}
+.internal-nav ul {
+  
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-left: 0;
+}
+
+.internal-nav li a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+  border: 1.5px solid transparent;
+}
+.internal-nav li a:hover,
+.internal-nav li a:focus {
+  background-color: #b5f5ea;
+  border-color: aqua;
+  outline: none;
+}
+
+/*Companies Grid Layout*/
+.company-grid {
+  display: grid;
+  grid-template-columns:  repeat(2, 1fr);;
+  gap: 2rem;
+  margin-bottom: 3rem;  
+}
+
+/*Company Card Styling*/
+.company-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.company-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);  
+}
+
+.card-header {
+  position: relative;
+  height: 200px;
+  overflow: hidden;  
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.company-card:hover .card-header img {
+  transform: scale(1.05);  
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.badge.solar {
+  background-color: #e4b773;  
+}
+
+.badge.wind {
+  background-color: #7ebcee;
+}
+
+.badge.future {
+  background-color: #e691f5;
+}
+
+.card-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.card-body h3 {
+  color: #004d40;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.loc {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.details {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.card-footer {
+  padding: 0 1.5rem 1.5rem;
+}
+
+/*Buttons*/
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #00796b;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #00695c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 1.5rem;
+  }
+  
+  .content-container h1 {
+    font-size: 2.2rem;
+  }
+  
+  .tab-container {
+    gap: 0.5rem;
+  }
+  
+  .tab-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .company-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Go to Top Button */
+.go-top-btn{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #00e676;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgb(0, 0, 0/0.15);
+  transition: background-color 0.3s ease;
+  font-size: 1.25rem;
+  z-index: 1000;
+}
+
+.go-top-btn:hover, .go-top-btn:focus{
+  background-color: #2a6a4c;
+  outline: none;
+}

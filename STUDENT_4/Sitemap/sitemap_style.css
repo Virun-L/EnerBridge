@@ -1,0 +1,38 @@
+body {
+  background-color: #A3D1C3;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+svg {
+  display: block;
+  margin: auto;
+  max-width: 100%; 
+}
+
+a rect, .parent-node {
+  fill: rgb(0, 121, 107); 
+  stroke: #1B4538;
+  stroke-width: 2px;
+  transition: fill 0.3s ease;
+}
+
+a:hover rect, a:focus rect {
+  fill: #41c39e;
+}
+
+a text, .parent-text {
+  fill: white;
+  font-size: 11px;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+line {
+  stroke: #225746;
+  stroke-width: 2px;
+}

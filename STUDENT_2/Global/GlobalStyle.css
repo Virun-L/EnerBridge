@@ -1,0 +1,471 @@
+/* Global Reset & Typography */
+/* Reset margin, padding and set box-sizing for all elements */
+/* Set global font family to Poppins */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure it stays behind other content */
+  opacity: 0.6; /* Optional: Slight transparency for readability */
+  pointer-events: none; /* Prevent interactions */
+}
+
+
+
+
+/* Body styles */
+/* Light grey background, dark text for readability, and comfortable line height */
+body {
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Wrapper */
+/* Container to center content and add top padding to avoid header overlap */
+.wrapper {
+  width: 90%;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding-top: 140px; /* Space for fixed header */
+}
+
+/* Header */
+/* Fixed at the top with full width */
+/* White background with green bottom border and shadow for separation */
+/* Flex container to center content vertically */
+header {
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 2rem;
+  height: 150px;
+  border-bottom: 4px solid #00796b;
+  box-shadow: 0 8px 8px -2px rgba(5, 148, 79, 0.6);
+ 
+}
+
+/* Logo */
+/* No padding on container */
+/* Image fixed height with automatic width */
+.logo {
+  padding: 0;
+}
+
+.logo img {
+  height: 120px;
+  width: auto;
+}
+
+/* Navigation */
+/* Margin and padding for spacing */
+/* Flex container for horizontal alignment */
+nav {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 1rem;
+}
+
+/* Navigation Links */
+/* Remove bullets, horizontal flex layout with gaps */
+/* Center links horizontally */
+.nav-links {
+  list-style: none;
+  font-size: 17px;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Individual nav links */
+/* Remove underline, dark text, padding for click area */
+/* Smooth transition for hover effects */
+/* Bottom border transparent by default */
+/* Flex align with gap for icon/text */
+.nav-links li a {
+  text-decoration: none;
+  color: #222;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Hover state */
+/* Light teal background, green bottom border, rounded corners */
+.nav-links li a:hover {
+  background-color: #e0f2f1;
+  border-bottom: 3px solid #00796b;
+  border-radius: 5px;
+}
+
+/* Active page link */
+/* Darker teal text, same background and border as hover */
+/* Bold font for emphasis */
+.nav-links li a.active {
+  color: #00796b;
+  background-color: #e0f2f1;
+  border-radius: 5px;
+  border-bottom: 3px solid #0d7744;
+  font-weight: bold;
+}
+
+/* Main Content Area */
+/* Vertical padding for spacing around content */
+main {
+  padding: 2rem 0;
+}
+
+/* Hero Section */
+/* Center text and add padding */
+/* Soft teal gradient background with rounded corners */
+/* Margin bottom for spacing */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #e0f2f1, #ffffff);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Hero Heading */
+/* Large font size with dark teal color */
+.hero h1 {
+  font-size: 3rem;
+  color: #00796b;
+}
+
+/* Hero Paragraph */
+/* Moderate font size with spacing */
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+}
+
+/* Hero Button */
+/* Green background, dark text, rounded pill shape */
+/* Pointer cursor on hover, bold font */
+/* Smooth color transition */
+.hero button {
+  background-color: #00e676;
+  color: #004d40;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Button hover */
+/* Invert colors for emphasis */
+.hero button:hover {
+  background-color: #004d40;
+  color: #00e676;
+}
+
+/* About Section */
+/* White background, padding, rounded corners */
+/* Subtle box shadow for depth */
+.about {
+  margin: 2rem 0;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* About Heading */
+/* Dark teal color with bottom margin */
+.about h2 {
+  color: #004d40;
+  margin-bottom: 1rem;
+}
+
+/* About Paragraph */
+/* Bottom margin and line height for readability */
+.about p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Features Section */
+/* Flex layout with wrapping and spacing */
+/* Centered text */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Individual feature card */
+/* Flexible width, white background, padding, rounded corners */
+/* Light shadow and hover translate effect */
+.feature {
+  flex: 1 1 250px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+/* Feature heading */
+/* Dark teal with margin */
+.feature h3 {
+  color: #00796b;
+  margin-top: 1rem;
+}
+
+/* Footer */
+/* Full width with relative positioning */
+/* Dark background, white text */
+/* Centered text with vertical padding */
+/* Prevent horizontal scroll with overflow-x hidden */
+footer {
+  width: 100vw;   
+  font-size: 23px;           
+  position: relative;        
+  left: 0;                   
+  margin: 0;                 
+  padding: 1rem 0;           
+  text-align: center;
+  background-color: #263238;
+  color: white;
+  box-sizing: border-box;    
+  overflow-x: hidden;    
+  border-top: 7px solid #00796b;
+  box-shadow: 0 8px 8px -2px rgba(3, 119, 63, 0.6);    
+}
+footer p{
+  margin-bottom: 14px;
+}
+
+/* Footer links hover */
+/* Underline on hover for clarity */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Footer links */
+/* Green text, no underline by default, margin for spacing */
+footer a {
+  color: #039e8c;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 10px;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+/* Duplicate hover rule (can be merged) */
+footer a:hover {
+  text-decoration: underline;
+}
+
+i.fa-solid {
+  margin-right: 6px; /* Adjust spacing as needed */
+}
+
+#go-top-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #00796b;
+  color: #e0f7fa;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0, 121, 107, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+#go-top-button:hover,
+#go-top-button:focus {
+  background-color: #004d40;
+  transform: scale(1.1);
+  outline: none;
+}
+
+
+/* Small screens - tablets (max width: 991px) */
+@media (max-width: 991px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    margin: 1rem 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .feature {
+    flex: 1 1 100%;
+  }
+
+  footer {
+    font-size: 20px;
+  }
+
+  footer a {
+    font-size: 16px;
+  }
+}
+
+/* Extra small screens - phones (max width: 600px) */
+@media (max-width: 600px) {
+  .wrapper {
+    padding-top: 120px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .about,
+  .hero,
+  .feature {
+    padding: 1rem;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 16px;
+    padding: 1rem 0.5rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .nav-links li a {
+    font-size: 18px;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    display: none; /* Hide by default */
+    z-index: 999;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+

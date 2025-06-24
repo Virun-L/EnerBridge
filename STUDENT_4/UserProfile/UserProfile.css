@@ -1,0 +1,313 @@
+/* Global Styles */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --light-gray: #ddd;
+    --white: #fff;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+body {
+    background-color: #ecffe9;
+    color: var(--text-color);
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    opacity: 0.98;
+}
+
+
+/* Main Content */
+.main-content {
+    padding: 40px 0;
+    opacity: 0.98;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 992px) {
+    .profile-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* Cards */
+.card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60%; 
+    background: linear-gradient(to top, rgb(230, 255, 148), transparent);
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+     position: relative;
+    z-index: 1;
+}
+
+.profile-info {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 28px;
+}
+
+.profile-role {
+    margin: 5px 0 0;
+    font-size: 18px;
+    color: #777;
+}
+
+/* Skills, Goals, UN Goals */
+.skills ul,
+.goals ul,
+.un-goals ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px; 
+    font-weight: 500;
+    gap: 20px;
+}
+
+
+.skills li span {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+/* The background of the percentage bar */
+.percentage-bar-container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.10); 
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+/* The colored fill of the percentage bar */
+.percentage-bar {
+    height: 22px;
+    background-color: var(--primary-color); 
+    color: var(--white); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: var(--border-radius);
+    
+    transition: width 0.5s ease-in-out;
+}
+
+.goals li,
+.un-goals li {
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+}
+
+.goals-icons li {
+  display: flex;        
+  align-items: center; 
+  gap: 40px;           
+}
+
+.quality-edu{
+  height: 110px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.quality-edu:hover {
+  transform: translateY(10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.clean-water{
+  height: 110px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.clean-water:hover {
+  transform: translateY(10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.clean-energy{
+  height: 110px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  cursor: pointer;
+}
+.clean-energy:hover {
+  transform: translateY(10px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+}
+
+.climate-action{
+  height: 110px; 
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  cursor: pointer;
+}
+.climate-action:hover {
+  transform: translateY(10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.calendar .month {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    opacity: 0.98;
+}
+
+.calendar th {
+    font-weight: 500;
+    padding: 12px;
+}
+
+
+.calendar td {
+   
+    padding: 2px 0; 
+}
+
+.calendar th {
+    font-weight: 500;
+}
+
+.calendar .available {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0.98;
+    
+    width: 40px;  
+    height: 40px; 
+    
+    border-radius: 50%;
+    
+    background-color: var(--primary-color);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+.calendar .disabled {
+    color: var(--light-gray);
+}
+
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,139 @@
+/* Full-screen background video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Team Page Styling */
+.team-section {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0c3c78, #3fb950, #0c3c78);
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+  
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px; 
+}
+
+.team-member {
+  background: linear-gradient(to bottom right, #ffffffcc, #e0f7facc);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 60, 120, 0.2);
+}
+
+.team-member img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; 
+  border: 2px solid #b2dfdb; 
+  margin-bottom: 15px;
+}
+
+.member-info h3 {
+  color: #0f6c2a;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+/* Add underline effect on hover */
+.member-info h3::after {
+  transition: width 0.3s;
+  margin-top: 5px;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #0c3c78;
+}
+
+.member-info h3:hover::after {
+  width: 100%;
+}
+
+
+
+/* Hide details initially */
+
+.details-container {
+  box-shadow: 0 2px 5px rgba(0,60,120,0.1);
+  margin-top: 10px;
+  transition: all 0.4s ease;
+  background: #f1f9ff;
+  border: 1px solid #d0e4ff;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.team-member .details {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  height: 0;
+  overflow: hidden;
+  font-size: 0.95rem;
+  color: #00796b;
+  margin-top: 10px;
+}
+
+/* Show details on hover over name */
+.team-member .member-info:hover .details,
+.team-member:focus .member-info .details {
+  opacity: 1;
+  transform: translateY(0);
+  height: auto;
+}
+
+.team-member p {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0;
+  box-shadow: #0f6c2a;
+}
+
+@media (max-width: 500px) {
+  .team-member {
+    padding: 15px;
+  }
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+}
