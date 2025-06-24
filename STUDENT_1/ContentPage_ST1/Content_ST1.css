@@ -96,7 +96,7 @@ section{
 }
 
 h1, h2, h3{
-    color: #00796b;
+    color: #040404;
 }
 
 .intro-box{
@@ -130,9 +130,10 @@ img.responsive-img{
     width: 95vw;
     margin: auto;
     z-index: 2;
-    color: #004d40;
-    background-color: rgba(255, 255, 255, 0.85);
-    border: 2px solid #00c853;
+    color: #121313;
+    background-color: rgb(131, 245, 159, 0.3);
+    border: 2px solid #00796b;
+    border-width: 8px;
     border-radius: 16px;
     padding: 30px;
     box-shadow: 0 4px 12px rgba(0,200, 83, 0.15);
@@ -186,7 +187,7 @@ img.responsive-img{
 
 /* Style for any new h4 subheadings inside a content box */
 .content-box h4 {
-    color: #007e42;
+    color: #040404;
     margin-top: 30px; /* Add space above the subheading */
     margin-bottom: 10px;
     font-size: 1.2em;
@@ -200,7 +201,7 @@ img.responsive-img{
 }
 
 .learn-more a {
-    color: #007e42;
+    color: #040404;
     font-weight: bold;
     text-decoration: none;
 }
@@ -227,7 +228,7 @@ img.responsive-img{
     box-shadow: 0 4px 12px rgba(0, 200, 83, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    color: #004d40;
+    color: #040404;
     flex-basis: 200px;
     flex-grow: 1;
     flex: 1;
@@ -240,7 +241,7 @@ img.responsive-img{
 
 .benefits-box h4{
     margin: 0;
-    color: #007e42;
+    color: #040404;
     font-size: 1.1rem;
 }
 
@@ -257,7 +258,7 @@ img.responsive-img{
 }
 
 .challenges-list h4{
-    color: #007e42;
+    color: #040404;
     margin-bottom: 5px;
 }
 
@@ -272,7 +273,7 @@ img.responsive-img{
 }
 
 .learn-more a{
-    color: #007e42;
+    color: #040404;
     font-weight: bold;
     text-decoration: none;
 }
