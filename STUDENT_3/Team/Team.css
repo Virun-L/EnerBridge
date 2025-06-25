@@ -125,6 +125,7 @@ main.wrapper.team-section {
   padding: 5px;
   border-radius: 5px;
   font-size: 1rem;
+  text-align: center;
 }
 
 .team-info ul {
