@@ -190,6 +190,11 @@ body {
     border-radius: var(--border-radius);
 }
 
+.goals ul{
+    list-style-type:disc;
+    padding-left: 25px;
+}
+
 .goals_pic{
   height: 110px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -244,7 +249,6 @@ body {
     
     background-color: var(--primary-color);
     color: var(--white);
-    cursor: pointer;
     font-weight: 700;
 }
 
