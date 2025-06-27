@@ -197,7 +197,7 @@ hr{
 
 .overall-rating{
     background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid #00796b;
+    border: 2px solid #43a047;
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
@@ -207,7 +207,7 @@ hr{
 .overall-rating .rating-value{
     font-size: 2.5rem;
     font-weight: bold;
-    color: #00796b;
+    color: #43a047;
 }
 
 .overall-rating .rating-summary{
@@ -264,6 +264,7 @@ hr{
     margin-bottom: 0.3rem;
     margin-top: -1rem;
     font-size: 1.2rem;
+    color: rgb(219, 219, 60);
 }
 
 
