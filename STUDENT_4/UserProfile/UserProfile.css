@@ -85,7 +85,7 @@ body {
     right: 0;
     bottom: 0;
     height: 60%; 
-    background: linear-gradient(to top, rgb(230, 255, 148), transparent);
+    background: linear-gradient(to top, rgba(18, 214, 47, 0.837), transparent);
 }
 
 .avatar {
@@ -101,16 +101,25 @@ body {
     position: relative;
     z-index: 1;
 }
+.profile-info p{
+    margin-top: -10px;
+}
 
 .profile-name {
     margin: 0;
     font-size: 28px;
+    margin-bottom: 5px;
 }
 
 .profile-role {
     margin: 5px 0 0;
     font-size: 18px;
     color: #777;
+    margin-bottom: 2px;
+}
+
+.about_me{
+    text-align: justify;
 }
 
 /* Skills, Goals, UN Goals */
@@ -160,9 +169,10 @@ body {
     transition: width 0.5s ease-in-out;
 }
 
+
 .goals li,
 .un-goals li {
-    background-color: var(--secondary-color);
+    background-color: rgb(218, 252, 218);
     padding: 10px 15px;
     border-radius: var(--border-radius);
     margin-bottom: 10px;
@@ -170,52 +180,32 @@ body {
 
 .goals-icons li {
   display: flex;        
-  align-items: center; 
-  gap: 40px;           
+  align-items: center;  
+  gap: 25px;     
+  background-color: rgb(218, 252, 218);
+  border-radius: var(--border-radius);    
 }
 
-.quality-edu{
+.goals-icons img{
+    border-radius: var(--border-radius);
+}
+
+.goals ul{
+    list-style-type:disc;
+    padding-left: 25px;
+}
+
+.goals_pic{
   height: 110px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  border-radius: var(--border-radius);
+  margin-top: 8px;
 }
-.quality-edu:hover {
+.goals_pic:hover {
   transform: translateY(10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
-
-.clean-water{
-  height: 110px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-.clean-water:hover {
-  transform: translateY(10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.clean-energy{
-  height: 110px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  cursor: pointer;
-}
-.clean-energy:hover {
-  transform: translateY(10px); 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
-}
-
-.climate-action{
-  height: 110px; 
-  
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  cursor: pointer;
-}
-.climate-action:hover {
-  transform: translateY(10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-
 
 .calendar .month {
     font-size: 20px;
@@ -259,7 +249,6 @@ body {
     
     background-color: var(--primary-color);
     color: var(--white);
-    cursor: pointer;
     font-weight: 700;
 }
 
@@ -295,7 +284,7 @@ body {
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
-.submit-button {
+.submit-button, .reset-button {
     width: 100%;
     padding: 15px;
     background-color: var(--primary-color);
@@ -306,8 +295,24 @@ body {
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s;
+    flex-grow: 1; /* Makes buttons share space */
+    margin-bottom: 5px;
 }
 
 .submit-button:hover {
     background-color: #45a049;
+}
+
+.reset-button {
+    background-color: #b3b3b3; /* A common color for reset/cancel */
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #959595;
+}
+
+form-buttons {
+    display: flex;
+    gap: 10px; /* This creates space between the two buttons */
 }

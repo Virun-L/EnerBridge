@@ -1,9 +1,4 @@
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 .container {
     display: flex;
@@ -19,8 +14,9 @@ aside {
     flex: 1;
     background-color: #f4f4f4;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 3px ridge #00796b;
     margin-right: 20px;
+    height: fit-content;
 }
 section {
     margin-bottom: 20px;
@@ -47,11 +43,12 @@ aside li{
     width: 100%;
     max-width: 100%;
     background-color: #cbccc2ef;
-    color: white;
+    color:#00796b;
     text-align: center;
     padding: 10px 10px;
     margin-top: 20px;
     line-height: 1.2;
+    border: 3px ridge #00796b;
 }
 
 .stud h2 {
