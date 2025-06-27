@@ -36,3 +36,14 @@ line {
   stroke: #225746;
   stroke-width: 2px;
 }
+
+.sitemap_card{
+  background-color: #d4fbe4a3;
+  border-radius: 20px;
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari browser support */
+}
+
+
+
