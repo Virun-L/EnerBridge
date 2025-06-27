@@ -43,8 +43,7 @@ hr{
   height: 5rem;
   max-width: 850px;
   background-color: rgb(1, 110, 118, 0.07);
- 
-  box-shadow: 0 4px 12px rgba(0, 200, 83, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 200, 83, 0.419);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 50px;
 }
@@ -55,10 +54,11 @@ hr{
   font-size: 1.5rem;
   font: 2.5rem;
   font-style: italic;
-  color: #00c853;
+  color: #43a047;
   line-height: 1.6;
   font-family: 'Georgia', serif;
   margin-top: -5.5rem;
+
 }
 
 .header-quote span{
@@ -66,7 +66,7 @@ hr{
   margin-top: -1.5px;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #007e42;
+  color: #43a047;
   
 }
 
@@ -85,7 +85,7 @@ hr{
     padding: 40px;
     text-align: center;
     margin-top: -30px;
-    background-color: rgb(1, 110, 118, 0.07);
+    background-color: rgba(108, 230, 153, 0.07);
     backdrop-filter: blur(10px);
     border-radius: 12px;
     margin-bottom: 30px;
@@ -131,11 +131,11 @@ hr{
     padding: 2.5rem 2rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid #00796b;
+    border: 2px solid #43a047;
 }
 
 .project-card:hover{
-    border: 2px solid #00796b;
+    border: 2px solid #43a047;
     transform: scale(1.03);
     box-shadow: 0 8px 25px rgba(0, 123, 255, 0.2);
 }
@@ -166,7 +166,7 @@ hr{
 }
 
 .project-card a{
-    color: #00796b;
+    color: #43a047;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -174,14 +174,14 @@ hr{
 }
 
 .project-card a:hover{
-    color: #00796b;
+    color: #43a047;
 }
 
 /* User Ratings and Reviews Section */
 .ratings-reviews{
     margin-bottom: 2rem;
     text-align: center;
-    background-color: rgb(1, 110, 118, 0.07);
+    background-color: rgba(108, 230, 153, 0.07);
     backdrop-filter: blur(10px);
     margin-top: 50px;
     padding: 40px;
@@ -259,10 +259,19 @@ hr{
     
 }
 
+.review-card span {
+    display: block;
+    margin-bottom: 0.3rem;
+    margin-top: -1rem;
+    font-size: 1.2rem;
+}
+
+
+
 .review-card:hover{
     transform: scale(1.03) ;
     box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
-    border-color: #00796b;
+    border-color: #43a047;
 }
 
 .review-card h4{
@@ -277,7 +286,7 @@ hr{
 }
 
 .review-card .see-more{
-    color: #00796b;
+    color: #43a047;
     text-decoration: none;
     font-size: large;
 }
@@ -316,39 +325,7 @@ label:active{
     margin-left: -20px;
 }
 
-.img-topic{
-    text-align: center;
-    padding: 20px;
-    font-size: 2.5rem;
 
-}
-
-.img-p{
-    padding: 20px;
-}
-
-
-
-.img-card{
-    background-color: rgba(200, 200, 200, 0.4);
-    border-radius: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-img{
-    width: 1px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-left: 50px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-img:hover{
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0,);
-    
-}
 
 .last-pic{
 
