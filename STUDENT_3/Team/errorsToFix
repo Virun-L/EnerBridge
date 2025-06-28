@@ -3,3 +3,18 @@ images aligning
 fix details container
     styles
 name fixing - Done
+
+
+  position: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  height: 400px;
