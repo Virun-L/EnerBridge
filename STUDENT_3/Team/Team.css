@@ -68,7 +68,7 @@ main.wrapper.team-section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   flex-shrink: 0;
-  height: 186px;
+  height: 270px;
 }
 
 .team-card:focus,
@@ -149,10 +149,15 @@ main.wrapper.team-section {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 28px;
   margin-top: 20px;
-  width: 30px;
+  width: 40px;
   margin-left: 100px;
+
+}
+
+.social-icons:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 
 }
 
