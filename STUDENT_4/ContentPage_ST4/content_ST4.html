@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="../../STUDENT_4/ContentPage_ST4/content.css">
 </head>
 <body id="page_top">
@@ -53,28 +54,33 @@
     <main>
 
       <!-- Background video for visual appeal -->
-                <video autoplay muted loop playsinline id="bg-video">
-                    <source src="../../STUDENT_2/Global/loop.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+      
+      <video autoplay muted loop playsinline id="bg-video" class="video">
+        <source src="../../STUDENT_2/Global/loop.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="video_overlay"></div>
+      
 
       <section class="dive_in_section">
         <h1>The Evolution of Electricity: From Fossil Fuels to Renewable</h1>
         <div class="dive_in_links">
-          <a href="#carbon_legacy">The Carbon Legacy</a>
-          <a href="#clean_energy">The Clean Energy Uprising</a>
-          <a href="#road_ahead">The Road Ahead</a>
-          <a href="#social_shifts">Power to the People</a>
+          <a href="#topic1">The Carbon Legacy</a>
+          <a href="#topic2">The Clean Energy Uprising</a>
+          <a href="#topic3">The Road Ahead</a>
+          <a href="#topic4">Power to the People</a>
+          <a href="#topic5">The Hidden Backbone</a>
+          <a href="#topic6">Beyond The Grid</a>
         </div>
       </section>
       
       
       <div> <!--main container-->
         
-        <div id="carbon_legacy" class="sections"> <!--first sub topic-->
+        <div id="topic1" class="sections"> <!--first sub topic-->
 
           <div> <!--for images-->
-            <img class="images" src="../../STUDENT_4/ContentPage_ST4/ContentPageST4_PICS/oil mine.webp" height="300" alt="oil mine">
+            <img class="images" src="../../STUDENT_4/ContentPage_ST4/ContentPageST4_PICS/oil mine.webp" height="300" alt="The Carbon Legacy">
           </div> 
           
           <div> <!--for texts-->
@@ -89,10 +95,10 @@
           </div>          
         </div>
 
-        <div id="clean_energy" class="sections reversed"> <!--second sub topic-->
+        <div id="topic2" class="sections reversed"> <!--second sub topic-->
 
           <div> <!--for images-->
-            <img class="images" src="../../STUDENT_4/ContentPage_ST4/ContentPageST4_PICS/clean energy uprise.jpg" height="300" alt="oil mine">
+            <img class="images" src="../../STUDENT_4/ContentPage_ST4/ContentPageST4_PICS/clean energy uprise.jpg" height="300" alt="The Clean Energy Uprising">
           </div> 
           
           <div> <!--for texts-->
@@ -107,10 +113,10 @@
           </div>          
         </div>
 
-        <div id="road_ahead" class="sections"> <!--third sub topic-->
+        <div id="topic3" class="sections"> <!--third sub topic-->
 
           <div> <!--for images-->
-            <img class="images" src="../../STUDENT_4/ContentPage_ST4/ContentPageST4_PICS/100p renewable.webp" height="300" alt="oil mine">
+            <img class="images" src="../../STUDENT_4/ContentPage_ST4/ContentPageST4_PICS/100p renewable.webp" height="300" alt="The Road Ahead">
           </div> 
           
           <div> <!--for texts-->
@@ -124,10 +130,10 @@
             <hr class="hr">
           </div>          
         </div>
-        <div id="social_shifts" class="sections reversed"> <!--fourth sub topic-->
+        <div id="topic4" class="sections reversed"> <!--fourth sub topic-->
 
           <div> <!--for images-->
-            <img class="images" src="../../STUDENT_4/ContentPage_ST4/ContentPageST4_PICS/topic4.png" height="300" alt="oil mine">
+            <img class="images" src="../../STUDENT_4/ContentPage_ST4/ContentPageST4_PICS/topic_4.jpg" height="300" alt="Power to the People">
           </div> 
           
           <div> <!--for texts-->
@@ -138,6 +144,52 @@
                as nations can rely on their own natural resources—sun, wind, and water—rather than volatile international fuel markets. Furthermore, the transition brings significant public health benefits.
               Cleaner air from reduced emissions means fewer respiratory illnesses and lower healthcare costs for everyone, creating healthier, more resilient communities in the new energy era.
             </p>
+            <hr class="hr">
+          </div>
+        </div>
+
+        <div id="topic5" class="sections"> <!--fifth sub topic-->
+
+          <div> <!--for images-->
+            <img class="images" src="../../STUDENT_4/ContentPage_ST4/ContentPageST4_PICS/topic5.png" height="300" alt="the hideen backbone">
+          </div> 
+          
+          <div> <!--for texts-->
+            <h2 class="h2_font">The Hidden Backbone: Mining and Materials for a Green Future</h2>
+
+            <ul>
+              <li>
+                <b>Dependence on Minerals:</b> Clean energy technologies like solar panels and batteries cannot be built without critical minerals like lithium, cobalt, and copper.
+              </li>
+              <li>
+                <b>Surging Demand:</b> The global shift to renewables is causing a massive spike in demand for these materials.
+              </li>
+              <li>
+                <b>Economic Opportunities:</b> This creates new economic prospects in mining for countries with rich mineral reserves.
+              </li>
+              <li>
+                <b>Ethical and Environmental Risks:</b> Increased mining raises concerns about environmental damage and fair labor practices.
+              </li>
+              <li>
+                <b>The Sustainability Challenge:</b> A truly green future requires a commitment to sourcing these essential materials responsibly and ethically.
+              </li>
+            </ul>
+            <hr class="hr">
+          </div>          
+        </div>
+
+        <div id="topic6" class="sections reversed"> <!--fourth sub topic-->
+
+          <div> <!--for images-->
+            <img class="images" src="../../STUDENT_4/ContentPage_ST4/ContentPageST4_PICS/topic6.jpg" height="300" alt="Hidden Backbone">
+          </div> 
+          
+          <div> <!--for texts-->
+            <h2 class="h2_font">Beyond the Grid: The Rise of Decentralized Energy</h2>        
+              <p class="paragraph">For over a century, electricity flowed from massive, centralized power plants to passive consumers. The renewable revolution is flipping that model on its head. With technologies like rooftop solar panels and community-owned wind projects,
+                 energy production is becoming decentralized—moving directly into our homes, businesses, and neighborhoods. This shift empowers individuals and communities to generate their own clean electricity, reducing reliance on the traditional grid and increasing resilience against blackouts.
+                  As battery storage becomes more affordable, homes and businesses can store their own surplus power, creating a more dynamic, democratic, and robust energy network from the ground up.</p>
+            </ul>
             <hr class="hr">
           </div>
         </div>
