@@ -52,7 +52,6 @@ hr{
 .header-quote{
   text-align: center;
   font-size: 1.5rem;
-  font: 2.5rem;
   font-style: italic;
   color: #43a047;
   line-height: 1.6;
@@ -222,7 +221,7 @@ hr{
   margin: 20px 0;
 }
 
-.rating-input input[input="radio"]{
+.rating-input input[type="radio"]{
   display: none;
 }
 
@@ -318,7 +317,7 @@ label:active{
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 0.5;
+    
 
 }
 
@@ -409,7 +408,7 @@ label:active{
     transform: translateY(-2px) scale(1.1);
 }
 
-@media{
+@media screen {
     project-icon img{
         size: 400px;
         width: 360px;
