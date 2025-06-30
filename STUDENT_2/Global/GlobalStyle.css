@@ -309,28 +309,24 @@ i.fa-solid {
   margin-right: 6px; /* Adjust spacing as needed */
 }
 
-#go-top-button {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: #00796b;
-  color: #e0f7fa;
-  padding: 0.8rem 1.2rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 6px 12px rgba(0, 121, 107, 0.3);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  z-index: 1000;
+
+#back_to_top{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    border-radius: 50%;    
+    text-decoration: none;    
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-#go-top-button:hover,
-#go-top-button:focus {
-  background-color: #004d40;
-  transform: scale(1.1);
-  outline: none;
+#back_to_top:hover{
+    transform: scale(1.1)
 }
 
 
