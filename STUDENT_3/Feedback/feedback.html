@@ -6,7 +6,7 @@
   <title>Feedback</title>
   <link rel="stylesheet" href="../../STUDENT_2/Global/GlobalStyle.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="../../STUDENT_3/Feedback/Feeback.css">
+  <link rel="stylesheet" href="../../STUDENT_3/Feedback/feedback_ST3.css">
   <link rel="icon" type="image/png" href="../../STUDENT_2/Global/EnerBridge_Logo.png" />
 </head>
 <body>
@@ -37,7 +37,7 @@
 
 
     <!-- Main Content -->
-   <!-- Main Content -->
+   
     <main style="max-width: 3000px; width: 95%; margin: 0 auto" class="wrapper">
       <div class="fb-container">
       <h2>Illuminate Our Path With Your Feedback!</h2><br>
@@ -65,6 +65,7 @@
         <legend><b>Feedback Details</b></legend>
 
         <label for="sources">Which renewable energy sources do you support?</label><br />
+        <p style="font-size: 0.9rem; color: #555;">(Hold Ctrl or Cmd to select multiple options)</p>
           <select name="sources[]" id="sources" multiple size="2">
             <option value="wind">Wind Energy</option>
             <option value="hydro">Hydropower</option>
@@ -110,11 +111,16 @@
       <fieldset>
           <legend>Rate Us</legend>
           <div class="emoji-rating">
-            <span title="1 Star">😠</span>
-            <span title="2 Stars">😐</span>
-            <span title="3 Stars">😊</span>
-            <span title="4 Stars">😁</span>
-            <span title="5 Stars">😍</span>
+            <input type="radio" name="emoji" id="1 Star" value="😠" title="1 Star" />
+            <label for="1 Star">😠</label>
+            <input type="radio" name="emoji" id="2 Stars" value="😐" title="2 Stars" />
+            <label for="2 Stars">😐</label>
+            <input type="radio" name="emoji" id="3 Stars" value="😊" title="3 Stars" />
+            <label for="3 Stars">😊</label>
+            <input type="radio" name="emoji" id="4 Stars" value="😁" title="4 Stars" />
+            <label for="4 Stars">😁</label>
+            <input type="radio" name="emoji" id="5 Stars" value="😍" title="5 Stars" />
+            <label for="5 Stars">😍</label>
           </div>
       </fieldset><br>
 
@@ -130,27 +136,28 @@
 
   </div> <!-- End wrapper -->
 
+  <a href="#top" id="go-top-button"><i class="fa-solid fa-arrow-up"></i></a>
 
   <!-- Footer OUTSIDE wrapper -->
   <footer>
     <p>⚡️ Empowering the future with clean, sustainable energy for all ⚡️</p>
 
     <p>
-      | <a href="../../STUDENT_1/PageEditor_ST1/pageEditor_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 01</span></a> |
-      <a href="../../STUDENT_2/PageEditor_ST2/PageEditor_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 02</span></a> |
-      <a href="../../STUDENT_3/PageEditor_ST3/pageEditor_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 03</span></a> |
-      <a href="../../STUDENT_4/PageEditor_ST4/PageEditor_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 04</span></a> |
+      | <a href="../Student02/editor.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 01</span></a> |
+      <a href="../Student01/editor.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 02</span></a> |
+      <a href="../Student03/editor.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 03</span></a> |
+      <a href="../Student04/editor.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 04</span></a> |
     </p>
 
     <p>
-      | <a href="../../STUDENT_1/ContentPage_ST1/content_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 01</span></a> |
-      <a href="../../STUDENT_2/ContentPage_ST2/Content_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 02</span></a> |
-      <a href="../../STUDENT_3/ContentPage_ST3/content_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 03</span></a> |
-      <a href="../../STUDENT_4/ContentPage_ST4/content_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 04</span></a> |
+      | <a href="../Student02/editor.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 01</span></a> |
+      <a href="../Student01/editor.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 02</span></a> |
+      <a href="../Student03/editor.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 03</span></a> |
+      <a href="../Student04/editor.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 04</span></a> |
     </p>
 
     <div class="sitemap">
-      | <a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span style="margin-left: 5px;">Site Map</span></a> |
+      | <a href="#"><i class="fa-solid fa-map"></i><span style="margin-left: 5px;">Site Map</span></a> |
     </div>
 
     <p> || Supporting <strong>SDG 7: Affordable & Clean Energy</strong> ||</p>
@@ -158,9 +165,6 @@
 
     <p>&copy; EnerBridge. All rights reserved.</p>
   </footer>
-     <a href="#top" id="back_to_top" title="Go to top">
-  <img src="../../STUDENT_4/ContentPage_ST4/ContentPageST4_PICS/back2top.png" height="50" alt="back to top button">
-</a>
 
 <script>
   const messageField = document.getElementById('message');
