@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: #d2ffd5;
+    background-color: #d2ffd500; /*overlay to the background video - currently turned off*/
     color: var(--text-color);
     
 }
