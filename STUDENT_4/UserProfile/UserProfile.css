@@ -30,15 +30,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    opacity: 0.98;
 }
 
-
-/* Main Content */
-.main-content {
-    padding: 40px 0;
-    opacity: 0.98;
-}
 
 .profile-grid {
     display: grid;
@@ -54,11 +47,12 @@ body {
 
 /* Cards */
 .card {
-    background-color: var(--white);
+    background-color: rgba(69, 232, 178, 0.243);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: 25px;
     margin-bottom: 30px;
+    backdrop-filter: blur(30px);
 }
 
 .section-title {
@@ -172,7 +166,7 @@ body {
 
 .goals li,
 .un-goals li {
-    background-color: rgb(218, 252, 218);
+    background-color: rgba(204, 255, 129, 0.412);
     padding: 10px 15px;
     border-radius: var(--border-radius);
     margin-bottom: 10px;
@@ -182,7 +176,7 @@ body {
   display: flex;        
   align-items: center;  
   gap: 25px;     
-  background-color: rgb(218, 252, 218);
+  
   border-radius: var(--border-radius);    
 }
 
