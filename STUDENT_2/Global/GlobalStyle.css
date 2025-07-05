@@ -3,9 +3,9 @@
 /* Set global font family to Poppins */
 
 :root{
-  --primary-color: #2F5249;
+  --primary-color: #00796b;
   --secondary-color:	#437057;
-  --third-color:#97B067 ;
+  --third-color:#bfb90f ;
   --backup-color:#E3DE61;
 }
 
@@ -32,7 +32,7 @@ html {
   min-height: 100%;
   object-fit: cover;
   z-index: -1; /* Ensure it stays behind other content */
-  opacity: 0.6; /* Optional: Slight transparency for readability */
+  opacity: 0.3; /* Optional: Slight transparency for readability */
   pointer-events: none; /* Prevent interactions */
 }
 

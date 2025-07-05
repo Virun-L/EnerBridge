@@ -1,15 +1,3 @@
-/* Full-screen background video */
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.6;
-  pointer-events: none;
-}
 
 /* Container with blur and light glass effect */
 .fb-container {
@@ -171,33 +159,42 @@ input[type="file"] {
 }
 
 /* Emoji Rating */
-.emoji-rating {
+.emoji-rating{
   display: flex;
   justify-content: center;
-  font-size: 2.2rem;
   gap: 20px;
-  margin-top: 12px;
+  margin: 20px 0;
 }
 
-.emoji-rating span {
+.emoji-rating input[type="radio"]{
+  display: none;
+}
+
+.emoji-rating label span{
+  font-size: 2rem;
   cursor: pointer;
   transition: transform 0.2s, filter 0.2s;
-  filter: grayscale(100%);
 }
 
-.emoji-rating span:hover,
+.emoji-rating label:hover span,
 .emoji-rating span.selected {
   transform: scale(1.3);
   filter: grayscale(0%);
 }
 
-
-
-input[type="radio"]:checked + label {
-  background-color: #e0f7e9;
-  border: 2px solid #3fb950;
-  border-radius: 75px;
+.emoji-rating input[type="radio"]:checked + span{
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 5px #00c853);
 }
+
+.emoji-preview{
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #00c853;
+}
+
+
 
 
 
