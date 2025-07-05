@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Feedback</title>
-  <link rel="stylesheet" href="../../STUDENT_2/Global/GlobalStyle.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../../STUDENT_2/Global/GlobalStyle.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="../../STUDENT_3/Feedback/feedback_ST3.css">
-  <link rel="icon" type="image/png" href="../../STUDENT_2/Global/EnerBridge_Logo.png" />
+  <link rel="icon" type="image/png" href="../../STUDENT_2/Global/EnerBridge_Logo.png"/>
 </head>
 <body>
   <div class="wrapper">
@@ -15,7 +15,7 @@
     <!-- Header -->
     <header>
       <div class="logo">
-        <img src="../../STUDENT_2/Global/EnerBridge_Logo.png" alt="Site Logo" />
+        <img src="../../STUDENT_2/Global/EnerBridge_Logo.png" alt="Site Logo"/>
       </div>
       <nav>
         <ul class="nav-links">
@@ -111,17 +111,13 @@
       <fieldset>
           <legend>Rate Us</legend>
           <div class="emoji-rating">
-            <input type="radio" name="emoji" id="1 Star" value="😠" title="1 Star" />
-            <label for="1 Star">😠</label>
-            <input type="radio" name="emoji" id="2 Stars" value="😐" title="2 Stars" />
-            <label for="2 Stars">😐</label>
-            <input type="radio" name="emoji" id="3 Stars" value="😊" title="3 Stars" />
-            <label for="3 Stars">😊</label>
-            <input type="radio" name="emoji" id="4 Stars" value="😁" title="4 Stars" />
-            <label for="4 Stars">😁</label>
-            <input type="radio" name="emoji" id="5 Stars" value="😍" title="5 Stars" />
-            <label for="5 Stars">😍</label>
+            <label><input type="radio" name="rating" value="1"><span class="span">😠</span></label>
+            <label><input type="radio" name="rating" value="2"><span class="span">😕</span></label>
+            <label><input type="radio" name="rating" value="3"><span class="span">😐</span></label>
+            <label><input type="radio" name="rating" value="4"><span class="span">😊</span></label>
+            <label><input type="radio" name="rating" value="5"><span class="span">😄</span></label>
           </div>
+          <div id="selectedEmoji" class="emoji-preview"></div>
       </fieldset><br>
 
       <button type="submit" class="btn primary">Submit</button>
