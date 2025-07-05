@@ -47,7 +47,7 @@ body {
 
 /* Cards */
 .card {
-    background-color: rgba(69, 232, 178, 0.243);
+    background-color: rgba(135, 250, 212, 0.243);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: 25px;
@@ -166,7 +166,7 @@ body {
 
 .goals li,
 .un-goals li {
-    background-color: rgba(204, 255, 129, 0.412);
+    background-color: lab(92.26% -25.85 16.63);
     padding: 10px 15px;
     border-radius: var(--border-radius);
     margin-bottom: 10px;
