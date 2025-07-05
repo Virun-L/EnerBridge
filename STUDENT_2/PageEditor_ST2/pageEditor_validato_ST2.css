@@ -38,6 +38,7 @@ main {
     flex: 3;
 }
 aside {
+    margin-top: 32px;
     flex: 1;
     background-color: #f4f4f4;
     padding: 15px;

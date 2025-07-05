@@ -1,16 +1,5 @@
-body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    color: #495057;
-}
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+
 
 /* Additional styles for the volunteering page */
 
@@ -154,6 +143,11 @@ hr{
     margin-top: 0;
     transition: transform 0.3s ease;
     
+}
+.project-location{
+    margin-top: -12px;
+    justify-content: center;
+    align-items: center; 
 }
 
 .project-card:hover .project-card-header img {
@@ -470,7 +464,7 @@ hr{
     margin-bottom: 0.3rem;
     margin-top: -1rem;
     font-size: 1.2rem;
-    color: rgb(244, 244, 14);
+    color: #FFD700;
 }
 
 
