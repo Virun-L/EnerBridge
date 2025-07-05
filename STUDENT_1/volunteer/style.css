@@ -113,67 +113,267 @@ hr{
             
 }
 
-.projects-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    text-align: center;
-    margin-top: -1.5rem;
-        }
-
-.project-card{
+/* Enhanced Project Card Styles */
+.project-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     background: #ffffff;
-    border-radius: 10px;
-    padding: 2.5rem 2rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid #43a047;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #e0e0e0;
+    max-width: 350px;
+    margin: 0 auto 5px auto;
+    min-height: 580px;
 }
 
-.project-card:hover{
-    border: 2px solid #43a047;
-    transform: scale(1.03);
-    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.2);
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(67, 160, 71, 0.2);
+    border-color: #43a047;
 }
 
-   
-.project-icon img{
-    size: 360px;
-    width: 60%;
-    display: block;
-    margin-left: -50px;
-    margin-top: -65px;
-    display: flex;
-    align-content: center;
-    border-radius: 20px;
+/* Card Header with Image */
+.project-card-header {
+    position: relative;
+    height: 30%;
+    overflow: hidden;
+    
     
 }
 
-.project-card h3{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
+.project-card-header img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    
 }
 
-.project-card p{
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+.project-card:hover .project-card-header img {
+    transform: scale(1.05);
 }
 
-.project-card a{
+
+/* Card Body */
+.project-card-body {
+    padding: 15px 15px 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Title and Location */
+.project-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.project-location {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.project-location i {
+    margin-right: 5px;
     color: #43a047;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    margin-top: auto;
 }
 
-.project-card a:hover{
+/* Stats Section */
+.project-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-item {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-icon {
+    font-size: 1.5rem;
     color: #43a047;
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: #666;
+    line-height: 1.2;
+}
+
+/* Duration and Requirements */
+.project-details {
+    margin-bottom: 15px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.detail-item i {
+    margin-right: 8px;
+    color: #43a047;
+    width: 16px;
+}
+
+/* Description */
+.project-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 10px;
+    flex-grow: 0;
+}
+
+/* Pricing Table */
+.pricing-table {
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.pricing-header {
+    background: #43a047;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.pricing-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+}
+
+.pricing-row:last-child {
+    border-bottom: none;
+}
+
+.pricing-duration {
+    color: #666;
+}
+
+.pricing-fee {
+    font-weight: 600;
+    color: #333;
+}
+
+.pricing-daily {
+    color: #43a047;
+    font-size: 0.8rem;
+}
+
+/* Action Buttons */
+.project-actions {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.btn-view {
+    flex: 1;
+    padding: 12px;
+    background: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-view:hover {
+    background: #138496;
+    transform: translateY(-2px);
+}
+
+.btn-apply {
+    flex: 1;
+    padding: 12px;
+    background: #43a047;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-apply:hover {
+    background: #2e7d32;
+    transform: translateY(-2px);
+}
+
+/* Remove old project-icon styles and update grid */
+.project-icon {
+    display: none;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .project-card {
+        max-width: 100%;
+    }
+    
+    .project-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .stat-item {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .stat-icon {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
 }
 
 /* User Ratings and Reviews Section */
@@ -182,7 +382,7 @@ hr{
     text-align: center;
     background-color: rgba(108, 230, 153, 0.07);
     backdrop-filter: blur(10px);
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 40px;
     border-radius: 12px;
     
