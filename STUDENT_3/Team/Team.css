@@ -30,6 +30,7 @@ bg-video {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 110px;
+  backdrop-filter: blur(8px);
 }
 
 .team-topic h1 {
