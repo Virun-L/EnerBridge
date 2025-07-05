@@ -42,7 +42,7 @@ hr{
   margin: 30px auto 20px;
   height: 5rem;
   max-width: 850px;
-  background-color: rgba(119, 127, 128, 0.4);
+  background-color: rgba(120, 128, 119, 0.4);
   box-shadow: 0 4px 12px rgba(0, 200, 83, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 50px;
@@ -51,12 +51,12 @@ hr{
 
 .header-quote{
   text-align: center;
+  margin-top: -1rem;
   font-size: 1.5rem;
   font-style: italic;
   color: #43a047;
   line-height: 1.6;
   font-family: 'Georgia', serif;
-  margin-top: -5.5rem;
 
 }
 
@@ -172,6 +172,7 @@ hr{
 
 /* Title and Location */
 .project-title {
+    text-align: center;
     font-size: 1.3rem;
     font-weight: 600;
     color: #333;
