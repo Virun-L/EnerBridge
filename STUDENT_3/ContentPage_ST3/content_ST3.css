@@ -13,7 +13,7 @@
 
 /* Container with blur and light glass effect */
 .content-container {
-  background: linear-gradient(to bottom right, #ffffffcc, #e0f7facc);
+  background: linear-gradient(to bottom right, #ffffffcc, #9de1b6cc);
   backdrop-filter: blur(5px);
   padding: 40px 30px;
   margin: 40px auto;
