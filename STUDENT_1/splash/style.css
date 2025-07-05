@@ -31,14 +31,15 @@ html, body {
 }
 
 .loading-dots{
-  margin-top: 1rem;
+  margin-top: -1rem;
   font-size: 2.5rem;
   letter-spacing: 0.5rem;
   display: flex;
   justify-content: center;
   color: #fff;
-  animation: fadeOut 1s ease forwards;
-  animation-delay: 2s;
+  opacity: 1;
+  animation: fadeOut 2s ease-in-out forwards;
+  animation-delay: 5.5s;
 }
 
 .loading-dots span{
@@ -55,8 +56,9 @@ html, body {
 
 @keyframes blink {
   0%, 100% {opacity: 0.2; }
-  50% {opacity: 1;}
+  50% {opacity: 1; }
 }
+
 
 .splash-screen {
   position: relative;
