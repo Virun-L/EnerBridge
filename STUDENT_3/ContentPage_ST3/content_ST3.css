@@ -62,10 +62,20 @@
 
 .internal-nav strong {
   display: block;
-  margin-bottom: 0.75rem;
-  color: #374151;
-  font-size: 1.125rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #004d40;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background: linear-gradient(to right, #00bfa5, #00796b);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
+
 .internal-nav ul {
   
   list-style: none;
@@ -87,8 +97,9 @@
 }
 .internal-nav li a:hover,
 .internal-nav li a:focus {
-  background-color: #b5f5ea;
-  border-color: aqua;
+  border-color: #00e676;
+  box-shadow: 0 0 6px rgba(0, 230, 118, 0.3);
+  background-color: #f5fff8;
   outline: none;
 }
 
