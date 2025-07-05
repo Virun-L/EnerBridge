@@ -41,7 +41,7 @@ h2 {
 .mission p {
 
 
-  border: 9px double #00796b;
+  border: 5px ridge #00796b;
   font-size: 25.8px;
   line-height: 1.8;
   max-width: 1200px;
@@ -127,6 +127,7 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 /* Hover effect to lift the tile */
 .content-tile:hover {
   transform: translateY(-8px);
@@ -158,6 +159,7 @@ h2 {
  
   
 }
+
 
 .learnmore {
   background: transparent;
