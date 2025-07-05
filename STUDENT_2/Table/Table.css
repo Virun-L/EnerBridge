@@ -2,7 +2,8 @@
 h1 {
   text-align: center;
   margin-top: 20px;
-  color: #076c61;
+  color:var(--primary-color);
+  font-size: 40px;
 }
 
 /* Section Container */
@@ -21,7 +22,7 @@ h1 {
 
 .energy-table-section h2 {
   text-align: center;
-  color: #00695c;
+  color: var(--secondary-color);
   margin-bottom: 20px;
   font-size: 2em;
   font-weight: 600;
