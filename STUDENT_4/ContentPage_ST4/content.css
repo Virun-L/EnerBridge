@@ -19,13 +19,13 @@
     justify-content: space-between;
     margin-bottom: 30px;
     gap: 40px;
-    background-color: rgba(69, 232, 178, 0.243);
+    background-color: #e0f7facc;
     padding: 15px;
     border: 2px solid rgba(4, 103, 73, 0.339);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.072);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border-radius: 8px;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
     max-width: 90%;
     margin: 0 auto;
     margin-top: 30px;
