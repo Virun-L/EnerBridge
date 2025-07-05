@@ -1,4 +1,3 @@
-and css
 
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,6 +11,10 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.logo{
+    margin-top: -0.5rem;
 }
 
 /* Additional styles for the volunteering page */
