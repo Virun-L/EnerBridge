@@ -1,14 +1,4 @@
-bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.6;
-  pointer-events: none;
-}
+
 
 
 .team-topic{
@@ -274,7 +264,7 @@ main.wrapper.team-section {
 
 
 .team-info1 h3 {
-  color: #00796b;
+  color: var(--primary-color);
   margin: 0.5rem 0;
 }
 .team-info2 h3 {
@@ -355,6 +345,8 @@ main.wrapper.team-section {
   margin-bottom: 0.4rem;
   color: #444;
 }
+
+
 
 @media (max-width: 768px) {
 .team-container {
