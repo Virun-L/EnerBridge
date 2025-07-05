@@ -38,11 +38,12 @@ line {
 }
 
 .sitemap_card{
-  background-color: #d4fbe4a3;
+  background-color: #e0f7facc;
   border-radius: 20px;
   margin-top: 20px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* For Safari browser support */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 
