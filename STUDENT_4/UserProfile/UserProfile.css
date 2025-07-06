@@ -5,31 +5,15 @@
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     --border-radius: 8px;
 }
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.3;
-  pointer-events: none;
-}
 
-body {
-    background-color: #d2ffd500; /*overlay to the background video - currently turned off*/
-    color: var(--text-color);
-    
-}
-
+/* Layout container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-
+/* Grid for main and sidebar */
 .profile-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -69,6 +53,8 @@ body {
     overflow: hidden;
 }
 
+
+/* Background gradient for profile header */
 .profile-header::after {
     content: '';
     position: absolute;
@@ -79,6 +65,7 @@ body {
     background: linear-gradient(to top, rgba(18, 214, 47, 0.837), transparent);
 }
 
+/* Avatar styling */
 .avatar {
     width: 100px;
     height: 100px;
@@ -169,6 +156,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* UN Goals styling */
 .goals-icons li {
   display: flex;        
   align-items: center;  
@@ -197,7 +185,7 @@ body {
   transform: translateY(10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
-
+/* Calendar table */
 .calendar .month {
     font-size: 20px;
     font-weight: 500;
@@ -275,6 +263,7 @@ body {
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
+/* Submit and reset button styles */
 .submit-button, .reset-button {
     width: 100%;
     padding: 15px;
@@ -286,7 +275,7 @@ body {
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s;
-    flex-grow: 1; /* Makes buttons share space */
+    flex-grow: 1;
     margin-bottom: 5px;
 }
 
@@ -295,7 +284,7 @@ body {
 }
 
 .reset-button {
-    background-color: #b3b3b3; /* A common color for reset/cancel */
+    background-color: #b3b3b3; 
     color: white;
 }
 
