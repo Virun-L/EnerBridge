@@ -1,22 +1,21 @@
-h2{
-
+h2 {
     margin-top: 5px;
     margin-bottom: 5px;
-
     text-align: center;
 }
 
-h3{
 
+h3 {
     margin-top: 5px;
     margin-bottom: 5px;
-
 }
+
 
 p {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 
 .container {
     display: flex;
@@ -27,9 +26,11 @@ p {
     align-items: flex-start;
 }
 
+
 main {
     flex: 3;
 }
+
 
 aside {
     margin-top: 32px;
@@ -41,6 +42,7 @@ aside {
     height: fit-content;
 }
 
+
 aside li {
     color: var(--primary-color);
 }
@@ -50,6 +52,8 @@ aside li a {
   color:var(--primary-color); 
   text-decoration: none; 
 }
+
+
 section {
     margin-bottom: 20px;
     padding: 15px;
@@ -63,6 +67,7 @@ section {
     padding-bottom: 9px;
 }
 
+
 aside a{
     text-decoration : none;
 }
@@ -70,9 +75,6 @@ aside a{
 aside li{
     padding-bottom: 4px;
 }
-
-
-
 
 
 .stud {
@@ -87,9 +89,12 @@ aside li{
     line-height: 1.2;
     border: 3px ridge #00796b;
 }
+
+
 .main-cards{
     border: #00796b ridge 3px;
 }
+
 
 .stud h2 {
     margin: 0;
@@ -98,8 +103,61 @@ aside li{
 }
 
 
-
 img{
     width: 90%;
 }
 
+
+ul.bullet_list {
+  list-style: none;
+  padding-left: 0.5rem; /* creates space for the icons */
+  position: relative;
+}
+
+
+ul.bullet_list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.5em;
+}
+
+
+ul.bullet_list li::before {
+  content: "\f05a"; /* Unicode for fa-circle-info */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  color: #00796b; /* Theme color */
+}
+
+/* Apply styles to paragraphs in the section */
+section.info-list p {
+  position: relative;
+  padding-left: 1.8em;
+  margin-bottom: 1em;
+}
+
+/* Icon pseudo-element */
+section.info-list p::before {
+  content: "\f05a"; /* Unicode for fa-circle-info */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  color: #00796b; /* Theme color */
+}
+
+
+/* Add left margin to top-level list items */
+ul.top-level-ul > li {
+  margin-left: 1em; /* Adjust as needed */
+}
+
+
+/* Add more left margin to sub-level bullets */
+ul.sub-level-ul li {
+  margin-left: 2em;
+}
