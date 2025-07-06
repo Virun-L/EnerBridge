@@ -1,18 +1,21 @@
+/* default font */
 body {
-
   font-family: Arial, sans-serif;
 }
 
+/* stylign for h1 */
 h1 {
   text-align: center;
 }
 
+/* Make SVG responsive and centered */
 svg {
   display: block;
   margin: auto;
   max-width: 100%; 
 }
 
+/* Styling for rectangle boxes inside anchor tags */
 a rect, .parent-node {
   fill: rgb(0, 121, 107); 
   stroke: #1B4538;
@@ -20,10 +23,12 @@ a rect, .parent-node {
   transition: fill 0.3s ease;
 }
 
+/* Hover effect for clickable boxes */
 a:hover rect, a:focus rect {
   fill: #41c39e;
 }
 
+/* Text inside SVG anchor tags */
 a text, .parent-text {
   fill: white;
   font-size: 11px;
@@ -31,11 +36,13 @@ a text, .parent-text {
   pointer-events: none;
 }
 
+/* Line styles for connections */
 line {
   stroke: #225746;
   stroke-width: 2px;
 }
 
+/* Card-style background for sitemap SVG */
 .sitemap_card{
   background-color: #e0f7facc;
   border-radius: 20px;
