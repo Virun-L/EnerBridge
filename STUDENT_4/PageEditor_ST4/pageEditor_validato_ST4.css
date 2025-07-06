@@ -24,9 +24,10 @@ aside {
 }
 section {
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 25px;
     border: 1px solid #ddd;
     background-color: #fafafa;
+    border: 3px ridge #00796b;
 }
 header, footer {
     text-align: center;
@@ -40,12 +41,28 @@ header, footer {
     padding-bottom: 9px;
 }
 
+aside{
+    margin-top: 32px;
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 25px;
+    border: 3px ridge #00796b;
+    margin-right: 20px;
+    height: fit-content;
+}
+
 aside a{
     text-decoration : none;
 }
 
+aside li a {
+  color:var(--primary-color); 
+  text-decoration: none; 
+}
+
 aside li{
     padding-bottom: 4px;
+    list-style-type: disc;
 }
 
 .stud {
@@ -80,3 +97,30 @@ aside li{
 img{
     width: 90%;
 }
+
+.headings_h2{
+    text-align: center;
+}
+
+.paragraph{
+    text-align: justify;
+}
+
+.main_container li{
+    margin-bottom: 15px;
+    list-style-type: disc;
+}
+
+.stud {
+    margin-left: 550px; 
+    width: 40%;
+    max-width: 100%;
+    background-color: #cbccc2ef;
+    color:#00796b;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 20px;
+    line-height: 1.2;
+    border: 3px ridge #00796b;
+}
+
