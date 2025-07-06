@@ -1,10 +1,10 @@
 
 
 h2{
-    color:#437057;
+
     margin-top: 5px;
     margin-bottom: 5px;
-    font-weight: 500;
+
     text-align: center;
 }
 
@@ -12,10 +12,10 @@ h2{
 
 
 h3{
-    color:#bfb90f ;
+
     margin-top: 5px;
     margin-bottom: 5px;
-    font-weight: 500;
+
 }
 
 p {
@@ -46,6 +46,16 @@ aside {
     margin-right: 20px;
     height: fit-content;
 }
+
+aside li {
+    color: var(--primary-color);
+}
+
+
+aside li a {
+  color:var(--primary-color); 
+  text-decoration: none; 
+}
 section {
     margin-bottom: 20px;
     padding: 15px;
@@ -66,6 +76,10 @@ aside a{
 aside li{
     padding-bottom: 4px;
 }
+
+
+
+
 
 .stud {
     margin-left: 550px; 
