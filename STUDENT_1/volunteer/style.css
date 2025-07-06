@@ -1,4 +1,4 @@
-
+/* General body styling */
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -7,36 +7,31 @@ body{
     color: #495057;
 }
 
+/* Main content container */
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-
-/* Additional styles for the volunteering page */
-
-        
-
-
-/* Main content */
-
-
+/* Main content area padding */
 main{
     padding: 2rem 0;
 }
 
-        
+/* General heading styles */        
 h1, h2, h3{
     color: #343a40;
 }
 
+/* Horizontal row */
 hr{
     border: 0;
     height: 1px;
     background: #bacde0;
 }
 
+/* --- Header Quote Styles --- */
 .header-quote-box{
   border: 2px solid rgba(200, 200, 200, 0.4);
   border-radius: 12px;
@@ -62,6 +57,7 @@ hr{
 
 }
 
+/* --- Dropdown Filter Styles --- */
 .header-quote span{
   display: block;
   margin-top: -1.5px;
@@ -72,9 +68,9 @@ hr{
 }
 
 .filter-container{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: flex;  /* Aligns label and dropdown horizontally */
+    justify-content: flex-end;   /* Pushes items to the right */
+    align-items: center;   /* Vertically aligns items */
     margin-bottom: 1.5rem;
     padding: 0 1rem;
 }
@@ -88,23 +84,20 @@ hr{
 
 .styled-dropdown{
     padding: 10px 15px;
-    border: 2px solid #43a047;
+    border: 2px solid #43a047;  /* Theme color border */
     border-radius: 8px;
     background-color: #ffffff;
     color: #333;
     font-size: 0.9rem;
     cursor: pointer;
-    outline: none;
+    outline: none;  /* Removes default browser outline */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .styled-dropdown:hover{
-    border-color: #2e7d32;
+    border-color: #2e7d32;   /* Darker green on hover */
 }
 
-.styled-dropdown:focus{
-    box-shadow: 0 0 5px rgba(67, 160, 71, 0.5);
-}
 
 
 .hero-image::before{
@@ -116,7 +109,7 @@ hr{
 
 }
 
-        /* projects-style info section */
+/* projects-style info section */
 .project-section{
     padding: 40px;
     text-align: center;
@@ -150,7 +143,7 @@ hr{
             
 }
 
-/* Enhanced Project Card Styles */
+/* --- Project Card Styles --- */
 .project-card {
     display: flex;
     flex-direction: column;
@@ -165,6 +158,7 @@ hr{
     min-height: 580px;
 }
 
+/* Hover effect for the entire card */
 .project-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(67, 160, 71, 0.2);
@@ -194,7 +188,7 @@ hr{
 }
 
 .project-card:hover .project-card-header img {
-    transform: scale(1.05);
+    transform: scale(1.05);  /* Slightly enlarges image on card hover */
 }
 
 
@@ -207,7 +201,7 @@ hr{
     gap: 10px;
 }
 
-/* Title and Location */
+/* Project Title and Location */
 .project-title {
     text-align: center;
     font-size: 1.3rem;
@@ -233,7 +227,7 @@ hr{
     color: #43a047;
 }
 
-/* Stats Section */
+/* Stats Section (e.g. duration, commitment) */
 .project-stats {
     display: flex;
     justify-content: space-between;
@@ -243,17 +237,20 @@ hr{
     border-bottom: 1px solid #f0f0f0;
 }
 
+/* Styles a single statistic item within the stats container */
 .stat-item {
     text-align: center;
     flex: 1;
 }
 
+/* Styles the icon for a statistic (e.g.🌱, ⏰) */
 .stat-icon {
     font-size: 1.5rem;
     color: #43a047;
     margin-bottom: 8px;
 }
 
+/* Styles the main value of a statistic (e.g. 'Promotes','4-8 hours') */
 .stat-value {
     font-size: 0.9rem;
     font-weight: 600;
@@ -261,6 +258,7 @@ hr{
     margin-bottom: 3px;
 }
 
+/* Styles the label for a statistics (e.g. 'Sustainability','per week') */
 .stat-label {
     font-size: 0.75rem;
     color: #666;
@@ -272,6 +270,7 @@ hr{
     margin-bottom: 15px;
 }
 
+/* Styles a single line item in the details section */
 .detail-item {
     display: flex;
     align-items: center;
@@ -295,7 +294,7 @@ hr{
     flex-grow: 0;
 }
 
-/* Pricing Table */
+/* Pricing Table within the card */
 .pricing-table {
     background: #f8f9fa;
     border-radius: 8px;
@@ -303,6 +302,7 @@ hr{
     margin-bottom: 20px;
 }
 
+/* Styles the header row of the pricing table */
 .pricing-header {
     background: #43a047;
     color: white;
@@ -313,6 +313,7 @@ hr{
     font-size: 0.9rem;
 }
 
+/* Styles a single data row in the pricing table */
 .pricing-row {
     display: flex;
     justify-content: space-between;
@@ -325,27 +326,31 @@ hr{
     border-bottom: none;
 }
 
+/* Styles the duration text in a pricing row */
 .pricing-duration {
     color: #666;
 }
 
+/* Styles the fee or activity text in a pricing row */
 .pricing-fee {
     font-weight: 600;
     color: #333;
 }
 
+/* Styles the smaller, daily/weekly fee text */
 .pricing-daily {
     color: #43a047;
     font-size: 0.8rem;
 }
 
-/* Action Buttons */
+/* Action Buttons (View and Apply) */
 .project-actions {
     display: flex;
     gap: 10px;
     
 }
 
+/* Styles the "VIEW PROJECT" button */
 .btn-view {
     flex: 1;
     padding: 12px;
@@ -358,11 +363,13 @@ hr{
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Hover effect for th "VIEW PROJECT button */
 .btn-view:hover {
     background: #138496;
-    transform: translateY(-2px);
+    transform: translateY(-2px); /* Lifts the button slightly on hover */
 }
 
+/* Styles the "APPLY" button */
 .btn-apply {
     flex: 1;
     padding: 12px;
@@ -375,6 +382,7 @@ hr{
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Hover effect for the "APPLY" button */
 .btn-apply:hover {
     background: #2e7d32;
     transform: translateY(-2px);
@@ -385,6 +393,7 @@ hr{
     display: none;
 }
 
+/* Grid layout for all project cards */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -393,33 +402,6 @@ hr{
     justify-items: center;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .project-card {
-        max-width: 100%;
-    }
-    
-    .project-stats {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .stat-item {
-        display: flex;
-        align-items: center;
-        text-align: left;
-    }
-    
-    .stat-icon {
-        margin-right: 10px;
-        margin-bottom: 0;
-    }
-}
 
 /* User Ratings and Reviews Section */
 .ratings-reviews{
@@ -439,6 +421,7 @@ hr{
     justify-content: center;
 }
 
+/* Overall summary box */
 .overall-rating{
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid #43a047;
@@ -459,6 +442,7 @@ hr{
     color: #6c757d;
 }
 
+/* Emoji rating input styles */
 .rating-input{
   display: flex;
   justify-content: center;
@@ -466,21 +450,25 @@ hr{
   margin: 20px 0;
 }
 
+/* Hides the actual radio button */
 .rating-input input[type="radio"]{
   display: none;
 }
 
+/* Styles the emoji span */
 .rating-input span{
   font-size: 2rem;
   cursor: pointer;
   transition: transform 0.2s, filter 0.3s;
 }
 
+/* Effect for the selected emoji */
 .rating-input input[type="radio"]:checked + span{
   transform: scale(1.3);
   filter: drop-shadow(0 0 5px #00c853);
 }
 
+/* Form Buttons (Submit and Cancel) */
 .emoji-preview{
   text-align: center;
   font-size: 2rem;
@@ -488,11 +476,13 @@ hr{
   color: #00c853;
 }
 
+/* Grid container for individual review cards */
 .review-cards{
     display: grid;
     gap: 1.5rem;
 }
 
+/* Styles a single review card */
 .review-card{
     background: #fff;
     padding: 1.5rem;
@@ -503,6 +493,7 @@ hr{
     
 }
 
+/* Styles the star rating within a review card */
 .review-card span {
     display: block;
     margin-bottom: 0.3rem;
@@ -511,31 +502,33 @@ hr{
     color: #FFD700;
 }
 
-
-
+/* Add Hover effect over a review card */
 .review-card:hover{
     transform: scale(1.03) ;
     box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
     border-color: #43a047;
 }
 
+/* Styles the heading within a review card */
 .review-card h4{
     margin-top: 0;
     color: #333;
 }
 
+/* Styles the reviewer's name and data information */
 .review-card .reviewer-info{
     font-size: 0.9rem;
     color: #6c757d;
     margin-top: 1rem;
 }
-
+/* Styles the "See More" link within a review card */
 .review-card .see-more{
     color: #43a047;
     text-decoration: none;
     font-size: large;
 }
 
+/* Hover effect to the "See More" */
 .review-card .see-more:hover{
     text-decoration: underline;
     color: #00ff80
@@ -556,7 +549,7 @@ label:active{
 }
 
 
-
+/* --- Feedback Form Styles -- */
 .feedback-form{
     background: #fff;
     padding: 2rem;
@@ -566,21 +559,12 @@ label:active{
 
 }
 
-.span{
-    margin-left: -20px;
-}
-
-
-
+/* A helper class for positioning */
 .last-pic{
-
     margin-left: 320px;
 }
 
-
-
-
-
+/* Styling the textarea of feedback */
 .feedback-form textarea{
     width: 100%;
     padding: 0.75rem;
@@ -608,6 +592,7 @@ label:active{
     margin-right: 5px;
 }
 
+/* Form Buttons (Submit and Cancel) */
 .form-buttons .btn {
     padding: 10px 20px;
     border: none;
@@ -621,7 +606,7 @@ label:active{
     transform: scale(1.05);
 }
 
-
+/* Submit button */
 .btn-primary{
     background-color: #00796b;
     color: white;
@@ -630,11 +615,13 @@ label:active{
     transition: all 0.3s ease;
 }
 
+/* Hover effect for the submit button */
 .btn-primary:hover{
     background-color: #004d40;
     transform: scale(1.05);
 }
 
+/* Cancel Button */
 .btn-secondary {
     background-color: #7b928f;
     color: white;
@@ -647,6 +634,7 @@ label:active{
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Hover effect for the submit button */
 .btn-secondary:hover {
     background-color: #667977;
     transform: translateY(-2px) scale(1.1);
