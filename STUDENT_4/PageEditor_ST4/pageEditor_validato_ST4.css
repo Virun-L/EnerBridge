@@ -143,3 +143,21 @@ img{
         color: #00796b; /* Customize icon color if needed */
     }
 }
+
+h2{
+    text-align: center;
+}
+
+.headings_h2{
+    scroll-margin-top: 30vh;
+}
+
+/* Add left margin to top-level list items */
+ul.top-level-ul > li {
+  margin-left: 1em; /* Adjust as needed */
+}
+
+/* Add more left margin to sub-level bullets */
+ul.sub-level-ul li {
+  margin-left: 2em;
+}
