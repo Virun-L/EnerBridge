@@ -6,20 +6,19 @@ h2 {
 .mission {
   margin-top: 50px;
   padding: 2rem;
-  background-color: #ffffff;
-  color: #0eb273;
+  background-color: var(--background-color); 
   text-align: center;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 230, 118, 0.2);
+  box-shadow: 0 4px 10px var(--primary-color);
   opacity: 0.95; /* Lower opacity (0.0 to 1.0) */
 }
 
 
 .mission h1 {
   font-size: 3rem;
-  color: #00796b; /* Dark teal-green heading */
+  color: var(--primary-color); /* Dark teal-green heading */
   margin-bottom: 1rem;
-  text-shadow: 0 0 3px #00e67633; /* Soft green glow */
+  text-shadow: 0 0 3px var(--soft-green); /* Soft green glow */
 }
 
 
@@ -28,7 +27,7 @@ h2 {
 .mission p {
 
 
-  border: 5px ridge #00796b;
+  border: 5px ridge var(--primary-color);
   font-size:19px;
   line-height: 1.8;
   max-width: 1000px;
@@ -54,6 +53,7 @@ h2 {
   gap: 90px;
   margin: 2rem 0;
   flex-wrap: wrap;
+  
 }
 
 .support-item {
@@ -65,7 +65,7 @@ h2 {
   width:170px;
   height: 170px;
   border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(6, 136, 112, 0.2);
+  box-shadow: 0 4px 10px var(--primary-color);
   transition: transform 0.3s ease;
 }
 
@@ -114,6 +114,7 @@ h2 {
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px var(--primary-color);
 }
 
 
@@ -126,10 +127,11 @@ h2 {
 /* Tile images */
 .tile-image {
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  box-shadow: 0 4px 10px var(--primary-color);
 }
 
 /* Tile title */
@@ -152,15 +154,15 @@ h2 {
 
 .learnmore {
   background: transparent;
-  color: #00796b;
+  color: var(--primary-color);
   font-size: 18px;
   font-weight: bold;
   padding: 12px 28px;
-  border: 2px solid #00796b;
+  border: 2px solid var(--primary-color);
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px #14d45d, 0 0 20px transparent;
+  box-shadow: 0 0 10px var(--secondary-color), 0 0 20px transparent;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -177,15 +179,15 @@ h2 {
 
 .learnmore-link {
   background: transparent;
-  color: #00796b;
+  color: var(--primary-color);
   font-size: 18px;
   font-weight: bold;
   padding: 12px 28px;
-  border: 2px solid #00796b;
+  border: 2px solid var(--primary-color);
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px #14d45d, 0 0 20px transparent;
+  box-shadow: 0 0 10px var(--secondary-color), 0 0 20px transparent;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -194,106 +196,23 @@ h2 {
 }
 
 .learnmore-link:hover {
-  background-color: #14d45d;
+  background-color: var(--button-hover-color);
   color: black;
-  box-shadow: 0 0 10px #00ffff, 0 0 20px #09dd81, 0 0 30px #09dd81;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px var(--button-hover-color), 0 0 30px var(--background-color);
   transform: scale(1.05);
 }
 
 .learnmore:hover {
-    background-color: #14d45d;
+    background-color: var(--button-hover-color);
     color: black;
-    box-shadow: 0 0 10px #00ffff, 0 0 20px #09dd81, 0 0 30px #09dd81;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px var(--button-hover-color), 0 0 30px var(--button-hover-color);
     transform: scale(1.05);
 }
 
-#go-top-button {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: #00796b;
-  color: #e0f7fa;
-  padding: 0.8rem 1.2rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  border-radius: 45%;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 6px 12px rgba(0, 121, 107, 0.3);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  z-index: 1000;
-}
-
-#go-top-button:hover,
-#go-top-button:focus {
-  background-color: #004d40;
-  transform: scale(1.1);
-  outline: none;
-}
 
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-    margin: 0;
-  }
 
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    font-size: 18px;
-  }
 
-  header {
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
-
-  .logo img {
-    height: 80px;
-  }
-}
-@media (max-width: 768px) {
-  .mission p {
-    font-size: 20px;
-    padding: 0.8rem;
-  }
-
-  .mission h1 {
-    font-size: 2rem;
-  }
-
-  .hero {
-    padding: 2rem 1rem;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .learnmore,
-  .learnmore-link {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-@media (max-width: 768px) {
-  #bg-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-  }
-}
 
 
 
