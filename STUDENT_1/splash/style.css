@@ -1,35 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+
+/* Universal selector to reset default styles for all elements */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0;  /* Removes default margin */
+  padding: 0;   /* Removes default padding */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
+/* Basic setup for the HTML and body */
 html, body {
   height: 100%;
   font-family: 'Inter', sans-serif;
   overflow: hidden;
-
-.loading-logo{
-  height: 150px;
-  animation: pulse 1.5s ease-in-out infinite;
 }
 
+/* Styles the logo on the initial black loading screen */
+.loading-logo{
+  height: 150px;
+  
+}
+
+/* Defines the 'pulse' animation for the intial logo */
 @keyframes pulse {
   0%, 100% {
-    transform: scale(1);
+    transform: scale(1); /* Original size */
     opacity: 1;
   }
   50% {
-    transform: scale(1.08);
-    opacity: 0.6;
+    transform: scale(1.08);   /* Slightly larger size */
+    opacity: 0.6;  /* Slightly faded */
   }
   
 }
-  
-}
 
+/* --- Loading Dots Animation --- */
 .loading-dots{
   margin-top: -1rem;
   font-size: 2.5rem;
@@ -38,28 +43,32 @@ html, body {
   justify-content: center;
   color: #fff;
   opacity: 1;
-  animation: fadeOut 2s ease-in-out forwards;
-  animation-delay: 5.5s;
+  animation: fadeOut 2s ease-in-out forwards;  /* Fades the dots out */
+  animation-delay: 5.5s;   /* Starts the fade-out animation after 5.5 seconds */
 }
 
+/* Defines the 'blink' animation */
+@keyframes blink {
+  0%, 100% {opacity: 0.2; }  /* Dimmed */
+  50% {opacity: 1; }  /* Fully visible */
+}
+
+/*Styles each individual dot */
 .loading-dots span{
-  animation: blink 1.5s infinite;
+  animation: blink 1.5s infinite; /* Applies the 'blink' animation to each dot */
 }
 
+/* Adds a small delay to the second dot's animation for a sequential effect */
 .loading-dots span:nth-child(2){
   animation-delay: 0.2s;
 }
 
+/* Adds a further delay to the third dot's animation */
 .loading-dots span:nth-child(3){
   animation-delay: 0.4s;
 }
 
-@keyframes blink {
-  0%, 100% {opacity: 0.2; }
-  50% {opacity: 1; }
-}
-
-
+/* --- Main Splash Screen Content --- */
 .splash-screen {
   position: relative;
   width: 100%;
@@ -67,85 +76,95 @@ html, body {
   overflow: hidden;
 }
 
+/* Styles the background video to fill the entire screen */
 .bg-video {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  object-fit: cover;  /* Ensures the video covers the screen without distortion */
+  z-index: -1;  /* Places the video behind all other content */
 }
 
+/* A dark, semi-transparent overlay on top of the video to improve text readability */
 .overlay {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);  /* Black with 50% opacity */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
 }
 
+/* The main container for the logo, mission, and team cards */
 .card-container {
-  opacity: 0;
+  opacity: 0; /* Starts as invisible */
   width: 90%;
   max-width: 800px;
   text-align: center;
   color: white;
-  animation: blurFadeIn 1s ease forwards;
-  animation-delay: 3s
+  animation: blurFadeIn 1s ease forwards;   /* Applies the custom fade-in animation */
+  animation-delay: 3s  /* Starts the animation after 3 seconds */
 }
 
+/* Styles the main logo shown on the splash screen */
 .logo {
   height: 200px;
   margin-bottom: 1.5rem;
   margin-top: -4.5rem;
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));  /* Adds a subtle glow */
   transition: transform 0.3s ease;
   cursor: default;
 }
 
+/* Slightly enlargs the logo on hover */
 .logo:hover{
     transform: scale(1.05);
 }
 
+/* Applies a negative margin to the mission card to adjust its position */
 .mission-card{
     margin-top: -30px;
        
 }
 
-
+/* General styling for both the mission and team cards */
 .card {
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.08);  /* Semi-transparent white background */
   border-radius: 20px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);  /* Blurs the background behind the card */
+  border: 1px solid rgba(255, 255, 255, 0.2);  /* Subtle border */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);   /* Subtle glow effect */
   
   
 }
 
+/* Styles the heading text (h2) within the cards */
 .card h2 {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
 }
 
+/* Styles the paragraph text (p) within the cards */
 .card p {
   font-size: 1.1rem;
   line-height: 1.6;
   
 }
 
+/* --- Team Card Specific Styles --- */
 .team-card ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* Styles each list item (each team member's row) */
 .team-card li {
   display: flex;
   justify-content: space-between;
@@ -158,23 +177,26 @@ html, body {
   transition: background-color 0.3s ease;
 }
 
+/* Changes the background color of a team member's row on hover */
 .team-card li:hover{
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Styles the emoji icon (the first span) in each team member row */
 .team-card li span:first-child {
   margin-right: 0.5rem;
   font-size: 1.4rem;
-  
-  
+    
 }
 
+/* Styles the team member's name */
 .name{
     margin-left: 3.5rem;
     flex-grow: 1;
     color: #fff;
 }
 
+/* Styles the team member's role */
 .role {
   font-weight: 600;
   color: #ddd;
@@ -182,6 +204,7 @@ html, body {
   text-align: right;
 }
 
+/* --- Loading & Transition Overlays --- */
 .loading-screen{
   position: fixed;
   top: 0; left: 0;
@@ -193,29 +216,34 @@ html, body {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  z-index: 10000;
-  animation: fadeOut 1s ease forwards;
-  animation-delay: 2s;
+  z-index: 10000; /* Ensures it's on top of everything */
+  animation: fadeOut 1s ease forwards;   /* Fades out after a delay */
+  animation-delay: 2s;  /* Starts fading out after 2 seconds */
+
 }
 
+/* A helper class to ensure the loading screen is fully hidden after fading */
 .loading-screen.fade-out {
   opacity: 0;
   pointer-events: none;
 }
 
+/* A white overlay that fades in at the end for a smooth transition to the next page */
 .white-overlay{
   position: fixed;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
   background-color: white;
-  z-index: 9999;
+  z-index: 9999;  /* Positioned just below the initial loading screen */
   opacity: 0;
   visibility: hidden;
-  animation: whiteFadeIn 1s ease forwards;
-  animation-delay: 6s;
+  animation: whiteFadeIn 1s ease forwards;  /* Fades it in */
+  animation-delay: 6s;  /* Starts fading in at 6 seconds */
 }
 
+/* --- Keyframe Animations --- */
+/* Defines the animation for the card container to fade in with a blur effect */
 @keyframes blurFadeIn {
   0% {
     opacity: 0;
@@ -229,6 +257,7 @@ html, body {
   }
 }
 
+/* A reusable animation to fade elements out and hide them */
 @keyframes fadeOut {
   to {
     opacity: 0;
@@ -236,16 +265,10 @@ html, body {
   }
 }
 
+/* Defines the animation for the final white overlay to fade in */
 @keyframes whiteFadeIn {
   to {
     opacity: 1;
     visibility: visible;
   }
-  
 }
-
-
-
-
-
-
