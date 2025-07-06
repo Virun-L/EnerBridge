@@ -1,0 +1,447 @@
+
+
+/* 
+  =============================
+        Global Stylels
+  =============================
+*/
+
+
+/* 
+  =============================
+        HTML Scroll 
+  =============================
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 
+  =============================
+        Colour Palette
+  =============================
+*/
+
+:root{
+  --primary-font: 'Poppins', sans-serif;
+  --primary-color: #00796b;
+  --secondary-color:	#437057;
+  --third-color:#bfb90f ;
+  --backup-color:#E3DE61;
+  --blue-color: #143D60;
+  --dark-green-color: #41644A;
+  --background-color: #e0f7facc;
+  --button-hover-color: #14d45d;
+  --soft-green: #00e67633;
+  --red-color: #FF0000;
+  --blue-color: #00008B;
+  --dark-yellow-color: #FFD700;
+}
+
+/* 
+  =============================
+        Typography
+  =============================
+*/
+
+
+h1{
+  
+  color: var(--primary-color);
+  font-weight: 700;
+  
+}
+
+h2 {
+  color: var(--secondary-color);
+}
+
+h3 {
+  color: var(--third-color);
+}
+
+h4 {
+  color: var(--backup-color);
+}
+
+h5 {
+  color: var(--blue-color);
+}
+
+
+h6 {
+  color: var(--dark-green-color);
+}
+
+/* 
+  =============================
+        Resetting body
+  =============================
+*/
+
+
+* {
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+/* 
+  =============================
+        Background Video
+  =============================
+*/
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+  opacity: 0.3; 
+  pointer-events: none;
+}
+
+
+/* 
+  =============================
+        Styling the body
+  =============================
+*/
+
+
+body {
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+
+/* 
+  =============================
+        Styling the wrapper
+  =============================
+*/
+
+
+.wrapper {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 140px; 
+}
+
+/* 
+  =============================
+        Styling the header
+  =============================
+*/
+
+header {
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 115px;
+  border-bottom: 4px solid #00796b;
+  box-shadow: 0 8px 8px -2px rgba(5, 148, 79, 0.6);
+ 
+}
+
+
+/* 
+  =============================
+        Styling the header logo
+  =============================
+*/
+
+.logo {
+  padding: 0;
+}
+
+.logo img {
+  height: 115px;
+  width: auto;
+}
+
+
+/* 
+  =============================
+        Navigation Bar
+  =============================
+*/
+
+
+nav {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 1rem;
+}
+
+
+.nav-links {
+  list-style: none;
+  font-size: 17px;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #222;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-links .user-profile a {
+  background-color: var(--third-color);
+  color: #000; 
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.nav-links .user-profile a:hover {
+  background-color:var(--third-color); 
+  border-bottom: 3px solid var(--primary-color);
+}
+
+
+
+.nav-links li a:hover {
+  background-color: #e0f2f1;
+  border-bottom: 3px solid #00796b;
+  border-radius: 5px;
+}
+
+
+.nav-links li a.active {
+  color: #00796b;
+  background-color: #e0f2f1;
+  border-radius: 5px;
+  border-bottom: 3px solid #0d7744;
+  font-weight: bold;
+}
+
+/* 
+  =============================
+        Main Content
+  =============================
+*/
+
+main {
+  padding: 2rem 0;
+}
+
+/* 
+  =============================
+        Hero Section
+  =============================
+*/
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #e0f2f1, #ffffff);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00796b;
+}
+
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+}
+
+
+.hero button {
+  background-color: var(--primary-color);
+  color:var(--secondary-color);
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+.hero button:hover {
+  background-color: #004d40;
+  color: var(--secondary-color);
+}
+
+/* 
+  =============================
+        About Section
+  =============================
+*/
+.about {
+  margin: 2rem 0;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  color: #004d40;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* 
+  =============================
+        Features Section
+  =============================
+*/
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+
+.feature {
+  flex: 1 1 250px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  color: #00796b;
+  margin-top: 1rem;
+}
+
+
+/* 
+  =============================
+        Footer
+  =============================
+*/
+
+
+footer {
+  width: 100vw;   
+  font-size: 23px;           
+  position: relative;        
+  left: 0;                   
+  margin: 0;                 
+  padding: 1rem 0;           
+  text-align: center;
+  background-color: #263238;
+  color: white;
+  box-sizing: border-box;    
+  overflow-x: hidden;    
+  border-top: 7px solid #00796b;
+  box-shadow: 0 8px 8px -2px rgba(3, 119, 63, 0.6);    
+}
+footer p{
+  margin-bottom: 14px;
+}
+
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+footer a {
+  color: #039e8c;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 10px;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+
+i.fa-solid {
+  margin-right: 2px;
+}
+
+
+/* 
+  =============================
+        Back to Top Button
+  =============================
+*/
+
+
+#back_to_top{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50%;    
+    text-decoration: none;    
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#back_to_top:hover{
+    transform: scale(1.1)
+}
+
+
+
+/* 
+  =============================
+        End of Global Style
+        
+        - Edited by Student 2
+  =============================
+*/
+
+
+
+
