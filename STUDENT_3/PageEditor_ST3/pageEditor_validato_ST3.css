@@ -50,6 +50,7 @@ aside li a {
   color:var(--primary-color); 
   text-decoration: none; 
 }
+
 section {
     margin-bottom: 20px;
     padding: 15px;
@@ -70,10 +71,6 @@ aside a{
 aside li{
     padding-bottom: 4px;
 }
-
-
-
-
 
 .stud {
     margin-left: 550px; 
@@ -96,7 +93,6 @@ aside li{
     font-size: 1.3rem;
     font-weight: 500;
 }
-
 
 
 img{
