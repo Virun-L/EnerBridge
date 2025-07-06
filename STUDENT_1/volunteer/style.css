@@ -71,6 +71,41 @@ hr{
   
 }
 
+.filter-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+.filter-container label{
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #343a40;
+}
+
+.styled-dropdown{
+    padding: 10px 15px;
+    border: 2px solid #43a047;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.styled-dropdown:hover{
+    border-color: #2e7d32;
+}
+
+.styled-dropdown:focus{
+    box-shadow: 0 0 5px rgba(67, 160, 71, 0.5);
+}
+
 
 .hero-image::before{
     content:"";
