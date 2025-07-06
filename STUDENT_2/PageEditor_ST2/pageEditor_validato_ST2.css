@@ -1,4 +1,9 @@
 
+/* 
+  =============================
+  Page Editor CSS for Student 2
+  =============================
+*/
 
 h2{
 
@@ -7,8 +12,6 @@ h2{
 
     text-align: center;
 }
-
-
 
 
 h3{
@@ -24,7 +27,11 @@ p {
 }
 
 
-
+/* 
+  =============================
+        Container and Layout
+  =============================
+*/
 
 .container {
     display: flex;
@@ -37,6 +44,14 @@ p {
 main {
     flex: 3;
 }
+
+
+/* 
+  =============================
+        aside Section
+        Contains References and Links
+  =============================
+*/
 aside {
     margin-top: 32px;
     flex: 1;
@@ -79,7 +94,12 @@ aside li{
 
 
 
-
+/* 
+  =============================
+        Student Section
+        Contains Student Information
+  =============================
+*/
 
 .stud {
     margin-left: 550px; 
@@ -104,7 +124,6 @@ aside li{
 }
 
 
-
 img{
     width: 90%;
 }
@@ -120,43 +139,58 @@ ul.bullet_list li {
   margin-bottom: 0.5em;
 }
 
+/* 
+  =============================
+        Info List Section
+        Contains Information List with Icons
+  =============================
+*/
+
 ul.bullet_list li::before {
-  content: "\f05a"; /* Unicode for fa-circle-info */
+  content: "\f05a";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   position: absolute;
   left: 0;
   top: 0.1em;
-  color: #00796b; /* Theme color */
+  color: var(--primary-color); 
 }
 
-/* Apply styles to paragraphs in the section */
+
 section.info-list p {
   position: relative;
   padding-left: 1.8em;
   margin-bottom: 1em;
 }
 
-/* Icon pseudo-element */
+
 section.info-list p::before {
-  content: "\f05a"; /* Unicode for fa-circle-info */
+  content: "\f05a"; 
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   position: absolute;
   left: 0;
   top: 0.2em;
-  color: #00796b; /* Theme color */
+  color: var(--primary-color); 
 }
 
 /* Add left margin to top-level list items */
 ul.top-level-ul > li {
-  margin-left: 1em; /* Adjust as needed */
+  margin-left: 1em; 
 }
 
-/* Add more left margin to sub-level bullets */
+
 ul.sub-level-ul li {
   margin-left: 2em;
 }
+
+/* 
+  =============================
+    End of Student 2 Page Editor CSS
+        
+       - Edited by Student 2
+  =============================
+*/
 
 
 
