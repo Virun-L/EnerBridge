@@ -14,16 +14,16 @@
 
 /* --- Global Styles --- */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;  /* Enables smooth scrolling when navigating via anchor links */
 }
 
 
 body {
-    font-size: 0.95rem;
-    font-family: var(--font-primary);
-    line-height: 1.6;
+    font-size: 0.95rem;  /* Sets the base font size */
+    font-family: var(--font-primary);  /* Applies the primary font */
+    line-height: 1.6;   /* Sets the spacing between lines of text readability */
     background-color: var(--page-bg);
-    color: var(--light-text);
+    color: var(--light-text);  /* Sets the page background color */
     margin: 0;
     padding-top: 100px; /* Space for fixed header */
 }
@@ -34,10 +34,11 @@ h2{
 }
 
 h1, h2, h3, h4 {
-    color: var(--dark-text);
-    font-weight: 600;
+    color: var(--dark-text);  /* Sets a darker color for all headings for better contrast */
+    font-weight: 600;  /* Sets a semi-bold weight */
 }
 
+/* Specific fot sizes for different heading levels */
 h1 { font-size: 2.8rem; }
 h2 { font-size: 2.2rem; }
 h3 { font-size: 1.5rem; }
@@ -50,8 +51,8 @@ h4 { font-size: 1.2rem; }
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -2;
-    overflow: hidden;
+    z-index: -2;  /* Places the video behind all other content */
+    overflow: hidden;  /* Prevents scrollbars from appearing on the container */
 }
 
 .video-background::after {
@@ -84,7 +85,7 @@ h4 { font-size: 1.2rem; }
 
 .after-header h1 {
     margin-top: 40px;
-    font-weight: 700;
+    font-weight: 700;  /* Makes the main title bolder */
 }
 
 nav.internal-nav {
@@ -96,9 +97,9 @@ nav.internal-nav {
     justify-content: center;
     gap: 10px;
     border-bottom: 1px solid #e0e0e0;
-    position: sticky;
+    position: sticky;  /* Makes the nav bar stick to the top of the viewport once scrolled past */
     top: 100px; /* Stick below the main header */
-    z-index: 10;
+    z-index: 10;  /* Ensures it stays above other content during scroll */
 }
 
 nav.internal-nav a {
@@ -107,7 +108,7 @@ nav.internal-nav a {
     font-weight: 600;
     padding: 8px 16px;
     border-radius: 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transition for hover effects */
 }
 
 nav.internal-nav a:hover {
@@ -123,17 +124,17 @@ section {
 }
 
 .content-box {
-    border-top: 4px solid var(--primary-green);
+    border-top: 4px solid var(--primary-green); /* Adds a green accent line at the top */
     position: relative;
     max-width: 1200px;
     margin: auto;
-    background: linear-gradient(145deg, var(--light-green), var(--white));
+    background: linear-gradient(145deg, var(--light-green), var(--white));  /*subtle gradient background. */
     backdrop-filter: blur(15px);
     border: 1px solid var(--primary-green);
     border-radius: 24px;
     padding: 30px;
-    box-shadow: 0 12px 30px 0 rgba(0, 200, 83, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 12px 30px 0 rgba(0, 200, 83, 0.15);  /* A soft, diffused shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth animation on hover */
     overflow: hidden;
 }
 
@@ -143,22 +144,23 @@ section {
 
 .content-box:hover {
     transform: translateY(-8px);
-    box-shadow: 0 16px 40px 0 var(--shadow-color);
+    box-shadow: 0 16px 40px 0 var(--shadow-color);  /* Makes the shadow more prominent */
 }
 
 .benefits-box{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;  /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: flex-start;  /* Aligns items to the top */
     text-align: center;
 }
 
+/* Styles for the icons inside the benefits boxes */
 .benefits-box img.benefit-icon{
     width: 100px;
     height: 80px;
     margin-bottom: 15px;
-    object-fit: contain;
+    object-fit: contain;  /* Ensure the icon scales correctly without being cropped or stretched */
     display: block;
 }    
 
@@ -176,14 +178,16 @@ section {
 .image-container img {
     width: 100%;
     height: auto;
-    display: block;
+    display: block;  /* Removes any extra space below the image */
 }
 
+/* A subtle zoom effect on image hover */
 .image-container img:hover{
     transform: scale(1.02);
     transition: transform 0.3s ease;
 }
 
+/* Specific size overrides for images in certain sections to make them smaller */
 #whatsmart .image-container,
 #Efficiency .image-container{
     max-width: 400px;
@@ -201,17 +205,18 @@ section {
     list-style: none;
     padding-left: 20px;
     margin-bottom: 20px;
-    border-left: 4px solid var(--primary-green);
+    border-left: 4px solid var(--primary-green);  /* Creates a vertical accent line. */
 }
 
 .efficiency-list li, .intro-list li {
     list-style: none;
     padding-left: 30px;
     margin-bottom: 15px;
-    position: relative;
+    position: relative;  /* Required for positioning the ::before pseudo-element. */
     line-height: 1.7;
 }
 
+/* Creates cuton bullet points using a pseudo-elements */
 .intro-list li::before, .efficiency-list li::before {
     margin-top: -0.5rem;
     content: '✔';
@@ -222,6 +227,7 @@ section {
     top: 4px;
 }
 
+/* Overrides the checkmark to use an arrow for the intro list */
 .intro-list li::before {
     margin-top: -0.5rem;
     content: '→';
@@ -231,11 +237,12 @@ section {
 /* --- Benefits Section --- */
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Creates as many colums as can fit with a minimum width of 250px */
     gap: 30px;
     padding-top: 20px;
 }
 
+/* Individual box styling within the benefits grid */
 .benefits-box {
     background-color: var(--white);
     border: 1px solid #e0e0e0;
@@ -262,12 +269,12 @@ section {
     color: var(--dark-green);
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent; /* Creates an invisible border to be revealed on hover */
     transition: border-bottom 0.3s ease;
 }
 
 .learn-more a:hover {
-    border-bottom: 2px solid var(--dark-green);
+    border-bottom: 2px solid var(--dark-green); /* Reveals the border on hover for an underline effect */
 }
 
 .btn{
@@ -282,11 +289,10 @@ section {
 
 /* --- Back to Top Button --- */
 #back_to_top{
-    position: fixed;
+    position: fixed;  /* Keeps the button in the same place on the screen */
     bottom: 50px;
     right: 30px;
-    z-index: 99;
-
+    z-index: 99;   /*Ensure it's on top of almost all other elements */
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -297,7 +303,7 @@ section {
 }
 
 #back_to_top:hover{
-    transform: scale(1.1)
+    transform: scale(1.1)  /* SLightly enlarges the button on hover */
 }
 
 section{
