@@ -108,3 +108,56 @@ aside li{
 img{
     width: 90%;
 }
+
+ul.bullet_list {
+  list-style: none;
+  padding-left: 2em; /* creates space for the icons */
+  position: relative;
+}
+
+ul.bullet_list li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+ul.bullet_list li::before {
+  content: "\f05a"; /* Unicode for fa-circle-info */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  color: #00796b; /* Theme color */
+}
+
+/* Apply styles to paragraphs in the section */
+section.info-list p {
+  position: relative;
+  padding-left: 1.8em;
+  margin-bottom: 1em;
+}
+
+/* Icon pseudo-element */
+section.info-list p::before {
+  content: "\f05a"; /* Unicode for fa-circle-info */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  color: #00796b; /* Theme color */
+}
+
+/* Add left margin to top-level list items */
+ul.top-level-ul > li {
+  margin-left: 1em; /* Adjust as needed */
+}
+
+/* Add more left margin to sub-level bullets */
+ul.sub-level-ul li {
+  margin-left: 2em;
+}
+
+
+
