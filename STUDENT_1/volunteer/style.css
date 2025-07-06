@@ -531,7 +531,7 @@ hr{
 /* Hover effect to the "See More" */
 .review-card .see-more:hover{
     text-decoration: underline;
-    color: #00ff80
+    color: #65d79e;
 
 }
 
