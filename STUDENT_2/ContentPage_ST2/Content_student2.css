@@ -1,18 +1,39 @@
-/* General heading */
+
+/* 
+  =============================
+  Content Page CSS for Student 2
+  =============================
+*/
+
+
+
+/* 
+  =============================
+  Content Page H1 AND H2 Styles
+  =============================
+*/
+
 h1 {
   margin-bottom: 15px;
   font-weight: 700;
-  color: #00796b; /* Dark teal/green consistent with theme */
+  color:var(--primary-color); 
   text-align: center;
 }
 
 h2 {
 margin-bottom: 15px;
   font-weight: 900;
-  color: #00796b; /* Dark teal/green consistent with theme */
+  color:var(--secondary-color); 
   text-decoration: underline;
   text-align: center;
 }
+
+
+/* 
+  =============================
+  Main Content Styles
+  =============================
+*/
 
 
 .jump {
@@ -23,7 +44,12 @@ margin-bottom: 15px;
     text-align:unset;
 }
 
-/* Learn More Section */
+/* 
+  =============================
+        page title 
+  =============================
+*/
+
 .learn-more-section {
    background: linear-gradient(135deg, #b2dfdb, #e0f2f1);
    border-radius: 1rem;
@@ -36,13 +62,19 @@ margin-bottom: 15px;
 
 .learn-more-section h2 {
   font-size: 2.5rem;
-  color: #00796b;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
-/* Internal Navigation */
+/* 
+  =============================
+        Internal Navigation
+  =============================
+*/
+
+
 #internal-nav {
-  background-color: #e0f2f1; /* Light teal background */
+  background-color: #e0f2f1;
   padding: 1rem 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
@@ -62,7 +94,7 @@ margin-bottom: 15px;
 }
 
 #internal-nav ul li a {
-  color: #00796b;
+  color: var(--primary-color);
   font-size: 20px;
   font-weight: 900;
   text-decoration: none;
@@ -74,12 +106,20 @@ margin-bottom: 15px;
 
 #internal-nav ul li a:hover,
 #internal-nav ul li a:focus {
-  background-color: #00796b;
+  background-color: var(--primary-color);
   color: #e0f7fa;
   outline: none;
 }
 
-/* Report Container */
+/* 
+  =============================
+        Report Container
+        Each Report Section
+        Report Images
+
+  =============================
+*/
+
 .report-container {
   max-width: 1200px;
   margin: 0 auto 4rem;
@@ -87,7 +127,8 @@ margin-bottom: 15px;
 
 }
 
-/* Each Report Section */
+/* for  Each Report Section */
+
 .report-section {
   background-color: #ffffff;
   border-radius: 1rem;
@@ -114,15 +155,13 @@ margin-bottom: 15px;
   font-size: 18px;
 }
 
-
-
 /* Report Images */
+
 .report-image {
-  width: 800px; /* Fixed width */
-  height: 500px; /* Fixed height */
+  width: 800px;
+  height: 500px; 
   border-radius: 1rem;
   box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.3);
-/* Even green glow on all sides */
   object-fit: cover;
   transition: transform 0.3s ease;
   display: block;
@@ -131,6 +170,7 @@ margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .report-image:hover {
   transform: scale(1.02);
 }
@@ -154,42 +194,48 @@ ul.bullet_list li {
     margin-bottom: 1em;
   }
 
+  /* 
+  =============================
+        Bullet List Styles
+
+  =============================
+*/
+
+
  ul.bullet_list li::before {
-    content: "\f05a"; /* Unicode for fa-circle-info */
+    content: "\f05a"; 
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     position: absolute;
     left: 0;
     top: 0.1em;
-    color: #00796b; /* Theme color */
+    color: var(--primary-color);
   }
 
+  /* 
+  =============================
+        HR Styles to make
+        all tiles are accessible   
+  =============================
+*/
 
-/* "Go to Top" Button */
-#go-top-button {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: #00796b;
-  color: #e0f7fa;
-  padding: 0.8rem 1.2rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  border-radius: 45%;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 6px 12px rgba(0, 121, 107, 0.3);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  z-index: 1000;
+
+
+hr {
+  padding: 40px;
+  border: transparent;
 }
 
-#go-top-button:hover,
-#go-top-button:focus {
-  background-color: #004d40;
-  transform: scale(1.1);
-  outline: none;
-}
 
+/* 
+  =============================
+        Tile Styles
+        Tile Image
+        Tile Title
+        Tile Description
+        Learn More 
+  =============================
+*/
 
 .tile {
   background-color: #e0f7facc;
@@ -200,6 +246,7 @@ ul.bullet_list li {
   box-shadow: 0 6px 20px rgba(0, 121, 107, 0.15);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   backdrop-filter: blur(10px);
+  opacity: unset;
 
 }
 
@@ -232,20 +279,27 @@ ul.bullet_list li {
   font-weight: bold;
 }
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .report-section {
-    padding: 1rem 1.2rem;
-  }
-
-  #internal-nav ul {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  #internal-nav ul li a {
-    font-size: 1.1rem;
-    padding: 0.8rem 1.2rem;
-  }
+.para {
+  margin-bottom: 15px;
 }
+
+.explore {
+  color: var(--primary-color);
+  font-size: 19px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-decoration: underline;
+
+}
+
+
+/* 
+  =============================
+        End of Content Page CSS
+
+        - Edited by Student 2
+
+  =============================
+*/
+
