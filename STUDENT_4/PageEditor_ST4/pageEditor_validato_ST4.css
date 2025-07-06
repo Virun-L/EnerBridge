@@ -124,3 +124,22 @@ img{
     border: 3px ridge #00796b;
 }
 
+.main_container{
+    ul li,
+    ol li {
+        list-style: none; /* Remove default bullets */
+        position: relative;
+        padding-left: 25px; /* Space for the icon */
+    }
+
+    ul li::before,
+    ol li::before {
+        content: "\f05a"; /* Unicode for fa-circle-info */
+        font-family: "Font Awesome 6 Free"; /* Font family */
+        font-weight: 900; /* Solid style */
+        position: absolute;
+        left: 0;
+        top: 0.1em;
+        color: #00796b; /* Customize icon color if needed */
+    }
+}

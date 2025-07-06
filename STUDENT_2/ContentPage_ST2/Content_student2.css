@@ -16,7 +16,7 @@ margin-bottom: 15px;
 
 
 .jump {
-    color: rgb(47, 79, 206);
+    color: var(--blue-color);
     font-size: 25px;
 }
 .by {
