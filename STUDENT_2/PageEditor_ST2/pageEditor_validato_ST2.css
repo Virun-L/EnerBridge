@@ -111,7 +111,6 @@ img{
 
 ul.bullet_list {
   list-style: none;
-  padding-left: 2em; /* creates space for the icons */
   position: relative;
 }
 
