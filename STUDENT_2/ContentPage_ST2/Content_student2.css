@@ -165,31 +165,11 @@ ul.bullet_list li {
   }
 
 
-/* "Go to Top" Button */
-#go-top-button {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: #00796b;
-  color: #e0f7fa;
-  padding: 0.8rem 1.2rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  border-radius: 45%;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 6px 12px rgba(0, 121, 107, 0.3);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  z-index: 1000;
-}
 
-#go-top-button:hover,
-#go-top-button:focus {
-  background-color: #004d40;
-  transform: scale(1.1);
-  outline: none;
+hr {
+  padding: 40px;
+  border: transparent;
 }
-
 
 .tile {
   background-color: #e0f7facc;
@@ -200,6 +180,7 @@ ul.bullet_list li {
   box-shadow: 0 6px 20px rgba(0, 121, 107, 0.15);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   backdrop-filter: blur(10px);
+  opacity: unset;
 
 }
 
@@ -230,6 +211,20 @@ ul.bullet_list li {
   color: #0277bd;
   text-decoration: none;
   font-weight: bold;
+}
+
+.para {
+  margin-bottom: 15px;
+}
+
+.explore {
+  color: var(--primary-color);
+  font-size: 19px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-decoration: underline;
+
 }
 
 
