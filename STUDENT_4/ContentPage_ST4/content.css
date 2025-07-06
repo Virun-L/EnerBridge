@@ -1,7 +1,9 @@
+/* styling for h1 */
 .h1_styles{
     font-size: 35px;
 }
 
+/* styling for h2 */
 .h2_font{
     font-size: 40px;
     line-height: 45px;
@@ -12,6 +14,7 @@
     text-align: justify;
 }
 
+/* styling for main section cards */
 .sections{
     display: flex;
     align-items: center;
@@ -31,29 +34,35 @@
     
 }
 
+/* styling for section cards when user hovers over them */
 .sections:hover {
     transform: scale(1.003);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.236);
 }
 
+/* styling for section cards which change the sides of the image and text */
 .reversed{
     flex-direction: row-reverse;
 }
 
+/* justfy the text inside cards */
 .section_text{
     text-align: justify;
 }
 
+/* makes the content align to the middle of the page when dive in buttons are clicked */
 .sections{
-    scroll-margin-top: 30vh; /* makes the content align to the middle of the page when dive in buttons are clicked */
+    scroll-margin-top: 30vh; 
 }
 
+/* styling for images */
 .images{
     border-radius: 8px;
     box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.236);
     
 }
 
+/* styling for the horizontal line inside the cards */
 .hr{
     margin-top: 10px;   
     border: none;
@@ -67,7 +76,7 @@
   padding: 20px;
   background-color: rgba(37, 234, 245, 0.395);
   border-radius:8px;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px); /* blurs the background giving it a matte glassy look */
   max-width: 87%;
   margin: 0 auto;
 }
@@ -106,10 +115,12 @@
   
 }
 
+/* smoother transition without jumping to a specific point */
 .scoll_behavior{
-    scroll-behavior: smooth; /* amoother transition without jumping to a specific point */
+    scroll-behavior: smooth; 
 }
 
+/* styling for the back to top button*/
 #back_to_top{
     position: fixed;
     bottom: 50px;
