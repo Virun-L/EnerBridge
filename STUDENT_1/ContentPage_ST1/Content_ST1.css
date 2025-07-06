@@ -211,6 +211,7 @@ section {
 }
 
 .intro-list li::before, .efficiency-list li::before {
+    margin-top: -0.5rem;
     content: '✔';
     color: var(--primary-green);
     position: absolute;
@@ -220,6 +221,7 @@ section {
 }
 
 .intro-list li::before {
+    margin-top: -0.5rem;
     content: '→';
 }
 
@@ -294,4 +296,8 @@ section {
 
 #back_to_top:hover{
     transform: scale(1.1)
+}
+
+section{
+    scroll-margin-top: 120px;
 }
