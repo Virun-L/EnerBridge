@@ -161,3 +161,9 @@ ul.top-level-ul > li {
 ul.sub-level-ul li {
   margin-left: 2em;
 }
+
+/* Styling for the text in validation page */
+.validation-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
