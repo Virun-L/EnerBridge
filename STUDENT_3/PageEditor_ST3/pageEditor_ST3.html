@@ -1,20 +1,22 @@
+<!--Page Editor HTML-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Metadata and head resources -->
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8">
         <!-- Set character encoding -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Responsive scaling -->
         <title>PageEditor_ST3</title>
         <!-- Page title -->
         <!-- Global styles -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <!-- Font Awesome icons -->
-        <link rel="stylesheet" href="../../STUDENT_3/PageEditor_ST3/pageEditor_validato_ST3.css" />
+        <link rel="stylesheet" href="../PageEditor_ST3/pageEditor_validation_ST3.css">
         <link rel="stylesheet" href="../Global/GlobalStyle.css">
         <!-- Page-specific styles -->
-        <link rel="icon" type="image/png" href="../Global/EnerBridge_Logo.png" />
+        <link rel="icon" type="image/png" href="../Global/EnerBridge_Logo.png">
         <!-- Favicon -->
          
     </head>
@@ -24,34 +26,22 @@
             <!-- Header with logo and navigation -->
             <header>
                 <div class="logo">
-                    <img src="../Global/EnerBridge_Logo.png alt="Site Logo" />
+                    <img src="../Global/EnerBridge_Logo.png" alt="Site Logo">
                     <!-- Site logo -->
                 </div>
                 <nav>
                     <ul class="nav-links">
+
                         <!-- Navigation links -->
-                        <li>
-                            <a href="../../STUDENT_2/Home/Home.html" class="active"><i class="fa-solid fa-house"></i><span>Home</span></a>
-                        </li>
-                        <li>
-                            <a href="../../STUDENT_1/volunteer/volunterr.html"><i class="fa-solid fa-handshake-angle"></i><span>Volunteer</span></a>
-                        </li>
-                        <li>
-                            <a href="../../STUDENT_2/Table/Table.html"><i class="fa-solid fa-solar-panel"></i><span>Energy Data</span></a>
-                        </li>
-                        <li>
-                            <a href="../../STUDENT_3/Feedback/feedback.html"><i class="fa-solid fa-comments"></i><span>Feedback</span></a>
-                        </li>
-                        <li>
-                            <a href="../../STUDENT_3/Team/Team.html"><i class="fa-solid fa-people-group"></i><span>Team</span></a>
-                        </li>
-                        
-                        <li>
-                            <a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span>Site Map</span></a>
-                        </li>
-                        <li class="user-profile">
-                         <a href="../../STUDENT_4/UserProfile/UserProfile.html"><i class="fa-solid fa-users"></i><span>User Profile</span></a>
-                        </li>
+                        <li> <a href="../../STUDENT_2/Home/Home.html" class="active"><i class="fa-solid fa-house"></i><span>Home</span></a></li> 
+                        <li> <a href="../../STUDENT_1/volunteer/volunterr.html"><i class="fa-solid fa-handshake-angle"></i><span>Volunteer</span></a></li>
+                        <li> <a href="../../STUDENT_2/Table/Table.html"><i class="fa-solid fa-solar-panel"></i><span>Energy Data</span></a></li>    
+                        <li> <a href="../../STUDENT_3/Feedback/feedback.html"><i class="fa-solid fa-comments"></i><span>Feedback</span></a></li>
+                        <li> <a href="../../STUDENT_3/Feedback/feedback.html"><i class="fa-solid fa-comments"></i><span>Feedback</span></a></li>
+                        <li> <a href="../../STUDENT_3/Team/Team.html"><i class="fa-solid fa-people-group"></i><span>Team</span></a></li>    
+                        <li> <a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span>Site Map</span></a></li>
+                        <li class="user-profile"> <a href="../../STUDENT_4/UserProfile/UserProfile.html"><i class="fa-solid fa-users"></i><span>User Profile</span></a></li>
+                            
                     </ul>
                 </nav>
             </header>
@@ -71,8 +61,7 @@
         <!-- Main content area -->
         <main>
 
-            <!-- Update those first three sections for the pages you were responsible to implement -->
-
+            <!--Feedback Page Editor Section-->
             <section class="main-cards info-list">
                 <h2 id="Feedback">Feedback Page</h2>
                     <h3>Technical Description</h3>
@@ -86,13 +75,14 @@
                     <h3>Accessibility</h3>
                         <p> Accessibility has been thoughtfully addressed throughout the feedback page to ensure it is usable by all visitors, including those with disabilities. All form fields are clearly labeled using label elements associated with their corresponding inputs, which supports screen reader navigation. Required fields are marked with a visible red asterisk and use the required attribute for validation. The use of semantic HTML elements such as fieldset, legend, and textarea provides structural clarity, enhancing keyboard navigation and assistive technology compatibility. Additionally, color contrasts between text and background are sufficient to aid users with visual impairments, and focus styles on interactive elements help users identify their current location within the form. The emoji rating system includes title attributes for screen reader descriptions, while the “Go to Top” button is keyboard-accessible and visually distinct. Combined with responsive design practices, these features make the page accessible, readable, and navigable for a broad range of users.</p>
                     
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="../../STUDENT_3/ValidationPage_ST3/validation_ST3.html">Feedback Page validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                    <h3>Link to the validation page</h3> <!-- path to link the Page Editor with the feedback validation page -->
+                        <p><a href="../ValidationPage_ST3/validation_ST3.html#FeedbackVal">Feedback Page validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                     <h3>Link to the page</h3>
                         <p><a href="../../STUDENT_3/Feedback/feedback.html">Feedback Page</a></p>
             </section>
 
+            <!--Team Page Editor Section-->
             <section class="main-cards info-list">
                 <h2 id="Team">Team Page</h2>
                     <h3>Technical Description</h3>
@@ -104,14 +94,15 @@
                     <h3>Accessibility</h3>
                         <p> Accessibility has been carefully incorporated into the Team Page to ensure all users, including those using assistive technologies, can navigate and interact with the content effectively. Semantic HTML tags like main, header, and h2 provide structure and meaning to screen readers. Each .team-member card is made keyboard-navigatable using the tabindex attribute, enabling users who rely on keyboard navigation to access individual profiles. The alt attributes on images ensure that screen readers can describe each team member’s photo meaningfully. Interactive elements such as names that reveal additional content on hover are also revealed on keyboard focus, ensuring parity between mouse and keyboard users. Text contrasts, such as dark text on light backgrounds, meet accessibility standards for readability. The layout is responsive, providing a smooth experience across different screen sizes and devices. These measures collectively enhance the accessibility and inclusivity of the page, making it usable for a wide range of users regardless of ability.</p>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="../../STUDENT_3/ValidationPage_ST3/validation_ST3.html">Team validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                    <h3>Link to the validation page</h3> <!-- path to link the Page Editor with the team validation page -->
+                        <p><a href="../ValidationPage_ST3/validation_ST3.html#TeamVal">Team validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                         
                     <h3>Link to the page</h3>
                         <p><a href="../../STUDENT_3/Team/Team.html">Team Page</a></p>
             </section>
 
+            <!--Content Page Editor Section-->
             <section class="main-cards info-list">
                 <h2 id="ContentPage_ST3">Content Page</h2>
                     <h3>Technical Description</h3>
@@ -124,14 +115,15 @@
                         <p> All interactive elements, such as internal navigation links and buttons, are keyboard-accessible and include clear :focus styles for visible interaction cues. The “Go to Top” button is given an aria-label for screen reader users. Image elements across the page include descriptive alt attributes that convey meaningful context, aiding users who rely on screen readers.</p>
                         <p> Additionally, the use of high-contrast text, large font sizes, and hover/focus states enhances visual accessibility. Responsive design ensures the layout remains functional and readable across a wide range of devices and screen sizes, promoting usability for users with low vision or motor impairments.</p>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="../../STUDENT_3/ValidationPage_ST3/validation_ST3.html"> ContentPage_ST3 validation Page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                    <h3>Link to the validation page</h3> <!--path to link the Page Editor with the content validation page -->
+                        <p><a href="../ValidationPage_ST3/validation_ST3.html#ContentVal"> ContentPage_ST3 validation Page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                         
                     <h3>Link to the page</h3>
-                        <p><a href="../../STUDENT_3/ContentPage_ST3/content_ST3.html"> ContentPage Student 3</a></p>
+                        <p><a href="../ContentPage_ST3/content_ST3.html"> ContentPage Student 3</a></p>
             </section>
 
+            <!--Challenges and Lessons Learned section-->
             <section class="main-cards info-list">
                 <h2 id="challenge"> Challenges and Lessons Learned</h2>
                     <p> During the development of this webpage, several challenges were encountered that provided valuable learning experiences. One of the main challenges was implementing a responsive grid layout that displayed company cards consistently across various screen sizes. Achieving smooth responsiveness required multiple iterations of CSS media queries and layout adjustments using grid-template-columns.</p>
@@ -140,6 +132,7 @@
         
             </section>
 
+            <!--Compliance Section-->
             <section class="main-cards info-list">
                 <h2 id="compliance" style="text-align: center; margin-top: 5px;margin-bottom: 5px;color: #437057;"> Compliance</h2>
                     <p> In developing this website we have followed all necessary guidelines and regulations set by JANET and the University of Westminster to ensure full compliance. Our implementation aligns with standards for structure, accessibility, and content integrity. We paid close attention to maintaining consistency, usability, and technical validity across each page.</p> 
@@ -149,16 +142,31 @@
                     
             </section>
 
-
+            <!--References Section-->
             <section class="main-cards">
-                    <h2 id="ref">References</h2>
+                <h2 id="ref">References</h2>
                     <ul class="ref bullet_list">
-                    <li>Duckett, J. (2011). <i>HTML and CSS: Design and Build Websites.</i> John Wiley & Sons, Inc.</li>
-                    <li>W3C. (n.d.). <i>W3C Markup Validation Service.</i> Available at: <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a> (Last accessed: 20 June 2025).</li>
-                    <li>FontAwesome. (2025). <i>Font Awesome Icons.</i> Available at: <a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/</a> (Last accessed: 20 June 2025).</li>
-                    <li>iStock. (2025). <i>iStock Photo Library.</i> Available at: <a href="https://www.istockphoto.com/" target="_blank">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
-                    <li>MDN Web Docs. (2025). <i>HTML: HyperText Markup Language.</i> Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a> (Last accessed: 20 June 2025).</li>
-                    <li>CSS-Tricks. (2025). <i>A Complete Guide to Flexbox.</i> Available at: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a> (Last accessed: 20 June 2025).</li>
+                        <ul>
+                        <li>Duckett, J. (2011). <i>HTML and CSS: Design and Build Websites.</i> John Wiley & Sons, Inc.</li>
+                        <li>W3C. (n.d.). <i>W3C Markup Validation Service.</i> Available at: <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a> (Last accessed: 20 June 2025).</li>
+                        <li>FontAwesome. (2025). <i>Font Awesome Icons.</i> Available at: <a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/</a> (Last accessed: 20 June 2025).</li>
+                        <li>iStock. (2025). <i>iStock Photo Library.</i> Available at: <a href="https://www.istockphoto.com/" target="_blank">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                        <li>MDN Web Docs. (2025). <i>HTML: HyperText Markup Language.</i> Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML</a> (Last accessed: 20 June 2025).</li>
+                        <li>CSS-Tricks. (2025). <i>A Complete Guide to Flexbox.</i> Available at: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a> (Last accessed: 20 June 2025).</li>
+
+                        <!-- Company-specific references -->
+                        <li>Heliogen. (2025). <i>Official Website.</i> Available at: <a href="https://www.heliogen.com/" target="_blank">https://www.heliogen.com/</a> (Last accessed: 20 June 2025).</li>
+                        <li>Jinko Solar. (2025). <i>Corporate Website.</i> Available at: <a href="https://www.jinkosolar.com/" target="_blank">https://www.jinkosolar.com/</a> (Last accessed: 20 June 2025).</li>
+                        <li>Daqo New Energy. (2025). <i>Company Overview.</i> Available at: <a href="https://www.dqsolar.com/" target="_blank">https://www.dqsolar.com/</a> (Last accessed: 20 June 2025).</li>
+                        <li>Enpal. (2025). <i>Solar Services in Germany.</i> Available at: <a href="https://www.enpal.com/" target="_blank">https://www.enpal.com/</a> (Last accessed: 20 June 2025).</li>
+                        <li>Vestas Wind Systems. (2025). <i>Global Wind Company.</i> Available at: <a href="https://www.vestas.com/" target="_blank">https://www.vestas.com/</a> (Last accessed: 20 June 2025).</li>
+                        <li>NextEra Energy. (2025). <i>Clean Energy Provider.</i> Available at: <a href="https://www.nexteraenergy.com/" target="_blank">https://www.nexteraenergy.com/</a> (Last accessed: 20 June 2025).</li>
+                        <li>Oklo. (2025). <i>Nuclear Energy Innovation.</i> Available at: <a href="https://www.oklo.com/" target="_blank">https://www.oklo.com/</a> (Last accessed: 20 June 2025).</li>
+                        <li>Constellation. (2025). <i>Nuclear Energy Company.</i> Available at: <a href="https://www.constellation.com/" target="_blank">https://www.constellation.com/</a> (Last accessed: 20 June 2025).</li>
+                        <li>Brookfield Renewable Partners. (2025). <i>Renewable Investment Platform.</i> Available at: <a href="https://bep.brookfield.com/" target="_blank">https://bep.brookfield.com/</a> (Last accessed: 20 June 2025).</li>
+                        <li>Bloom Energy. (2025). <i>Fuel Cell Technology.</i> Available at: <a href="https://www.bloomenergy.com/" target="_blank">https://www.bloomenergy.com/</a> (Last accessed: 20 June 2025).</li>
+                        </ul>
+
                     </ul>
             </section>
 
@@ -171,9 +179,9 @@
         <aside>
             <h3>Core pages developed:</h3>
 
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+        <!-- Page Sections done by Student 3 -->
             <ul class="top-level-ul">
-                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                
                 <li> Page Sections:
                 <ul class="sub-level-ul">
                     <li><a href="#Feedback">Feedback page</a> </li>
@@ -199,6 +207,7 @@
         <footer>
             <p>⚡️ Empowering the future with clean, sustainable energy for all ⚡️</p>
             <p>
+                <!--Links to Page Editors and content pages-->
                 <a href="../../STUDENT_1/PageEditor_ST1/pageEditor_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 01</span></a> |
                 <a href="../../STUDENT_2/PageEditor_ST2/PageEditor_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 02</span></a> |
                 <a href="../../STUDENT_3/PageEditor_ST3/pageEditor_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 03</span></a> |
@@ -216,8 +225,9 @@
             <p>|| Supporting <strong>SDG 7: Affordable & Clean Energy</strong> ||</p>
             <p>&copy; EnerBridge. All rights reserved.</p>
         </footer>
-           <a href="#top" id="back_to_top" title="Go to top">
-  <img src="../Global/back2top.png" height="50" alt="back to top button">
-</a>
-    </body>
+            <!--Back to top button-->
+            <a href="#top" id="back_to_top" title="Go to top">
+                <img src="../Global/back2top.png" height="50" alt="back to top button">
+            </a>
+</body>
 </html>

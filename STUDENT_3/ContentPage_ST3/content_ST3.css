@@ -1,4 +1,6 @@
-/* Full-screen background video */
+\/*Content Page Style*/
+
+/* Full-screen background video with a dimmed overlay effect*/
 #bg-video {
   position: fixed;
   top: 0;
@@ -6,7 +8,7 @@
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: -1; /*Behind all content*/
   opacity: 0.6;
   pointer-events: none;
 }
@@ -23,12 +25,15 @@
   animation: fadeIn 1s ease-in;
 }
 
+/*Animation for smooth entrance*/
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 /*Headings*/
+
+/*Main heading with gradient text*/
 .content-container h1 {
   font-size: 2.8rem;
   color: #00796b;
@@ -40,6 +45,7 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
 }
 
+/*Subtitle*/
 .subtitle {
   text-align: center;
   color: #555;
@@ -48,7 +54,7 @@
   font-weight: 500;  
 }
 
-/*Navigation Tabs*/
+/*Jump to Navigation Tabs*/
 .internal-nav {
   background-color: #f9fafb;
   border-radius: 0.75rem;
@@ -59,7 +65,7 @@
   border: 2px solid #00bfa5; 
 }
 
-
+/*Styling the headingss to the nav tabs*/
 .internal-nav strong {
   display: block;
   text-align: center;
@@ -75,7 +81,7 @@
   letter-spacing: 1px;
 }
 
-
+/*Nav list layout*/
 .internal-nav ul {
   
   list-style: none;
@@ -85,6 +91,7 @@
   padding-left: 0;
 }
 
+/*Individual link styles*/
 .internal-nav li a {
   text-decoration: none;
   color: #1f2937;
@@ -106,12 +113,14 @@
 /*Companies Grid Layout*/
 .company-grid {
   display: grid;
-  grid-template-columns:  repeat(2, 1fr);;
+  grid-template-columns:  repeat(2, 1fr);; /*2 columns*/
   gap: 2rem;
   margin-bottom: 3rem;  
 }
 
 /*Company Card Styling*/
+
+/*Base styling for each card*/
 .company-card {
   background: white;
   border-radius: 1rem;
@@ -122,11 +131,13 @@
   flex-direction: column;
 }
 
+/*Hover effects*/
 .company-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);  
 }
 
+/*card header- Image*/
 .card-header {
   position: relative;
   height: 200px;
@@ -140,6 +151,7 @@
   transition: transform 0.5s ease;
 }
 
+/*Zoom on image hover*/
 .company-card:hover .card-header img {
   transform: scale(1.05);  
 }
@@ -157,6 +169,7 @@
   letter-spacing: 1px;
 }
 
+/*Badge colors based on type*/
 .badge.solar {
   background-color: #e4b773;  
 }
@@ -169,6 +182,7 @@
   background-color: #e691f5;
 }
 
+/*Card body details*/
 .card-body {
   padding: 1.5rem;
   flex-grow: 1;
@@ -195,6 +209,7 @@
   margin-bottom: 1.5rem;
 }
 
+/*Card footer - button*/
 .card-footer {
   padding: 0 1.5rem 1.5rem;
 }
@@ -238,7 +253,7 @@
   }
   
   .company-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /*Arrange cards vertivcally*/
   }
 }
 

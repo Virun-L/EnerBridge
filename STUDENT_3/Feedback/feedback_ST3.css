@@ -1,8 +1,9 @@
+/* Feedback Page Styling */
 
 /* Container with blur and light glass effect */
 .fb-container {
   background: linear-gradient(to bottom right, #ffffffcc, #e0f7facc);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); /*glass-effect*/
   padding: 40px 30px;
   margin: 40px auto;
   border-radius: 20px;
@@ -28,7 +29,7 @@ label {
   color: #055a1c;
 }
 
-/* Inputs and Textareas */
+/* Inputs and Textareas Selects */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -182,6 +183,7 @@ input[type="file"] {
   filter: grayscale(0%);
 }
 
+/*For selected emoji*/
 .emoji-rating input[type="radio"]:checked + span{
   transform: scale(1.3);
   filter: drop-shadow(0 0 5px #00c853);
@@ -194,6 +196,27 @@ input[type="file"] {
   color: #00c853;
 }
 
+/* Error Handling */
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border: 2px solid #d00000;
+  background-color: #fff0f0;
+}
+
+/* Error message shown only after user tries to submit */
+.error-message {
+  display: none;
+  color: #d00000;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+input:invalid:user-invalid + .error-message,
+textarea:invalid:user-invalid + .error-message,
+select:invalid:user-invalid + .error-message {
+  display: block;
+}
 
 
 
