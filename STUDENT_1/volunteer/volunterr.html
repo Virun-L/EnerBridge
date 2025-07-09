@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!--Basic page Setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Volunteer</title>
+
+  <!--Linking Global Css and Styles-->
   <link rel="stylesheet" href="../Global/GlobalStyle.css">
   <link rel="stylesheet" href="../volunteer/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -11,14 +15,17 @@
 </head>
 <body>
 
+  <!-- Wrapper contains the entire page content -->
   <div class="wrapper">
 
     <header>
+      <!-- Header Section with Logo and Navigation Bar -->
       <div class="logo">
         <img src="../Global/EnerBridge_Logo.png" alt="Site Logo" >
       </div>
       <nav>
         <ul class="nav-links">
+          <!-- Navigation links to other pages -->
           <li><a href="../../STUDENT_2/Home/Home.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
           <li><a href="#" class="active"><i class="fa-solid fa-handshake-angle"></i><span>Volunteer</span></a></li>
           <li><a href="../../STUDENT_2/Table/Table.html"><i class="fa-solid fa-solar-panel"></i><span>Energy Data</span></a></li>
@@ -32,11 +39,14 @@
       </nav>
     </header>
 
+    <!-- Main Content Area -->
     <main>
+      <!-- Background video for visual appeal -->
       <video autoplay muted loop playsinline id="bg-video">
         <source src="../Global/loop.mp4" type="video/mp4">
       </video>
 
+      <!-- Inspirational quote box at top -->
       <div class="header-quote-box"> 
         <p class="header-quote">
           "Volunteers do not necessarily have the time; they just have the heart."<br>
@@ -45,7 +55,7 @@
       </div>
       
       <div class="container">
-
+         <!-- Sorting Dropdown -->
         <div class="filter-container">
           <label for="sort-projects">Sort by:</label>
           <select id="sort-projects" class="styled-dropdown">
@@ -56,6 +66,7 @@
           </select>
         </div>
         <div class="projects-grid">
+          <!-- Repeatable block for each volunteering opportunity -->
           <article class="project-card">
             <div class="project-card-header">
               <img src="../volunteer/Volunteer_pics/image3.png" alt="Environmental Care">
@@ -68,22 +79,25 @@
                 <div class="stat-item"><div class="stat-icon">⏰</div><div class="stat-value">4-8 hours</div><div class="stat-label">per week</div></div>
                 <div class="stat-item"><div class="stat-icon">💰</div><div class="stat-value">Free</div><div class="stat-label">participation</div></div>
               </div>
+              <!-- Duration and participation details -->
               <div class="project-details">
                 <div class="detail-item"><i class="fas fa-clock"></i> Duration: 2-12 weeks</div>
                 <div class="detail-item"><i class="fas fa-users"></i> All ages welcome</div>
               </div>
+              <!-- Activity table -->
               <div class="pricing-table">
                 <div class="pricing-header"><span>Duration</span><span>Commitment</span></div>
                 <div class="pricing-row"><span class="pricing-duration">2 weeks</span><span class="pricing-fee">Weekend cleanups</span></div>
                 <div class="pricing-row"><span class="pricing-duration">4 weeks</span><span class="pricing-fee">Tree planting</span></div>
               </div>
+               <!-- Project description -->
               <p class="project-description">Support eco-friendly efforts by participating in tree planting, clean-up drives, and awareness events focused on recycling, pollution control, and protecting natural habitats.</p>
               <div class="project-actions"><button class="btn-view">VIEW PROJECT</button><button class="btn-apply">APPLY</button></div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-card-header"><img src="../volunteer/Volunteer_pics/image2.png" alt="Community Support"></div>
+            <div class="project-card-header"><img src="../ContentPage_ST1/ContentPage_ST1_PICS/energy-efficent.webp" alt="Community Support"></div>
             <div class="project-card-body">
               <h3 class="project-title">Community Support</h3>
               <div class="project-location"><i class="fas fa-map-marker-alt"></i> Local Communities</div>
@@ -201,6 +215,8 @@
                   <div class="project-actions"><button class="btn-view">VIEW PROJECT</button><button class="btn-apply">APPLY</button></div>
               </div>
           </article>
+
+          <!-- Ratings and User Reviews Section -->
         </div> <section class="ratings-reviews">
           <h2>User Ratings & Reviews</h2><br>
           <div class="overall-rating">
@@ -223,6 +239,7 @@
           </div>
         </section>
 
+        <!-- Feedback Form Section -->
         <section class="feedback-form">
           <h2>Submit Your Feedback</h2>
           <form>
@@ -233,8 +250,10 @@
               <label><input type="radio" name="rating" value="2"><span class="span">😕</span></label>
               <label><input type="radio" name="rating" value="1"><span class="span">😠</span></label>
             </div>
+            <!-- Feedback input box -->
             <textarea id="feedbackText" placeholder="Write your review here..."></textarea>
             <div id="selectedEmoji" class="emoji-preview"></div>
+               <!-- Form buttons -->
             <div class="form-buttons">
               <button type="button" class="btn btn-primary">Submit Feedback</button>
               <button type="button" class="btn btn-secondary">Cancel</button>
@@ -242,16 +261,18 @@
           </form>
         </section>
 
+          <!--  Footer with Page Editor and Content Credits -->
+
       </div> </main> </div> <footer>
     <p>⚡️ Empowering the future with clean, sustainable energy for all ⚡️</p>
     <p>
-      | <a href="../../STUDENT_1/PageEditor_ST1/pageEditor_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 01</span></a> |
+      | <a href="../PageEditor_ST1/pageEditor_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 01</span></a> |
       <a href="../../STUDENT_2/PageEditor_ST2/PageEditor_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 02</span></a> |
       <a href="../../STUDENT_3/PageEditor_ST3/pageEditor_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 03</span></a> |
       <a href="../../STUDENT_4/PageEditor_ST4/PageEditor_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 04</span></a> |
     </p>
     <p>
-      | <a href="../../STUDENT_1/ContentPage_ST1/content_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 01</span></a> |
+      | <a href="../ContentPage_ST1/content_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 01</span></a> |
       <a href="../../STUDENT_2/ContentPage_ST2/Content_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 02</span></a> |
       <a href="../../STUDENT_3/ContentPage_ST3/content_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 03</span></a> |
       <a href="../../STUDENT_4/ContentPage_ST4/content_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 04</span></a> |

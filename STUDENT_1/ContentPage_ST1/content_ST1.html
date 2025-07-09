@@ -1,331 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Meta data and page setup -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Homes & Energy Efficiency</title>
+    <head>
+        <!-- Metadata and head resources -->
+        <meta charset="UTF-8" />
+        <!-- Set character encoding -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Responsive scaling -->
+        <title>PageEditor_ST1</title>
+        <!-- Page title -->
+        <!-- Global styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <!-- Font Awesome icons -->
+        <link rel="stylesheet" href="../PageEditor_ST1/pageEditor_validatST1.css" />
+        <link rel="stylesheet" href="../Global/GlobalStyle.css">
+        <!-- Page-specific styles -->
+        <link rel="icon" type="image/png" href="../Global/EnerBridge_Logo.png" />
+        <!-- Favicon -->
+         
+    </head>
 
-    <!-- Font awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <body>
+        <div class="wrapper">
+            <!-- Header with logo and navigation -->
+            <header>
+                <div class="logo">
+                    <img src="../Global/EnerBridge_Logo.png" alt="Site Logo" />
+                    <!-- Site logo -->
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <!-- Navigation links -->
+                        <li>
+                            <a href="../../STUDENT_2/Home/Home.html" class="active"><i class="fa-solid fa-house"></i><span>Home</span></a>
+                        </li>
+                        <li>
+                            <a href="../volunteer/volunterr.html"><i class="fa-solid fa-handshake-angle"></i><span>Volunteer</span></a>
+                        </li>
+                        <li>
+                            <a href="../STUDENT_2/Table/Table.html"><i class="fa-solid fa-solar-panel"></i><span>Energy Data</span></a>
+                        </li>
+                        <li>
+                            <a href="../../STUDENT_3/Feedback/feedback.html"><i class="fa-solid fa-comments"></i><span>Feedback</span></a>
+                        </li>
+                        <li>
+                            <a href="../../STUDENT_3/Team/Team.html"><i class="fa-solid fa-people-group"></i><span>Team</span></a>
+                        </li>
+                       
+                        <li>
+                            <a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span>Site Map</span></a>
+                        </li>
+                         <li class="user-profile">
+                         <a href="../../STUDENT_4/UserProfile/UserProfile.html"><i class="fa-solid fa-users"></i><span>User Profile</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-    <!-- Global and local Stylesheets-->
-    <link rel="stylesheet" href="../Global/GlobalStyle.css">
-    <link rel="stylesheet" href="../ContentPage_ST1/Content_ST1.css">
-    <link rel="icon" type="image/png" href="../Global/EnerBridge_Logo.png" >
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="../Global/EnerBridge_Logo.png" alt="Site Logo" >
-            </div>
-        <nav>
-            <ul class="nav-links">
-                <!-- Main navigation links -->
-                <li>
-                    <a href="../../STUDENT_2/Home/Home.html" class="active"><i class="fa-solid fa-house"></i><span>Home</span></a>
-                </li>
-                <li>
-                    <a href="../volunteer/volunterr.html"><i class="fa-solid fa-handshake-angle"></i><span>Volunteer</span></a>
-                </li>
-                <li>
-                    <a href="../../STUDENT_2/Table/Table.html"><i class="fa-solid fa-solar-panel"></i><span>Energy Data</span></a>
-                </li>
-                <li>
-                    <a href="../../STUDENT_3/Feedback/feedback.html"><i class="fa-solid fa-comments"></i><span>Feedback</span></a>
-                </li>
-                <li>
-                    <a href="../../STUDENT_3/Team/Team.html"><i class="fa-solid fa-people-group"></i><span>Team</span></a>
-                </li>
-                <li>
-                    <a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span>Site Map</span></a>
-                </li>
-                <li class="user-profile">
-                    <a href="../../STUDENT_4/UserProfile/UserProfile.html"><i class="fa-solid fa-users"></i><span>User Profile</span></a>
-                </li>
+            <main>
+                <!-- Background video for visual appeal -->
+                <video autoplay muted loop playsinline id="bg-video">
+                    <source src="../Global/loop.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
+        <section class="stud">
+        <h2><b>A.W.Kithsara - Student 1</b></h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section class="main-cards info-list">
+                <h2 id="Splash">Splash Screen</h2>
+                    <h3>Technical Description</h3>
+                        
+                        <p>
+                            The Splash Screen acts as a visual introduction to the EnerBridge website while the main content loads. It features a full-screen black background with the EnerBridge logo centered on the screen, animated using a pulsing effect to create visual emphasis.
+                        </p>
+                        <p>
+                            Just beneath the logo, three animated loading dots appear sequentially using CSS keyframes to simulate a smooth and modern loading experience. The background is layered with a looping, muted video that represents clean and renewable energy themes. This video is styled to cover the entire screen using `object-fit: cover`, and positioned behind all other content using `z-index` and `position: fixed`.
+                        </p>
+                        <p>
+                            To maintain legibility of the foreground elements, a semi-transparent dark overlay is applied over the video using RGBA values and a backdrop filter. The splash screen also includes two content cards: one highlighting the EnerBridge mission and another displaying the team members' names, each paired with emojis for a friendly touch.
+                        </p>
+                        <p>
+                            The layout relies heavily on Flexbox to center and space content consistently across devices. CSS animations like fade-in, blur, and glow effects are used to bring motion and personality to the interface. After a 7-second delay, the splash screen redirects users automatically to the homepage using a meta refresh tag.
+                        </p>
+                        <p>
+                            Altogether, the splash screen combines branding, smooth animation, and immersive visuals to create a polished and engaging entry experience for users visiting the EnerBridge website.
+                        </p>
+                    
+                    <h3 >Accessibility</h3>
+                        <p>
+                            Accessibility has been carefully considered throughout the splash screen. The structure uses semantic HTML5 tags to provide clarity for assistive technologies. A fallback message is included for users whose browsers cannot play the video.
+                        </p>
+                        <p>
+                            Visual elements such as the logo and dots are animated in a way that avoids overstimulation. High-contrast overlays help keep text readable against the moving background, and the typefaces are legible on all screen sizes.
+                        </p>
+                        <p>
+                            The logo contains appropriate alt text for screen readers. The entire screen is designed to work without user interaction, so keyboard-only and screen reader users are not hindered by the automatic redirection.
+                        </p>
+                        <p>
+                            Flexbox ensures that layout remains consistent across screen sizes, and the animations maintain sufficient spacing and timing to avoid disorientation. These choices make the splash screen both inclusive and visually effective.
+                        </p>
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="../ValidationPage_ST1/validation_ST1.html#splashVal">Splash Screen Validation </a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="../splash/Splash.html">Splash Screen</a></p>
+            </section>
+
+            <section class="main-cards info-list">
+                <h2 id="volunteer" style="text-align: center; margin-top: 5px;margin-bottom: 5px;color: #00796b;">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            The Volunteer Page serves as a dynamic platform where users can explore a curated list of community projects focused on sustainability, renewable energy, and environmental awareness. The layout features a responsive grid of project cards, each designed with clear visual hierarchy and interactive elements to engage potential volunteers. Each card displays a project image, title, location, brief description, key statistics such as duration and commitment, and actionable buttons for viewing details or applying.
+                        </p>
+                        <p>
+                            The page utilizes CSS Grid and Flexbox to create a flexible and aesthetically pleasing arrangement of cards that adapts seamlessly to different screen sizes. Animations and hover effects are applied to cards and buttons to provide tactile feedback and enhance the user experience. The color palette revolves around greens and neutrals, reinforcing the eco-friendly theme of the platform.
+                        </p>
+                        <p>
+                            A filter dropdown allows users to sort or narrow projects by categories or criteria, improving navigation and usability. Beneath the project listings, a dedicated section for user ratings and reviews provides social proof and transparency, encouraging trust and participation. This section includes star ratings, emoji feedback, and a form for submitting new reviews, all styled with consistent design language and accessible controls.
+                        </p>
+                        <p>
+                            The Volunteer Page also features a well-structured feedback form at the bottom, enabling users to share detailed comments and rate their experiences. The form uses accessible input controls, custom emoji rating inputs, and clearly labeled buttons with hover and focus states. Proper use of semantic HTML elements and ARIA roles ensures compatibility with assistive technologies.
+                        </p>
+                        <p>
+                            Overall, the Volunteer Page integrates robust front-end techniques including responsive design, smooth animations, and user interaction handling to create an inviting and functional space for community engagement in sustainable initiatives.
+                        </p>
+
+                    <h3>Accessibility</h3>
+                        <p>
+                            Accessibility considerations are thoroughly embedded in the Volunteer Page design. All interactive elements, such as buttons, dropdowns, and form inputs, are keyboard-navigable and include visible focus indicators. Semantic HTML5 tags are used to structure content logically, improving screen reader compatibility and navigation.
+                        </p>
+                        <p>
+                            Color contrast ratios have been carefully selected to meet WCAG guidelines, ensuring readability for users with visual impairments. The emoji rating system is implemented with hidden radio inputs paired with accessible labels, providing a clear and intuitive experience for assistive device users.
+                        </p>
+                        <p>
+                            Responsive layouts guarantee that content is usable across a range of devices and orientations, with no loss of functionality or information. Animations and transitions are subtle and do not cause motion sickness or distraction.
+                        </p>
+                        <p>
+                            Error handling and validation feedback in the feedback form are presented in text and visually, helping users understand any input issues. Alt text is provided for all images to describe visual content to screen readers.
+                        </p>
+                        <p>
+                            These combined accessibility efforts make the Volunteer Page welcoming and usable for all visitors, regardless of their abilities or technology.
+                        </p>
+
+  <h3>Link to the validation page</h3>
+  <p>
+    <a href="../ValidationPage_ST1/validation_ST1.html#volunteerVal">Volunteer Page Validation</a>
+  </p>
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="../volunteer/volunterr.html">Volunteer Page</a></p>
+            </section>
+
+            <section class="main-cards info-list">
+                <h2 id="Content-Page">Content Page_ST1</h2>
+                    <h3>Technical Description</h3>
+                         <p>
+                            The Smart Homes & Energy Efficiency Page provides an informative overview of how modern smart home technologies contribute to energy savings and sustainable living. The page is divided into well-defined sections including Introduction, What Are Smart Homes, Energy Efficiency Benefits, Challenges, and Future Trends.
+                        </p>
+                        <p>
+                            The layout uses responsive design principles with CSS Grid and Flexbox to ensure content adjusts gracefully on different devices and screen sizes. A fixed background video enhances the visual appeal without compromising readability, thanks to an overlay layer. Interactive internal navigation with smooth scrolling improves user experience.
+                        </p>
+                        <p>
+                            Visual elements include relevant images with descriptive alt text, styled with subtle shadows and hover zoom effects to maintain engagement. Lists are styled with custom bullets and icons to clearly differentiate content types.
+                        </p>
+                        <p>
+                            The page incorporates semantic HTML5 tags, consistent color palettes from root variables, and accessible fonts for easy reading. CSS transitions and animations are used sparingly to maintain focus on content while providing a polished feel.
+                        </p>
+                        <p>
+                            External links are provided for users to explore further, styled with hover effects to indicate interactivity. Overall, the page balances informative content delivery with engaging design and accessibility.
+                        </p>
+                    <h3>Accessibility</h3>
+                        
+                         <p>
+                            Accessibility is prioritized through keyboard navigability, meaningful semantic structure, and adherence to WCAG color contrast guidelines. The fixed video background includes an overlay to maintain sufficient contrast between text and background.
+                        </p>
+                        <p>
+                            Headings and lists are properly structured for screen reader clarity. Images include descriptive alt attributes. Focus outlines and visible indicators assist keyboard users in navigation.
+                        </p>
+                        <p>
+                            Smooth scrolling and animations are subtle and non-disruptive, minimizing motion sickness risks. The responsive layout ensures content is accessible across devices, maintaining functional integrity without loss of information.
+                        </p>
+                        <p>
+                            Form elements and links are labeled clearly, and ARIA roles are applied where necessary to improve assistive technology support.
+                        </p>
+                        <p>
+                            These accessibility measures ensure the page is usable and inclusive for a diverse audience.
+                        </p>
+
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="../ValidationPage_ST1/validation_ST1.html#contentVal" >Content Page validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="../ContentPage_ST1/content_ST1.html">Content Page</a></p>
+            </section>
+
+            <section class="main-cards info-list">
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+
+                   <h3>Splash Screen</h3>
+                        <p>
+                            <strong>Challenges:</strong> Implementing a smooth and visually appealing animated logo with loading dots was tricky, especially ensuring it performed well across different browsers. Managing the timing for automatic redirection while keeping the loading screen seamless also required careful timing and event handling. Accessibility considerations such as keyboard focus and screen reader announcements were additional challenges.
+                        </p>
+                        <p>
+                            <strong>Lessons Learned:</strong> I gained valuable experience working with CSS animations and keyframes, as well as coordinating animation timing with JavaScript. I also learned the importance of balancing aesthetic effects with accessibility and performance.
+                        </p>
+
+                        <h3>Content Page</h3>
+                        <p>
+                            <strong>Challenges:</strong> Creating a fixed video background with an overlay that ensures text readability on all screen sizes was a major challenge. Structuring the content semantically and making internal navigation smooth and user-friendly required careful HTML and CSS planning. Ensuring responsive layouts using Flexbox and Grid took some trial and error.
+                        </p>
+                        <p>
+                            <strong>Lessons Learned:</strong> I improved my skills in responsive design, semantic HTML5, and advanced CSS layout techniques. I also learned how to enhance user experience through smooth scrolling and layered visual design without compromising accessibility.
+                        </p>
+
+                        <h3>Volunteer Page</h3>
+                        <p>
+                            <strong>Challenges:</strong> Designing consistent and visually appealing project cards with images, ratings, and user reviews needed precise CSS styling and responsiveness. Handling form validation and feedback input while maintaining usability and accessibility required detailed testing. Integrating external icon libraries and managing layout spacing also presented difficulties.
+                        </p>
+                        <p>
+                            <strong>Lessons Learned:</strong> I gained confidence in creating interactive and accessible UI components using CSS and HTML forms. I also learned to troubleshoot layout issues across different screen sizes and ensure user inputs are clear and functional.
+                        </p>
+            </section>
+
+            <section class="main-cards info-list">
+                <h2 id="compliance" style="text-align: center; margin-top: 5px; margin-bottom: 5px; color: #437057;">Compliance</h2>
+
+                <p>The pages created aim to comply with JANET regulations by following key principles related to accessibility, privacy, and ethical publishing standards. Content is built using semantic HTML5 to ensure clarity, machine readability, and accessibility for users with disabilities, aligning with WCAG 2.1 guidelines, which JANET supports. We have used descriptive alt text for all images, ensured keyboard accessibility for all interactive elements, and maintained a clear visual hierarchy with readable fonts and good contrast.</p> 
+
+                <p>We also avoided the use of any inappropriate, copyrighted, or non-attributed content, adhering to ethical content standards and responsible use of open-source assets (e.g., FontAwesome, free icon libraries). User data collection features (if implemented) would be designed with GDPR compliance in mind, though in this project no personal data is collected or stored.</p>
+
+                <p>While we acknowledge that this is a student project and not deployed on a live institutional server, every effort has been made to simulate a realistic, secure, and compliant web development process in accordance with JANET’s expectations for content quality, accessibility, and responsible digital conduct.</p>
+                </section>
+
+
+            <section class="main-cards">
+                <h2 id="ref">References</h2>
+                <ul class="ref bullet_list">
+                    <li>International Energy Agency, 2023. <i>Energy Efficiency Report 2023</i>. [online] Available at: <a href="https://www.iea.org/reports/energy-efficiency-2023" target="_blank" rel="noopener">https://www.iea.org/reports/energy-efficiency-2023</a> [Accessed 1 July 2025].</li>
+        
+                    <li>Wired, n.d. <i>The Ultimate Guide to Setting Up Your Smart Home</i>. [online] Available at: <a href="https://www.wired.com/story/how-to-set-up-smart-home/" target="_blank" rel="noopener">https://www.wired.com/story/how-to-set-up-smart-home/</a> [Accessed 1 July 2025].</li>
+                    
+                    <li>PCMag, n.d. <i>Best Smart Home Devices</i>. [online] Available at: <a href="https://www.pcmag.com/picks/the-best-smart-home-devices" target="_blank" rel="noopener">https://www.pcmag.com/picks/the-best-smart-home-devices</a> [Accessed 1 July 2025].</li>
+                    
+                    <li>Energy Star, n.d. <i>Smart Home Energy Tips</i>. U.S. Environmental Protection Agency. [online] Available at: <a href="https://www.energystar.gov/products/smart_home_tips" target="_blank" rel="noopener">https://www.energystar.gov/products/smart_home_tips</a> [Accessed 1 July 2025].</li>
+                    
+                    <li>Guidance Residential, n.d. <i>How Much Does a Smart Home Cost?</i> [online] Available at: <a href="https://www.guidanceresidential.com/resources/home-inspiration/how-much-does-a-smart-home-cost/" target="_blank" rel="noopener">https://www.guidanceresidential.com/resources/home-inspiration/how-much-does-a-smart-home-cost/</a> [Accessed 1 July 2025].</li>
+                    
+                    <li>New York Government, n.d. <i>Securing Your Smart Home & IoT</i>. [online] Available at: <a href="https://its.ny.gov/news/securing-your-smart-home-navigating-internet-things-part-ii" target="_blank" rel="noopener">https://its.ny.gov/news/securing-your-smart-home-navigating-internet-things-part-ii</a> [Accessed 1 July 2025].</li>
+                    
+                    <li>TechRadar, n.d. <i>Your Smart Home’s Fragile Existence Relies on the Internet</i>. [online] Available at: <a href="https://www.techradar.com/news/your-smart-homes-fragile-existence-relies-on-a-factor-you-cant-control-the-internet" target="_blank" rel="noopener">https://www.techradar.com/news/your-smart-homes-fragile-existence-relies-on-a-factor-you-cant-control-the-internet</a> [Accessed 1 July 2025].</li>
+                    
+                    <li>Smart Lifestyle Australia, 2025. <i>Energy-Efficient Smart Homes: Top Trends to Know in 2025</i>. [online] Available at: <a href="https://smartlifestyleaustralia.com.au/energy-efficient-smart-homes-top-trends-to-know-in-2025/" target="_blank" rel="noopener">https://smartlifestyleaustralia.com.au/energy-efficient-smart-homes-top-trends-to-know-in-2025/</a> [Accessed 1 July 2025].</li>
+                    
+                </ul>
+
+            </section>
+
+
+            
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+        <h3>Core pages developed:</h3>
+        <ul class="top-level-ul">
+            <li>
+            Page Sections:
+            <ul class="sub-level-ul">
+                <li><a href="../splash/Splash.html">Splash Screen</a></li>
+                <li><a href="../volunteer/volunterr.html">Volunteer Page</a></li>
+                <li><a href="../ContentPage_ST1/content_ST1.html">Content page</a></li>
             </ul>
-        </nav>
-    </header>
+            </li>
+            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#ref">References</a></li>
+        </ul>
+        </aside>
 
-    <!-- Background video Section -->
-    <div class="video-background">
-        <video autoplay muted loop playsinline>
-            <source src="../Global/loop.mp4" type="video/mp4">
-        </video>
     </div>
 
-    <!--Top anchor for scroll to-top-->
-    <a id="top"></a>
-    <!-- Page Title -->
-    <div class="after-header">
-        <h1>Smart Homes and the Future of Energy Efficiency</h1>
-    </div>
-
-    <!-- Internal Navigation Bar -->
-    <nav class="internal-nav">
-        <a href="#intro">Introduction</a>
-        <a href="#whatsmart">What Are Smart Homes</a>
-        <a href="#Efficiency">Energy Efficiency</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#Challenges">Challenges</a>
-        <a href="#future">Future Trends</a>
-        <a href="#conclusion">Conclusion</a>
-    </nav>
-
-    <main>
-        <!-- Introduction Section -->
-        <section id="intro" class="intro-flex">
-            <div class="content-box">
-                <h2>Introduction</h2>
-                <p>In an era where technology is woven into the fabric of our daily lives, our homes are undergoing a powerful transformation. As global energy demands rise and environmental awareness grows, the concept of the "smart home" has evolved from a simple convenience into a crucial tool for building a sustainable future.</p>
-                <p>This page explores how smart home technology offers a direct and impactful solution to reduce residential energy consumption—lowering your bills, increasing your comfort, and shrinking your carbon footprint, one automated action at a time.</p>
-                <br>
-                <h4>On this page, you'll discover:</h4>
-                <ul class="intro-list">
-                    <li>What a smart home truly is and how its core components work together.</li>
-                    <li>The specific ways smart technology cuts down on energy waste in your home.</li>
-                    <li>The tangible benefits of adopting these systems for you and the planet.</li>
-                    <li>A realistic look at the challenges and considerations before you get started.</li>
-                </ul>
-                <p class="learn-more">
-                    <strong>Learn more:</strong>
-                    <a href="https://www.iea.org/reports/energy-efficiency-2023" target="_blank" rel="noopener">IEA: Energy Efficiency Overview</a> |
-                    <a href="https://www.wired.com/story/how-to-set-up-smart-home/" target="_blank" rel="noopener">Wired: The Ultimate Guide to Setting Up Your Smart Home</a>
-                </p>
-            </div>
-        </section>
-
-        <!-- What are Smart Homes -->
-        <section id="whatsmart">
-            <div class="content-box">
-                <h2>What Are Smart Homes?</h2>
-                <p>A smart home is more than just remote-controlled gadgets; it's a connected ecosystem where various devices and appliances work together to automate tasks, improve efficiency, and enhance your lifestyle. By using the Internet of Things (IoT), these devices can communicate with each other and be managed from a central point, like a smartphone app or a voice assistant.</p>
-                <div class="image-container">
-                    <img src="../ContentPage_ST1/ContentPage_ST1_PICS/smart-home2.png" alt="A living room with smart home icons" class="responsive-img">
-                </div>
-                <h4>Core Components of a Smart Home</h4>
-                <p>A typical smart home system consists of three key elements working in unison:</p>
-                <br>
-                <ul class="components-list">
-                    <li><strong>The Hub (The Brain):</strong> This is the central command center that connects all your devices. It can be a dedicated device or a platform like Amazon Alexa, Google Assistant, or Apple HomeKit that allows different products to communicate with each other.</li>
-                    <li><strong>Sensors & Devices (The Senses & Hands):</strong> These are the products that gather information and perform actions. This includes everything from motion sensors, smart thermostats, and door sensors to smart light bulbs, plugs, and automated blinds.</li>
-                    <li><strong>The Interface (The Controls):</strong> This is how you interact with the system. You can issue commands through a smartphone app, a smart speaker with voice control, or automated schedules that run based on time, temperature, or your location.</li>
-                </ul>
-                <h4>Beyond Remote Control: True Automation</h4>
-                <p>The real power of a smart home lies in automation. Instead of just turning a light off remotely, you can create "scenes" or "routines." For example, a "Movie Night" scene could dim the lights, lower the blinds, and turn on the TV, all with a single voice command. This same intelligence is what allows a smart home to significantly improve energy efficiency by learning your habits and ensuring no energy is wasted on empty rooms.</p>
-                <p class="learn-more">
-                    <strong>Learn more:</strong>
-                    <a href="https://www.pcmag.com/picks/the-best-smart-home-devices" target="_blank" rel="noopener">PCMag: Best Smart Home Devices</a> |
-                    <a href="https://www.techradar.com/home/smart-home/what-exactly-is-a-smart-home-3-things-you-need-to-know-to-get-started" target="_blank" rel="noopener">TechRadar: What exactly is a smart home? 3 things you need to know to get started</a>
-                </p>
-            </div>
-        </section>
-
-        <!-- Energy Efficiency Section -->
-        <section id="Efficiency">
-            <div class="content-box">
-                <h2>How Smart Homes Improve Energy Efficiency</h2>
-                <p>A smart home's efficiency comes from its ability to eliminate waste through intelligent automation and granular control. Instead of relying on manual adjustments, it uses data and schedules to ensure energy is only used when and where it's needed. This proactive approach tackles energy consumption in several key areas of the home.</p>
-                <div class="image-container">
-                    <img src="../ContentPage_ST1/ContentPage_ST1_PICS/energy-efficent.webp" alt="A graphic showing a home with energy efficiency icons" class="responsive-img">
-                </div>
-                <h4>Smart Climate Control (HVAC)</h4>
-                <p>As the largest energy consumer in most homes, automating your heating and cooling system provides the biggest savings:</p>
-                <br>
-                <ul class="efficiency-list">
-                    <li><strong>Learning Schedules:</strong> Smart thermostats learn your daily routines and automatically adjust the temperature when you're away or asleep.</li>
-                    <li><strong>Geofencing:</strong> The system uses your phone's location to detect when the house is empty and sets back the thermostat to an energy-saving mode.</li>
-                    <li><strong>Zone Control:</strong> By using sensors in different rooms, the system can heat or cool only the occupied areas, rather than the entire house.</li>
-                </ul>
-                <h4>Intelligent Lighting</h4>
-                <p>Smart lighting reduces electricity usage by ensuring lights are never left on unnecessarily:</p>
-                <br>
-                <ul class="efficiency-list">
-                    <li><strong>Motion-Sensing:</strong> Lights automatically turn on when you enter a room and, more importantly, turn off after a period of inactivity.</li>
-                    <li><strong>Scheduling:</strong> You can schedule outdoor and indoor lights to turn on at sunset and off at sunrise or at a set time.</li>
-                    <li><strong>Daylight Harvesting:</strong> Advanced systems can detect ambient natural light and dim your bulbs accordingly, saving electricity during the day.</li>
-                </ul>
-                <h4>Smart Plugs and Appliances</h4>
-                <p>These devices tackle energy waste from electronics and large appliances:</p>
-                <br>
-                <ul class="efficiency-list">
-                    <li><strong>Vampire Load Elimination:</strong> Smart plugs can completely cut power to electronics (like TVs and game consoles) that draw "vampire" power even when turned off.</li>
-                    <li><strong>Off-Peak Scheduling:</strong> Smart washers, dryers, and dishwashers can be scheduled to run during off-peak hours when electricity rates are lower.</li>
-                </ul>
-                <p class="learn-more">
-                    <strong>Learn more:</strong>
-                    <a href="https://www.energystar.gov/products/smart_home_tips" target="_blank" rel="noopener"> ENERGY STAR: Smart Home Energy Tips </a>  |
-                    <a href="https://greenerideal.com/guides/green-living/do-smart-homes-live-up-to-their-energy-efficiency-promises/" target="_blank" rel="noopener">GreenerIdeal: Do Smart Homes Live Up to Their Energy‑Efficiency Promises?</a>
-                </p>
-            </div>
-        </section>
-
-        <!-- Benefits Section -->
-        <section id="benefits">
-            <div class="content-box">
-                <h2>Benefits of Smart Energy Systems</h2>
-                <div class="benefits-grid">
-                    <div class="benefits-box">
-                        <img src="../ContentPage_ST1/ContentPage_ST1_PICS/lowerbills.jpg" alt="lower-energy" class="benefit-icon">
-                        <h4>Lower energy<br> bills</h4>
-                        <p>Smart systems optimize heating, cooling, and lighting, automatically cutting down on waste and reducing your monthly utility costs.</p>
-                    </div>
-                    <div class="benefits-box">
-                        <img src="../ContentPage_ST1/ContentPage_ST1_PICS/sustainability.jpg" alt="sustainability" class="benefit-icon">
-                        <h4>environmental sustainability</h4>
-                        <p>By consuming less power, you actively reduce your home's carbon footprint and contribute to a healthier, more sustainable planet.</p>
-                    </div>
-                    <div class="benefits-box">
-                        <img src="../ContentPage_ST1/ContentPage_ST1_PICS/comfort.jpg" alt="comfort-control" class="benefit-icon">
-                        <h4>Increased comfort and control</h4>
-                        <p>Fine-tune your home's environment to your exact preference and remotely manage lighting and temperature from anywhere using your smartphone.</p>
-                    </div>
-                    <div class="benefits-box">
-                        <img src="../ContentPage_ST1/ContentPage_ST1_PICS/monitoring.webp" alt="monitoring" class="benefit-icon">
-                        <h4>Real-time monitoring and alerts</h4>
-                        <p>Easily track your energy use with live data and receive instant notifications about any waste or system problems, keeping you informed at all the time.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Challenges Section -->
-        <section id="Challenges">
-            <div class="content-box">
-                <h2>Challenges & Considerations</h2>
-                <p>
-                    While the promise of a fully automated, energy-efficient home is compelling, the path to creating one involves navigating several important challenges. From the initial financial investment to ensuring the security of your personal data, a realistic look at these considerations is crucial. Being aware of these potential hurdles allows homeowners to make more informed decisions and build a smart home that is truly efficient, secure, and user-friendly for the long term.
-                </p>
-                <ul class="challenges-list">
-                    <li>
-                        <h4>High Initial Cost and Investment</h4>
-                        <p>The upfront cost of purchasing smart devices like thermostats, light bulbs, sensors, and central hubs can be a significant barrier. While the long-term goal is to save money on energy bills, the initial investment can take years to pay for itself.</p>
-                        <p class="learn-more"><strong>Learn more:</strong> <a href="https://www.guidanceresidential.com/resources/home-inspiration/how-much-does-a-smart-home-cost/" target="_blank" rel="noopener"> Guidance Residential: How Much Does a Smart Home Cost?</a> |
-                            <a href="https://www.loxone.com/enus/blog/real-cost-of-smart-home-automation/" target="_blank" rel="noopener">Loxone: The REAL Cost of Smart Home Automation</a>
-
-                    </li>
-                    <li>
-                        <h4>Cybersecurity and Privacy Risks</h4>
-                        <p>Every internet-connected device is a potential entry point for cyberattacks. A compromised system could lead to unauthorized access to personal data, cameras, and controls, raising significant security and privacy concerns.</p>
-                        <p class="learn-more"><strong>Learn more:</strong> <a href="https://its.ny.gov/news/securing-your-smart-home-navigating-internet-things-part-ii" target="_blank" rel="noopener">NY Gov: Securing Your Smart Home & IoT</a> |
-                            <a href="https://www.nist.gov/blogs/taking-measure/7-tips-keep-your-smart-home-safer-and-more-private-nist-cybersecurity" target="_blank" rel="noopener">NIST: 7 Tips to Keep Your Smart Home Safer & Private</a>
-
-                    </li>
-                    <li>
-                        <h4>Interoperability and Lack of Standardization</h4>
-                        <p>Devices from different brands often don't "talk" to each other, creating a fragmented experience. While standards like "Matter" are improving this, the ecosystem can still be difficult to unify.</p>
-                        <p class="learn-more"><strong>Learn more:</strong> <a href="https://www.theverge.com/tech/643328/does-z-wave-still-matter-in-the-smart-home" target="_blank" rel="noopener"> The Verge: Z‑Wave’s Role in a Matter‑Driven Smart Home</a> |
-                            <a href="https://www.theverge.com/24349390/matter-csa-thread-group-wifi-alliance-interview-2025" target="_blank" rel="noopener">  The Verge: Matter Will Be Better in 2025</a>
-                    </li>
-                    <li>
-                        <h4>Dependence on Reliable Internet</h4>
-                        <p>Most smart home automations and remote control features are entirely dependent on a stable internet connection. An outage can render many of your smart devices non-functional until the connection is restored.</p>
-                        <p class="learn-more"><strong>Learn more:</strong> <a href="https://www.techradar.com/news/your-smart-homes-fragile-existence-relies-on-a-factor-you-cant-control-the-internet" target="_blank" rel="noopener"> TechRadar: Your smart home’s fragile existence relies on the internet</a> |
-                            <a href="https://greenbuildingcanada.ca/smart-home-internet-outage/" target="_blank" rel="noopener">Green Building Canada: Can Your Smart Home Survive an Internet Outage?</a>
-  
-                    </li>
-                    <li>
-                        <h4>Complexity and User-Friendliness</h4>
-                        <p>For those not technologically inclined, setting up and managing a multitude of devices and automation routines can be complex and frustrating, creating a steep learning curve.</p>
-                        <p class="learn-more"><strong>Learn more:</strong> <a href="https://www.mdpi.com/2673-9259/5/1/3" target="_blank" rel="noopener">MDPI: Evaluating Smart Home Usability and Accessibility</a> |
-                            <a href="https://www.mdpi.com/2227-7080/11/1/9" target="_blank" rel="noopener">MDPI: Complexity of Smart Home Setups</a> 
-
-                    </li>
-                    <li>
-                        <h4>"Parasitic" Energy Consumption</h4>
-                        <p>The smart devices themselves constantly consume a small amount of "standby" power. The cumulative energy draw from dozens of always-on devices can add up, potentially offsetting some of the intended savings.</p>
-                        <p class="learn-more"><strong>Learn more:</strong> <a href="https://energysavehouse.com/home-energy-efficiency/energy-saving-tips/7-ways-to-reduce-standby-power-consumption/" target="_blank" rel="noopener">Energy Save House: 7 Ways to Reduce Standby Power Consumption</a>
-
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Future Trends Section -->
-        <section id="future">
-            <div class="content-box">
-                <h2>Future Trends</h2>
-                <p>The evolution of the smart home is accelerating. Driven by breakthroughs in artificial intelligence and connectivity, the homes of tomorrow will move beyond simple automation to become truly predictive, adaptive, and integrated ecosystems. Here are some of the key trends shaping the future of energy efficiency at home.</p>
-                <div class="image-container">
-                    <img src="../ContentPage_ST1/ContentPage_ST1_PICS/future-trends.webp" alt="A graphic showing a home with energy efficiency icons" class="responsive-img">
-                </div>
-                <ul class="future-trends-list">
-                    <li>
-                        <h4>AI-Powered Hyper-Automation</h4>
-                        <p>Future smart homes will use advanced AI to make incredibly nuanced decisions. By analyzing weather forecasts, real-time grid pricing, and your personal habits, the system will optimize energy use in ways we can't manually, anticipating your needs before you're even aware of them.</p>
-                    </li>
-                    <li>
-                        <h4>Predictive Maintenance</h4>
-                        <p>Your home will tell you it needs a repair before something breaks. Sensors on appliances like your HVAC or water heater will monitor performance and energy draw. The system will detect anomalies, alert you to potential failures, and even schedule a technician, preventing costly breakdowns and inefficient operation.</p>
-                    </li>
-                    <li>
-                        <h4>Deep Grid Integration: The "Prosumer" Home</h4>
-                        <p>Homes will transform from energy consumers to active participants in the power grid. With the rise of solar panels, home batteries (like Tesla's Powerwall), and electric vehicles (EVs), smart energy systems will sell excess power back to the grid during peak hours, a new source of income for homeowners.</p>
-                    </li>
-                    <li>
-                        <h4>Ambient and Invisible Interfaces</h4>
-                        <p>The need for apps and screens will diminish as technology becomes more seamlessly integrated into our environment. Control will shift towards natural conversation, gestures, and context-aware systems that adapt automatically without any direct commands, making energy efficiency an effortless part of daily life.</p>
-                    </li>
-                </ul>
-                <p class="learn-more">
-                    <strong>Learn more:</strong>
-                    <a href="https://smartlifestyleaustralia.com.au/energy-efficient-smart-homes-top-trends-to-know-in-2025/" target="_blank" rel="noopener">Smart Life Style Australia: Energy-Efficient Smart Homes</a> |
-                    <a href="https://insights.made-in-china.com/Top-10-Smart-Home-Trends-for-2025_YaRteopJDmHQ.html" target="_blank" rel="noopener">Made-in-China: Sustainable and Energy Efficient Homes</a>
-                </p>
-            </div>
-        </section>
-
-        <!--Conclusion Section -->
-        <section id="conclusion">
-            <div class="content-box ">
-                <h2>Conclusion</h2>
-                <p>Smart homes are no longer just a futuristic idea.They're a practical, powerful solution to today’s environmental and energy challenges. By integrating intelligent technologies that automate, optimize, and personalize our daily living, smart homes not only enhance our quality of life but also significantly reduce our ecological footprint. Although there are upfront costs and technical challenges to consider, the long-term benefits-financial, environmental, and personal are clear. As technology continues to evolve, the future of smart homes looks even more promising, with AI, predictive maintenance, and energy-sharing capabilities turning our living spaces into proactive, eco-conscious partners in sustainability.</p>
-                <br>
-                <ul>
-                    <li><strong>Smart Homes reduce energy waste</strong> through intelligent automation and real-time control.</li>
-                    <li><strong>Lower utility bills</strong> by optimizing heating, cooling, lighting, and appliance usage.</li>
-                    <li><strong>Support sustainability goals</strong> by shrinking your household's carbon footprint.</li>
-                    <li><strong>Enhance comfort and convenience</strong> with personalized, automated routines.</li>
-                    <li><strong>Future advancements</strong> like AI and predictive maintenance will make homes even more efficient.</li>
-                    <li><strong>Challenges like cost, cybersecurity, and interoperability</strong> require careful planning.</li>
-                    <li><strong>Deep integration with the energy grid</strong> enables homeowners to become energy producers, not just consumers.</li>
-                    <li><strong>The future is seamless and intuitive,</strong> with invisible interfaces and smart adaptation becoming the norm.</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer Section-->
-    <footer>
-        <p>⚡️ Empowering the future with clean, sustainable energy for all ⚡️</p>
-        <p>
-            <!-- Page Editor Links-->
-            | <a href="../PageEditor_ST1/pageEditor_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 01</span></a> |
-            <a href="../../STUDENT_2/PageEditor_ST2/PageEditor_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 02</span></a> |
-            <a href="../../STUDENT_3/PageEditor_ST3/pageEditor_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 03</span></a> |
-            <a href="../../STUDENT_4/PageEditor_ST4/PageEditor_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 04</span></a> |
-        </p>
-        <p>
-            <!--Content Page Links -->
-            | <a href="../ContentPage_ST1/content_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 01</span></a> |
-            <a href="../../STUDENT_2/ContentPage_ST2/Content_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 02</span></a> |
-            <a href="../../STUDENT_3/ContentPage_ST3/content_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 03</span></a> |
-            <a href="../../STUDENT_4/ContentPage_ST4/content_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 04</span></a> |
-        </p>
-
-        <!-- Sitemap Link -->
-        <div class="sitemap">
-            | <a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span style="margin-left: 5px;">Site Map</span></a> |
+                
+            </main>
         </div>
 
-        <!--SDG Statement and copyright-->
-        <p>|| Supporting <strong>SDG 7: Affordable & Clean Energy</strong> ||</p>
-        <p>© EnerBridge. All rights reserved.</p>
-    </footer>
-    
-    <!-- Scroll-to-top button -->
-    <a href="#top" id="back_to_top" title="Go to top">
-        <img src="../Global/back2top.png" height="50" alt="back to top button">
-    </a>
-</body>
+       
+
+        <!-- Footer content -->
+        <footer>
+            <p>⚡️ Empowering the future with clean, sustainable energy for all ⚡️</p>
+            <p>
+                | <a href="../PageEditor_ST1/pageEditor_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 01</span></a> |
+                <a href="../../STUDENT_2/PageEditor_ST2/PageEditor_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 02</span></a> |
+                <a href="../../STUDENT_3/PageEditor_ST3/pageEditor_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 03</span></a> |
+                <a href="../../STUDENT_4/PageEditor_ST4/PageEditor_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 04</span></a> |
+            </p>
+            <p>
+                | <a href="../ContentPage_ST1/content_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 01</span></a> |
+                <a href="../../STUDENT_2/ContentPage_ST2/Content_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 02</span></a> |
+                <a href="../../STUDENT_3/ContentPage_ST3/content_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 03</span></a> |
+                <a href="../../STUDENT_4/ContentPage_ST4/content_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 04</span></a> |
+            </p>
+            <div class="sitemap">
+                | <a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span style="margin-left: 5px;">Site Map</span></a> |
+            </div>
+            <p>|| Supporting <strong>SDG 7: Affordable & Clean Energy</strong> ||</p>
+            <p>&copy; EnerBridge. All rights reserved.</p>
+        </footer>
+           <a href="#top" id="back_to_top" title="Go to top">
+  <img src="../Global/back2top.png" height="50" alt="back to top button">
+</a>
+    </body>
 </html>

@@ -531,7 +531,7 @@ hr{
 /* Hover effect to the "See More" */
 .review-card .see-more:hover{
     text-decoration: underline;
-    color: #65d79e;
+    color: #00ff80
 
 }
 
@@ -639,6 +639,8 @@ label:active{
     background-color: #667977;
     transform: translateY(-2px) scale(1.1);
 }
+
+
 
 
 
