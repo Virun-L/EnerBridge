@@ -179,6 +179,20 @@ h1 {
 .energy-table a:hover {
   text-decoration: underline;
 }
+/* 
+  =============================
+        Row hover effect
+  =============================
+*/
+
+.energy-table tbody tr:hover td {
+  color:var(--primary-color); 
+}
+.energy-table tbody tr:hover a {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
 
 /* 
   =============================
@@ -194,6 +208,7 @@ h1 {
   padding: 10px;
 }
 
+
 /* 
   =============================
   Emoji or Special Highlights
@@ -203,6 +218,7 @@ h1 {
 .energy-table td {
   font-weight: normal;
 }
+
 
 
 /* 
