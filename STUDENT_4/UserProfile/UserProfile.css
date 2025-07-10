@@ -143,7 +143,6 @@
     font-size: 12px;
     font-weight: 700;
     border-radius: var(--border-radius);
-    
     transition: width 0.5s ease-in-out;
 }
 
