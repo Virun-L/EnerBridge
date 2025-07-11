@@ -176,22 +176,10 @@ h1 {
   font-weight: 500;
 }
 
-.energy-table a:hover {
+.energy-table tbody tr:hover td{
   text-decoration: underline;
 }
-/* 
-  =============================
-        Row hover effect
-  =============================
-*/
 
-.energy-table tbody tr:hover td {
-  color:var(--primary-color); 
-}
-.energy-table tbody tr:hover a {
-  text-decoration: underline;
-  color: var(--primary-color);
-}
 
 
 /* 
