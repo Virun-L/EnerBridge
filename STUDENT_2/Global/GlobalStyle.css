@@ -543,6 +543,12 @@ i.fa-solid {
   }
 }
 
+@media (max-width: 600px) {
+  .wrapper, .main {
+    padding-top: 130px; /* Equal to or greater than header height */
+  }
+}
+
 
 
 /* 

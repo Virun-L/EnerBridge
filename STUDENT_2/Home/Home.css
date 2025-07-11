@@ -236,6 +236,113 @@ h2 {
 
 /* 
   =============================
+      Responsive Styles
+  =============================
+*/
+
+/* For tablets and medium screens */
+@media (max-width: 992px) {
+  .mission h1 {
+    font-size: 2.3rem;
+  }
+
+  .mission p {
+    font-size: 17px;
+  }
+
+  .tile-container {
+    gap: 2rem;
+  }
+
+  .content-tile {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .content-tile p {
+    font-size: 18px;
+  }
+
+  .learnmore,
+  .learnmore-link {
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+
+  .extra-support-logos {
+    gap: 50px;
+  }
+}
+
+/* For phones and small devices */
+@media (max-width: 600px) {
+  .mission {
+    padding: 1.2rem;
+    margin-top: 30px;
+  }
+
+  .mission h1 {
+    font-size: 1.8rem;
+  }
+
+  .mission p {
+    font-size: 16px;
+    padding: 0.8rem;
+    margin-bottom: 50px;
+  }
+
+  .tile-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .content-tile {
+    max-width: 90%;
+  }
+
+  .tile-title {
+    font-size: 1.2rem;
+  }
+
+  .content-tile p {
+    font-size: 16px;
+    padding: 0 1rem;
+  }
+
+  .learnmore,
+  .learnmore-link {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .extra-support-logos {
+    gap: 30px;
+  }
+
+  .support-item img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .support-item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper,
+  .main,
+  .mission,
+  .splash-screen {
+    padding-top: 300px; /* larger than header height */
+  }
+}
+
+
+
+/* 
+  =============================
         End of Home Page Styles
 
         - Edited by Student 2
