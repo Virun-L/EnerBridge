@@ -154,7 +154,7 @@ body {
   padding-top: 140px; 
 }
 
-/* 
+/*
   =============================
         Styling the header
   =============================
@@ -259,7 +259,7 @@ nav {
 
 
 .nav-links li a.active {
-  color: #00796b;
+  color: var(--primary-color);
   background-color: #e0f2f1;
   border-radius: 5px;
   border-bottom: 3px solid #0d7744;
