@@ -272,3 +272,52 @@ html, body {
     visibility: visible;
   }
 }
+
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .logo {
+    width: 100px;
+    margin-bottom: 1.5rem;
+  }
+
+  .card h2 {
+    font-size: 1.4rem;
+  }
+
+  .card p,
+  .card li {
+    font-size: 0.9rem;
+  }
+
+  .card-container {
+    padding: 1rem;
+  }
+
+  .loading-logo {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    padding: 0.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .card p,
+  .card li {
+    font-size: 0.85rem;
+  }
+
+  .loading-logo {
+    width: 60px;
+  }
+}
