@@ -62,3 +62,30 @@ document.querySelectorAll(".team-card, .team-card2").forEach(card => {
     alert(`${name}: ${funFacts[name] || "No fun fact available yet!"}`);
   });
 });
+const cards = document.querySelectorAll(".team-card, .team-card2");
+
+const revealCards = () => {
+  cards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+    if (cardTop < window.innerHeight - 100) {
+      card.classList.add("show");
+    }
+  });
+};
+
+window.addEventListener("scroll", revealCards);
+
+// Add reveal CSS
+const scrollStyle = document.createElement("style");
+scrollStyle.innerHTML = `
+  .team-card, .team-card2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+  }
+  .team-card.show, .team-card2.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+document.head.appendChild(scrollStyle);
