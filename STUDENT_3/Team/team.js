@@ -89,3 +89,11 @@ scrollStyle.innerHTML = `
   }
 `;
 document.head.appendChild(scrollStyle);
+document.querySelectorAll(".team-card, .team-card2").forEach(card => {
+  const tasks = card.querySelectorAll("ul li").length;
+  const counter = document.createElement("p");
+  counter.textContent = `✅ Contributions: ${tasks}`;
+  counter.style.fontWeight = "bold";
+  counter.style.color = "#00796b";
+  card.querySelector(".team-info, .team-info2").appendChild(counter);
+});
