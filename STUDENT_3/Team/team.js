@@ -49,3 +49,16 @@ style.innerHTML = `
   }
 `;
 document.head.appendChild(style);
+const funFacts = {
+  "Kithsara Witharana": "Loves football and is a huge fan of FC Barcelona ⚽",
+  "Aakash Wijesekara": "Enjoys playing hockey and organizing events 🏑",
+  "Shaginthiya Mahendran": "Passionate about photography 📸",
+  "Virun Liyanage": "Gaming enthusiast and loves exploring new tech 🎮"
+};
+
+document.querySelectorAll(".team-card, .team-card2").forEach(card => {
+  card.addEventListener("click", () => {
+    const name = card.querySelector("h3").textContent;
+    alert(`${name}: ${funFacts[name] || "No fun fact available yet!"}`);
+  });
+});
