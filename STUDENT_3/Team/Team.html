@@ -1,74 +1,196 @@
+<!--Team Page HTML-->
+<!--Declares the document type and language-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--Metadata and responsive viewport-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team Page</title>
-  <link rel="stylesheet" href="team.css">
+  
+  <!--Title and external sstylesheet links-->
+  <title>Team</title>
+  <link rel="stylesheet" href="../Global/GlobalStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Team/Team.css">
+  <link rel="icon" type="image/png" href="../STUDENT_3/Global/EnerBridge_Logo.png">
 </head>
 <body>
-  <header>
-    <h1>Our Team</h1>
-  </header>
+  <div class="wrapper">
 
-  <!-- Search Bar will be added dynamically by JS -->
-
-  <main class="team-container">
-    <!-- Example team member -->
-    <div class="team-card">
-      <div class="team-info">
-        <h3>Kithsara Witharana</h3>
-        <p>Project Lead</p>
-        <ul>
-          <li>Coordinated overall project</li>
-          <li>Reviewed code quality</li>
-          <li>Managed deadlines</li>
-        </ul>
+    <!-- Header with logo and navigation bar -->
+    <header>
+      <div class="logo">
+        <img src="../Global/EnerBridge_Logo.png" alt="Site Logo">
       </div>
-    </div>
-
-    <div class="team-card2">
-      <div class="team-info2">
-        <h3>Aakash Wijesekara</h3>
-        <p>Frontend Developer</p>
-        <ul>
-          <li>Developed UI components</li>
-          <li>Handled CSS design</li>
-          <li>Optimized responsiveness</li>
+      <nav>
+        <ul class="nav-links">
+          <!--Navigation links with icons-->
+          <!--Uses <i> for font awesome icons-->
+          <li><a href="../../STUDENT_2/Home/Home.html" ><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+          <li><a href="../../STUDENT_1/volunteer/volunterr.html"><i class="fa-solid fa-handshake-angle"></i><span>Volunteer</span></a></li>
+          <li><a href="../../STUDENT_2/Table/Table.html"><i class="fa-solid fa-solar-panel"></i><span>Energy Data</span></a></li>
+          <li><a href="../../STUDENT_3/Feedback/feedback.html"><i class="fa-solid fa-comments"></i><span>Feedback</span></a></li>
+          <li><a href="#" class="active"><i class="fa-solid fa-people-group"></i><span>Team</span></a></li>
+          <li><a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span>Site Map</span></a></li>
+          <li class="user-profile">
+           <a href="../../STUDENT_4/UserProfile/UserProfile.html"><i class="fa-solid fa-users"></i><span>User Profile</span></a>
+           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
 
-    <div class="team-card">
-      <div class="team-info">
-        <h3>Shaginthiya Mahendran</h3>
-        <p>Backend Developer</p>
-        <ul>
-          <li>Developed APIs</li>
-          <li>Database design</li>
-          <li>Security improvements</li>
-        </ul>
-      </div>
-    </div>
+    <!--Background video-->
+    <video autoplay muted loop playsinline id="bg-video">
+  <source src="../Global/loop.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-    <div class="team-card2">
-      <div class="team-info2">
-        <h3>Virun Liyanage</h3>
-        <p>Tester</p>
-        <ul>
-          <li>Performed test cases</li>
-          <li>Debugged code</li>
-          <li>Automated testing</li>
-        </ul>
-      </div>
-    </div>
-  </main>
+      <!--Introduction with heading and description-->
+      <div class="team-box">
+            <div class="team-topic"><h1>Meet Team EnerBridge</h1></div>
+            <div class="team-dis"><p>Passionate about driving sustainable energy solutions, Team EnerBridge brings together innovative minds dedicated to bridging the gap between technology and a greener future. Get to know the talented individuals behind our mission for change.</p></div>
 
+      </div>
+
+  
+    <!--Main content container for team cards-->
+    <main class="team-container">
+
+      <!--Focusable with tabindex="0" for keyboard accessibility-->
+      <!--Includes name, image,  studentID, task list and Linkedin links-->
+      
+      <!-- Team Member 1 -->
+      <div class="team-card" tabindex="0"> 
+        <img src="../Team/Team_PICS/Kithsara.jpg" alt="Kithsara Witharana">
+        <div class="team-info">
+          <div class="info-topic">
+          <h3>Kithsara Witharana</h3>
+          </div>
+          <h4 class="name">Student 1</h4>
+          <ul>
+            <li>Splash Page</li>
+            <li>Volunteer Page</li>
+            <li>Content Page - ST1</li>
+            <li>Page Editor - ST1</li>
+            <li>Validation Page - ST1</li>
+          </ul>
+          <div class="social-icons">
+          <a href="https://www.linkedin.com/in/alahapperuma-witharana-kithsara-61035b354/" target="_blank">
+          <img src="../Team/Team_PICS/linkedin.png" alt="icons8-linkedin-48">
+          </a>
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- Team Member 2 -->
+      <div class="team-card2" tabindex="0">
+        <img src="../Team/Team_PICS/AAKASH.jpeg" alt="Aakash Wijesekara">
+        <div class="team-info2">
+          <div class="info-topic">
+          <h3>Aakash Wijesekara</h3>
+          </div>
+          <h4 class="name">Student 2</h4>
+          <ul>
+            <li>Overlooked the consistency of the Website</li>
+            <li>Home Page</li>
+            <li>Template & Navigation Bar</li>
+            <li>Table</li>
+            <li>Content Page - ST2</li>
+            <li>Page Editor - ST2</li>
+            <li>Validation Page - ST2</li>
+          </ul>
+          <div class="social-icons">
+          <a href="https://www.linkedin.com/in/aakash-wijesekara-611588318/" target="_blank">
+          <img src="../Team/Team_PICS/linkedin.png" alt="icons8-linkedin-48">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="team-card" tabindex="0">
+        <img src="../Team/Team_PICS/Shaginthiya.jpg" alt="Shaginthiya Mahendran">
+        <div class="team-info">
+          <div class="info-topic">
+          <h3>Shaginthiya Mahendran</h3>
+          </div>
+          <h4 class="name">Student 3</h4>
+          <ul>
+            <li>Feedback Page</li>
+            <li>Team Page </li>
+            <li>Content Page - ST3</li>
+            <li>Page Editor - ST3</li>
+            <li>Validation Page - ST3</li>
+          </ul>
+          <div class="social-icons">
+          <a href="https://www.linkedin.com/in/shaginthiya-mahendran-42802b302/" target="_blank">
+          <img src="../Team/Team_PICS/linkedin.png" alt="icons8-linkedin-48">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 4 -->
+      <div class="team-card" tabindex="0">
+        <img src="../Team/Team_PICS/VIRUN.jpeg" alt="Virun Liyanage">
+        <div class="team-info">
+          <div class="info-topic">
+          <h3>Virun Liyanage</h3>
+          </div>
+          <h4 class="name">Student 4</h4>
+          <ul>
+            <li>User Profile </li>
+            <li>Sitemap</li>
+            <li>Content Page - ST4</li>
+            <li>Page Editor - ST4</li>
+            <li>Validation Page - ST4</li>
+          </ul>
+          <div class="social-icons">
+          <a href="https://www.linkedin.com/in/virun-liyanage-5b3625188/" target="_blank">
+          <img src="../Team/Team_PICS/linkedin.png" alt="icons8-linkedin-48">
+          </a>
+          </div>
+        </div>
+      </div>
+  </main>  
+
+  </div><!-- End wrapper -->
+
+  <!-- Footer OUTSIDE wrapper -->
+  
   <footer>
-    <p>© 2025 Our Team. All Rights Reserved.</p>
+    <p>⚡️ Empowering the future with clean, sustainable energy for all ⚡️</p>
+
+    <p>
+      <!--Links for page editors and content page-->
+      <a href="../../STUDENT_1/PageEditor_ST1/pageEditor_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 01</span></a> |
+      <a href="../../STUDENT_2/PageEditor_ST2/PageEditor_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 02</span></a> |
+      <a href="../../STUDENT_3/PageEditor_ST3/pageEditor_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 03</span></a> |
+      <a href="../../STUDENT_4/PageEditor_ST4/PageEditor_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Page Editor :- Student 04</span></a> |
+    </p>
+
+    <p>
+      <a href="../../STUDENT_1/ContentPage_ST1/content_ST1.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 01</span></a> |
+      <a href="../../STUDENT_2/ContentPage_ST2/Content_ST2.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 02</span></a> |
+      <a href="../../STUDENT_3/ContentPage_ST3/content_ST3.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 03</span></a> |
+      <a href="../../STUDENT_4/ContentPage_ST4/content_ST4.html"><i class="fa-solid fa-user"></i><span style="margin-left: 5px;">Content Page :- Student 04</span></a> |
+    </p>
+
+    <div class="sitemap">
+      | <a href="../../STUDENT_4/Sitemap/sitemap.html"><i class="fa-solid fa-map"></i><span style="margin-left: 5px;">Site Map</span></a> |
+    </div>
+
+    <p> || Supporting <strong>SDG 7: Affordable & Clean Energy</strong> ||</p>
+
+
+    <p>&copy; EnerBridge. All rights reserved.</p>
   </footer>
 
-  <!-- JavaScript -->
-  <script src="team.js"></script>
+    <!--Back to top button-->
+    <a href="#top" id="back_to_top" title="Go to top">
+      <img src="../Global/back2top.png" height="50" alt="back to top button">
+    </a>
 </body>
 </html>
